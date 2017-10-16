@@ -22,9 +22,9 @@ weight = 3
 #   Deactivate by commenting out parameters, prefixing lines with `#`.
 [cta]
   url = "./post/getting-started/"
-  label = '<i class="fa fa-download"></i> Get Started'
+  label = '<i class="fa fa-question-circle"></i> Start Here'
 +++
 
-A website to promote statistical reasoning and the use of statistical programming.
+A website to promote statistical reasoning through the practice of statistical programming.
 
 
