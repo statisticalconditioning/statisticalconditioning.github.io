@@ -1,0 +1,26 @@
+---
+title: Test Post
+author: William Murrah
+date: '2017-10-16'
+slug: test-post
+categories:
+  - R
+tags: []
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+This is only a test.
+
+```{r}
+x = 1:1000
+y <- x^2 +2
+```
+
+
+```{r}
+plot(x, y)
+```
+
