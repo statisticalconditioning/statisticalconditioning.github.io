@@ -12,9 +12,9 @@ weight = 5
 # List your academic interests.
 [interests]
   interests = [
-    "Artificial Intelligence",
-    "Computational Linguistics",
-    "Information Retrieval"
+    "Design, Implementation and Evaluation of STEM interventions",
+    "Longitudinal and Predictive Modeling",
+    "Program Evaluation"
   ]
 
 # List your qualifications (such as academic degrees).
