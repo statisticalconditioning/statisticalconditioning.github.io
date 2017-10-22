@@ -1,11 +1,11 @@
 +++
 # Projects widget.
-# This widget displays all projects from `content/project/`.
+# This widget displays all projects from `content/course/`.
 
 date = "2016-04-20T00:00:00"
 draft = false
 
-title = "Projects"
+title = "Courses"
 subtitle = ""
 widget = "projects"
 
@@ -30,8 +30,16 @@ filter_default = 0
   tag = "*"
   
 [[filter]]
-  name = "Deep Learning"
-  tag = ".deep-learning"
+  name = "Design and Analysis I"
+  course = "ERMA 7300"
+  
+[[filter]]  
+  name = "Design and Analysis II"
+  course = "ERMA 7310"
+  
+[[filter]]
+  name = "Design and Analysis III"
+  course = "ERMA 8320"
 
 [[filter]]
   name = "Other"
@@ -39,3 +47,4 @@ filter_default = 0
 
 +++
 
+Courses for which I use this site.

@@ -24,3 +24,7 @@ y <- x^2 +2
 plot(x, y)
 ```
 
+
+$$
+y_i = \beta_0 + \beta_1 x_i + \beta_2 x_i + \varepsilon_i
+$$
