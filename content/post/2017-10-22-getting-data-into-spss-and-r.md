@@ -10,10 +10,6 @@ header:
   image: ''
 ---
 
-# Getting Data Into SPSS and R
-
-
-
 The first step in analyzing data is often getting the data into your chosen software.
 In this tutorial, I demonstrate how to manually enter data into SPSS and R as well as how to import existing date from two common formats.
 
@@ -37,15 +33,15 @@ Click on the variable tab in the lower left corner of the SPSS Data Editor.
 Then enter the information about each variable.
 Name the variable, select the appropriate variable type, label the variable so it is clear what information is captured by each variable, and select the appropriate scale of measurement.
 
-![](spss/manualVar.jpg)
-![](spss/manualVar2.jpg)
+![](static/img/spss/manualVar.jpg)
+![](static/img/spss/manualVar2.jpg)
 
 With your variables defined, you are ready to enter the data.
 Click the data view in the bottom left corner of SPSS and enter the data in the empty cells. 
 The rows represent different cases, and the columns diffeent variables.
 Enter the values as below:
 
-![](spss/manualData.png)
+![](static/img/spss/manualData.png)
 You can also enter data manually using SPSS syntax.
 
 ```
@@ -119,25 +115,31 @@ student_grades
 
 To import a file into SPSS click the folder icon in the upper left corner, navigate to the folder that contains the csv file, then change the *Files of type* menu to look for the type of file you are importing (.csv). 
 
-![](spss/importcsv1.jpg)
+![image1](/img/spss/importcsv1.jpg)
 Then select the file you wish to open and click **Open**.
-![](spss/importcsv2.jpg)
+![](/img/spss/importcsv2.jpg)
 This will open a dialog box with 6 steps. 
-1. Click next.
 
-![](spss/importcsv3.jpg)
-2. Make sure thet **Yes** is selected if there are variable names included in the top of the csv, and select **No** otherwise.
+**Step 1.** If you are not using a predefined format click next.
+
+![](/img/spss/importcsv3.jpg)
+
+**Step 2.** Make sure thet **Yes** is selected if there are variable names included in the top of the csv, and select **No** otherwise.
 In this example you can see in the preview in the bottom of the dialog box that the variable names "height" and "gender" are included.
 
-![](spss/importcsv4.jpg)
-3. You can click next on step 3 most of the time.
-4. Make sure only the appropriate delimiters are selected on step 4 (here only Comma as this is a csv). Sometimes Space will also be selected and must be unselected to import the data correctly.
+![](/img/spss/importcsv4.jpg)
 
-![](spss/importcsv5.jpg)
+**Step 3.** You can click next on step 3 most of the time.
 
-5. Click next on step 5 unless you which to change the variable names.
+ 
+**Step 4.** Make sure only the appropriate delimiters are selected on step 4 (here only Comma as this is a csv). Sometimes Space will also be selected and must be unselected to import the data correctly.
 
-6. Finally look over the preview to ensure everything looks okay, an click **Finish**. 
+![](/img/spss/importcsv5.jpg)
+
+
+**Step 5.** Click next on step 5 unless you which to change the variable names.
+
+**Step 6.** Finally look over the preview to ensure everything looks okay, an click **Finish**. 
 Your data should now be properly imported into SPSS.
 
 ### R
@@ -151,3 +153,4 @@ height <- read.csv(file = "height.csv", header = TRUE)
 
 Note that you will need to include the file path to the file name in the file argument if it is not in the current directory. 
 The header argument is set to TRUE if the variable names are in the first row of the csv, and FALSE if not.
+

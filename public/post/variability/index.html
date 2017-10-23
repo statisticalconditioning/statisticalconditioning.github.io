@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.30.2" />
+  <meta name="author" content="William M. (Hank) Murrah, III">
+  <meta name="description" content="Assistant Professor of Quantitative Methods">
+
+  
+  
+  
+  
+    
+  
+  
+    
+    
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+    
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.1/css/academicons.min.css" integrity="sha512-NThgw3XKQ1absAahW6to7Ey42uycrVvfNfyjqcFNgCmOCQ5AR4AO0SiXrN+8ZtYeappp56lk1WtvjVmEa+VR6A==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+  
+  
+
+
+  
+
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700%7cRoboto:400,400italic,700%7cRoboto&#43;Mono">
+  
+  <link rel="stylesheet" href="/styles.css">
+  
+
+  
+
+  <link rel="alternate" href="" type="application/rss+xml" title="Statistical Conditioning">
+  <link rel="feed" href="" type="application/rss+xml" title="Statistical Conditioning">
+
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
+
+  <link rel="canonical" href="/post/variability/">
+
+  
+
+  <title>Variability | Statistical Conditioning</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <a class="navbar-brand" href="/">Statistical Conditioning</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#about">
+            
+            <span>Home</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#courses">
+            
+            <span>Courses</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#posts">
+            
+            <span>Posts</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#teaching">
+            
+            <span>Teaching</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#contact">
+            
+            <span>Contact</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+  <div class="article-container">
+    <h1 itemprop="name">Variability</h1>
+    
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    
+    <time datetime="2017-10-23 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+      Oct 23, 2017
+    </time>
+  </span>
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    4 min read
+  </span>
+  
+
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Variability&amp;url=%2fpost%2fvariability%2f"
+         target="_blank">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=%2fpost%2fvariability%2f"
+         target="_blank">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fpost%2fvariability%2f&amp;title=Variability"
+         target="_blank">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=%2fpost%2fvariability%2f&amp;title=Variability"
+         target="_blank">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Variability&amp;body=%2fpost%2fvariability%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    <div class="article-style" itemprop="articleBody">
+      <div id="important-notation" class="section level2">
+<h2>Important Notation</h2>
+<p>Scientific notation, while often confusing and frustrating initially, is very useful in helping to convey complex ideas in a compact and precise manner. The table below contains scientific notations relevant to the previous tutorial on central tendency and this one on variability.</p>
+<p>We will be using the following notation in this class:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(y\)</span></td>
+<td>Dependent Variable</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(x\)</span></td>
+<td>Independent Variable</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(N\)</span></td>
+<td>Population size</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(n\)</span></td>
+<td>Sample size</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\Sigma\)</span></td>
+<td>Sum of</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\mu\)</span></td>
+<td>Population mean</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(M\)</span></td>
+<td>sample mean (also often <span class="math inline">\(\bar{x}\)</span>)</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(M_w\)</span></td>
+<td>Weighted mean (or <span class="math inline">\(\bar{x}_w\)</span> )</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(IQR\)</span></td>
+<td>Interquartile range</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\sigma^2\)</span></td>
+<td>Population variance</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(s^2\)</span></td>
+<td>sample variance</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\sigma\)</span></td>
+<td>Population standard deviation</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(s\)</span></td>
+<td>sample standard deviation</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="range" class="section level2">
+<h2>Range</h2>
+<div id="gre-scores-for-two-classes-with-the-same-mean-151.3-and-same-range-40" class="section level4">
+<h4>GRE scores for two classes with the same mean (151.3) and same range (40):</h4>
+<p><img src="/post/2017-10-23-variability_files/figure-html/unnamed-chunk-1-1.png" width="960" /></p>
+<p>We need some way to quantify the variability of the scores in distributions that reflects all scores and is sensitive to outliers. We already have a single score for the average or “typical” score - the mean. Ideally, we want a single number that represents the typical variation from the mean.</p>
+</div>
+</div>
+<div id="range-1" class="section level2">
+<h2>Range</h2>
+<p>The range is the simplest way to describe variability or how scores are dispersed across possible values. The range is the difference between the highest and lowest values in the variable.</p>
+<pre><code> Range = Highest - Lowest</code></pre>
+<p>The range is useful for identifying outliers. But it is also very sensitive to outliers. If one value is drastically different for the others, the range can be misleading. For example, see the histogram of GRE scores above. This makes a major limitation of the range apparent: it is based on only two of the scores in the variable.</p>
+</div>
+<div id="quantiles" class="section level2">
+<h2>Quantiles</h2>
+<p>Quantiles are a set of values in a variable that divide it into equal groups. The most common is quartiles, which divide a variable into four equal parts, so that there are the same number of scores in each quartile. The lower or first quartile separates the lower 25% of the scores from the upper 75%, the second or median quartile – which is the median value – separates the lower and upper 50%, and the third or upper quartile separates the lower 75% from the upper 25%. These three quartiles separate the variable into 4 equal parts.</p>
+</div>
+<div id="variance" class="section level2">
+<h2>Variance</h2>
+<p>The variance is a very important measure of variability. It is also closely related to the standard deviation, which we talk about next.</p>
+<div id="deviance" class="section level3">
+<h3>Deviance</h3>
+<p>We can calculate the distance between the mean and each score. These distances are called deviations. Each score has a deviation. I have plotted the histogram of the deviations for each of the two classes GRE scores below.</p>
+<p><img src="/post/2017-10-23-variability_files/figure-html/unnamed-chunk-2-1.png" width="960" /></p>
+<p>We might think to just take the mean of the deviations as a measure of the average or “typical” distance from the mean for each set of scores. But, the mean deviation for the first score is 0 and the mean deviation for the second set is 0. This is because, being a measure of central tendency, the mean is in the middle, and the positive distances of scores above the mean cancel out the negative distances below the mean.</p>
+<p>We could take the mean of the absolute values of the deviations, but a more ingenious solution is to square the deviations.</p>
+<p>This does two things:</p>
+<ol style="list-style-type: decimal">
+<li>Squaring takes care of the problem of the deviations summing to 0, as all the squared deviations will be positive. Remember, positive times a positive is a positive, but a negative times a negative is also a positive.</li>
+<li>Summing the squared deviations is a minimal number. Explaining this would take use too far afield. Suffice it to say, the sum of the squared deviations is more influenced by scores further from the mean, making the variance sensitive to outliers</li>
+</ol>
+<p>The sum of the squared deviations is often referred to simply as the “sum of squares”, and symbolized as <span class="math inline">\(SS\)</span>. The sum of squares is not very meaningful by itself, so we often calculate the mean squared deviation, by dividing the <span class="math inline">\(SS\)</span> by <span class="math inline">\(N\)</span>. This give us the population variance:</p>
+<p><span class="math display">\[
+\sigma^2 = \frac{SS}{N} = \frac{\Sigma(x - \mu)^2}{N}
+\]</span></p>
+<p>The sample variance is calculated in a similar way:</p>
+<p><span class="math display">\[
+s^2 = \frac{\Sigma{(x - M)^2}}{n - 1}
+\]</span></p>
+</div>
+<div id="comparing-formulae-for-mean-and-variance" class="section level3">
+<h3>Comparing formulae for mean and variance</h3>
+<p><span class="math display">\[
+\mu = \frac{\Sigma x}{N}, \quad \sigma^2 = \frac{\Sigma(x - \mu)^2}{N}.
+\]</span></p>
+<p>Comparing the formulae for the mean and variance makes clear that the variance is the mean squared deviation.</p>
+</div>
+</div>
+<div id="standard-deviation" class="section level2">
+<h2>Standard Deviation</h2>
+<p>If the variance is the mean squared distance from the mean, then taking the square root of the variance gives us the mean, or average, distance from the mean.</p>
+<div id="population-standard-deviation" class="section level3">
+<h3>Population standard deviation</h3>
+<p><span class="math display">\[
+\sigma = \sqrt{\sigma^2} = \sqrt{\frac{SS}{N}} = \sqrt{\frac{\Sigma{(x -\mu)^2}}{N}}. 
+\]</span></p>
+</div>
+<div id="sample-standard-deviation" class="section level3">
+<h3>Sample standard deviation</h3>
+<p><span class="math display">\[
+s = \sqrt{s^2} = \sqrt{\frac{SS}{n-1}} = \sqrt{\frac{\Sigma{(x - M)^2}}{n-1}}. 
+\]</span></p>
+<p><img src="/post/2017-10-23-variability_files/figure-html/unnamed-chunk-3-1.png" width="960" /> The variance of x1 is 54.71 and the variance of x2 is 9.51. The standard deviation of x1 is 7.4 and the standard deviation of x2 is 3.08.</p>
+<pre><code>   vars   n   mean   sd    min    max range   se
+x1    1 980 151.15 7.40 130.01 169.49 39.48 0.24
+x2    2 980 151.34 3.08 130.00 170.00 40.00 0.10</code></pre>
+<p><img src="/post/2017-10-23-variability_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+</div>
+</div>
+
+    </div>
+
+    
+    
+    
+    
+
+  </div>
+
+</article>
+
+
+
+
+
+
+<div class="article-container">
+  
+
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="powered-by">
+
+      &copy; 2017 William Murrah &middot; 
+
+      Powered by the <a href="https://github.com/gcushen/hugo-academic" target="_blank">Academic
+      theme</a> for <a href="http://gohugo.io" target="_blank">Hugo</a>.
+
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+    
+
+    
+    
+
+    
+    <script async defer src="//maps.googleapis.com/maps/api/js"></script>
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gmaps.js/0.4.25/gmaps.min.js" integrity="sha256-7vjlAeb8OaTrCXZkCNun9djzuB2owUsaO72kXaFDBJs=" crossorigin="anonymous"></script>
+    
+    <script src="/js/hugo-academic.js"></script>
+    
+
+    
+    
+      
+      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+      
+
+      
+
+      
+
+      <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML" integrity="sha512-tOav5w1OjvsSJzePRtt2uQPFwBoHt1VZcUq8l8nm5284LEKE9FSJBQryzMBzHxY5P0zRdNqEcpLIRVYFNgu1jw==" crossorigin="anonymous"></script>
+    
+    
+
+  </body>
+</html>
+

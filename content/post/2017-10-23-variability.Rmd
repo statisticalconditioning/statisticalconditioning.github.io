@@ -1,0 +1,241 @@
+---
+title: Variability
+author: William Murrah
+date: '2017-10-23'
+slug: variability
+categories: []
+tags: []
+---
+
+```{r, setup, include=FALSE}
+library(tidyverse)
+library(mosaic)   # Load additional packages here 
+library(knitr)
+library(sn)
+library(psych)
+library(xtable)
+library(pander)
+# Some customization.  You can alter or delete as desired (if you know what you are doing).
+trellis.par.set(theme=theme.mosaic()) # change default color scheme for lattice
+opts_chunk$set(
+  tidy=FALSE,     # display code as typed
+  size="small",   # slightly smaller font for code
+  comment = NULL,
+  echo = FALSE)
+
+panderOptions('table.alignment.default', "left")
+panderOptions('table.style', 'rmarkdown')
+```
+
+## Important Notation
+
+Scientific notation, while often confusing and frustrating initially, is very useful in helping to convey complex ideas in a compact and precise manner.
+The table below contains scientific notations relevant to the previous tutorial on central tendency and this one on variability.
+
+We will be using the following notation in this class:
+
+
+Symbol       | meaning
+-------------|----------
+$y$          | Dependent Variable
+$x$          |Independent Variable
+$N$          |Population size
+$n$          |Sample size
+$\Sigma$      |Sum of
+$\mu$        |Population mean
+$M$          |sample mean (also often  $\bar{x}$)
+$M_w$        | Weighted mean (or $\bar{x}_w$ )
+$IQR$        | Interquartile range
+$\sigma^2$   | Population variance
+$s^2$        | sample variance
+$\sigma$     |Population standard deviation
+$s$          |sample standard deviation
+
+## Range
+
+#### GRE scores for two classes with the same mean (151.3) and same range (40):
+
+```{r fig.width=10, fig.height= 5}
+set.seed(1234)
+x1 <- rnorm(1000, 151.3, 8)
+x1 <- x1[x1 > 130 & x1 < 170]
+x2 <- c(rnorm(length(x1)-2, 151.3, 3), 130, 170)
+par(mfrow = c(1,2))
+hist(x1, col = "skyblue", xlim = c(130, 170), main = NULL)
+abline(v = mean(x1), col = "red", lwd = 2)
+hist(x2, col = "skyblue", xlim = c(130, 170), main = NULL, breaks = 15)
+abline(v = mean(x2), col = "red", lwd = 2)
+par(mfrow = c(1, 1))
+```
+
+We need some way to quantify the variability of the scores in distributions that reflects all scores and is sensitive to outliers.
+We already have a single score for the average or "typical" score - the mean.
+Ideally, we want a single number that represents the typical variation from the mean. 
+
+## Range
+
+The range is the simplest way to describe variability or how scores are dispersed across possible values.
+The range is the difference between the highest and lowest values in the variable.
+
+     Range = Highest - Lowest
+
+The range is useful for identifying outliers. 
+But it is also very sensitive to outliers. 
+If one value is drastically different for the others, the range can be misleading.
+For example, see the histogram of GRE scores above. 
+This makes a major limitation of the range apparent: it is based on only two of the scores in the variable.
+
+## Quantiles
+
+Quantiles are a set of values in a variable that divide it into equal groups.
+The most common is quartiles, which divide a variable into four equal parts, so that there are the same number of scores in each quartile. 
+The lower or first quartile separates the lower 25% of the scores from the upper 75%, the second or  median quartile -- which is the median value -- separates the lower and upper 50%, and the third or upper quartile separates the lower 75% from the upper 25%. These three quartiles separate the variable into 4 equal parts.
+
+## Variance
+
+The variance is a very important measure of variability.
+It is also closely related to the standard deviation, which we talk about next.
+
+
+
+### Deviance
+
+We can calculate the distance between the mean and each score. These distances are called deviations. Each score has a deviation. I have plotted the histogram of the deviations for each of the two classes GRE scores below.
+
+```{r fig.width=10, fig.height= 5}
+par(mfrow = c(1,2))
+d1 <- x1 - mean(x1)
+d2 <- x2 - mean(x2)
+hist(d1, col = "skyblue", xlim = c(-30, 30), main = NULL)
+abline(v = mean(d1), col = "red", lwd = 2)
+hist(d2, col = "skyblue", xlim = c(-30, 30), main = NULL, breaks = 15)
+abline(v = mean(d2), col = "red", lwd = 2)
+par(mfrow = c(1, 1))
+
+```
+
+
+We might think to just take the mean of the deviations as a measure of the average or "typical" distance from the mean for each set of scores. But, the mean deviation for the first score is `r round(mean(d1))` and the mean deviation for the second set is `r round(mean(d2))`. This is because, being a measure of central tendency, the mean is in the middle, and the positive distances of scores above the mean cancel out the negative distances below the mean.
+
+We could take the mean of the absolute values of the deviations, but a more ingenious solution is to square the deviations. 
+
+This does two things:
+
+1. Squaring takes care of the problem of the deviations summing to 0, as all the squared deviations will be positive. Remember, positive times a positive is a positive, but a negative times a negative is also a positive.
+2. Summing the squared deviations is a minimal number. Explaining this would take use too far afield. Suffice it to say, the sum of the squared deviations is more influenced by scores further from the mean, making the variance sensitive to outliers
+
+The sum of the squared deviations is often referred to simply as the "sum of squares", and symbolized as $SS$.
+The sum of squares is not very meaningful by itself, so we often calculate the mean squared deviation, by dividing the $SS$ by $N$.
+This give us the population variance:
+
+$$
+\sigma^2 = \frac{SS}{N} = \frac{\Sigma(x - \mu)^2}{N}
+$$
+
+
+The sample variance is calculated in a similar way:
+
+$$
+s^2 = \frac{\Sigma{(x - M)^2}}{n - 1}
+$$
+
+### Comparing formulae for mean and variance
+
+$$
+\mu = \frac{\Sigma x}{N}, \quad \sigma^2 = \frac{\Sigma(x - \mu)^2}{N}.
+$$
+
+Comparing the formulae for the mean and variance makes clear that the variance is the mean squared deviation. 
+
+## Standard Deviation
+
+If the variance is the mean squared distance from the mean, then taking the square root of the variance gives us the mean, or average, distance from the mean. 
+
+### Population standard deviation
+$$
+\sigma = \sqrt{\sigma^2} = \sqrt{\frac{SS}{N}} = \sqrt{\frac{\Sigma{(x -\mu)^2}}{N}}. 
+$$
+
+### Sample standard deviation
+
+$$
+s = \sqrt{s^2} = \sqrt{\frac{SS}{n-1}} = \sqrt{\frac{\Sigma{(x - M)^2}}{n-1}}. 
+$$
+
+```{r, fig.height=5, fig.width=10}
+par(mfrow = c(1,2))
+hist(x1, col = "skyblue", xlim = c(130, 170), main = NULL)
+abline(v = mean(x1), col = "red", lwd = 2)
+hist(x2, col = "skyblue", xlim = c(130, 170), main = NULL, breaks = 15)
+abline(v = mean(x2), col = "red", lwd = 2)
+par(mfrow = c(1, 1))
+```
+The variance of x1 is `r round(var(x1),2)` and the variance of x2 is `r round(var(x2),2)`.
+The standard deviation of x1 is `r round(sd(x1),2)` and the standard deviation of x2 is `r round(sd(x2),2)`.
+
+```{r}
+d <- data.frame(x1, x2)
+describe(d, fast = TRUE)
+```
+
+
+```{r}
+
+## Standard Normal Distribution Labelled.
+
+xvalues <- data.frame(x = c(-3, 3))
+plot <- ggplot(xvalues, aes(x = xvalues))
+
+
+area_one_sd <- round(pnorm(1) - pnorm(-1), 4)
+area_two_sd <- round(pnorm(2) - pnorm(-2), 4)
+area_three_sd <- round(pnorm(3) - pnorm(-3), 4)
+# Shading from x = -1 to x = 1 (within one std deviation):
+
+dnorm_one_sd <- function(x){
+  norm_one_sd <- dnorm(x)
+  # Have NA values outside interval x in [-1, 1]:
+  norm_one_sd[x <= -1 | x >= 1] <- NA
+  return(norm_one_sd)
+}
+
+# Shading from x = -2 to x = 2 (within two std deviations):
+
+dnorm_two_sd <- function(x){
+  norm_two_sd <- dnorm(x)
+  # Have NA values outside interval x in [-2, 2]:
+  norm_two_sd[x <= -2 | x >= 2] <- NA
+  return(norm_two_sd)
+}
+
+# Shading from x = -3 to x = 3 (within three std deviations):
+ 
+dnorm_three_sd <- function(x){
+  norm_three_sd <- dnorm(x)
+  # Have NA values outside interval x in [-3, 3]:
+  norm_three_sd[x <= -3 | x >= 3] <- NA
+  return(norm_three_sd)
+}
+
+
+# Summary plot for normal distribution (Version Two)
+
+plot + stat_function(fun = dnorm) + 
+ stat_function(fun = dnorm_three_sd, geom = "area", fill = "#03244d", alpha = 1) +
+ stat_function(fun = dnorm_two_sd, geom = "area", fill = "#dd550c", alpha = 1) +
+ stat_function(fun = dnorm_one_sd, geom = "area", fill = "#496e9c", alpha = 1) +
+ geom_text(x = 0, y = 0.22, size = 4, fontface = "bold",
+ label = paste0("<------- ", round(area_one_sd * 100, 0), "%", " ------->")) +
+ geom_text(x = 0, y = 0.15, size = 4, fontface = "bold",
+ label = paste0("<------------- ", round(area_two_sd * 100, 0), "%", 
+ " ------------->")) +
+ geom_text(x = 0, y = 0.025, size = 4, fontface = "bold",
+ label = paste0("<-------------------------- ", round(area_three_sd * 100, 1), 
+ "%", " -------------------------->")) +
+ scale_x_continuous(breaks = c(-3:3)) + 
+ labs(x = "\n sd", y = "Density \n", title = "Standard Normal Distribution \n") +
+ theme(plot.title = element_text(hjust = 0.5), 
+ axis.title.x = element_text(face="bold", colour="blue", size = 12),
+ axis.title.y = element_text(face="bold", colour="blue", size = 12)) 
+```
+

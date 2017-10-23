@@ -15,6 +15,9 @@ image_preview = "background.jpg"
 # Example: `tags = ["machine-learning", "deep-learning"]`
 tags = ["DesignAnalysisI"]
 
+# Courses: ERMA coures numer
+courses = ["ERMA7300"]
+
 # Optional external URL for project (replaces project detail page).
 external_link = ""
 
