@@ -90,7 +90,7 @@ student_grades <- data.frame(
 )
 ```
 
-This creates an object named `df` that contains the two varibles and related data.
+This creates an object named `student_grades` that contains the two varibles and related data.
 
 You can view the data frame by typing the name of the object into R as you see below followed by the resulting output.
 
