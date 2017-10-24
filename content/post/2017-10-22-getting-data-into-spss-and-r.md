@@ -69,7 +69,7 @@ Grade "Student grade".
 
 variable level
 Name (Nominal)
-grade (scale).
+Grade (scale).
 ```
 
 Notice that the `Name` variable was entered as unique numbers and then labelled with the names using the `VALUE LABELS` command. 
