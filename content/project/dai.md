@@ -58,6 +58,8 @@ Upon completion of this course, the student will be able to:
 
 [Central Tendency](http://www.statisticalconditioning.com/post/central-tendency/)
 
+[Variability] (http://www.statisticalconditioning.com/post/variability/)
+
 ## 2-Probability and Sampling
 
 ## 3-Hypothesis Testing and *t* tests
