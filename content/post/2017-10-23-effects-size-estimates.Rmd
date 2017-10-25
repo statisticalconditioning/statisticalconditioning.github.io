@@ -7,3 +7,74 @@ categories: []
 tags: ["ERMA7300"]
 ---
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+## Cohen's D
+
+Cohen's D is the number of standard deviations an effect is shifted above or below the populations mean stated by the null hypothesis.
+
+
+### *z* test
+
+When we have known population parameters, we use them to calculate 
+$$
+d = \frac{\bar{X} - \mu}{\sigma}
+$$
+Note that $\sigma$ is the standard deviation and NOT the standard error of the mean.
+
+### One-sample *t* test
+
+$$
+d = \frac{\bar{X} - \mu}{s}
+$$
+
+### Independent sample *t* test
+
+$$
+d = \frac{\bar{X_1} - \bar{X_2}}{\sqrt{s^2_P}}
+$$
+Consult a introductory statistics textbook for the calculation fo $s^2_p$.
+
+### Related samples *t* test
+
+$$
+d = \frac{\bar{X}_D}{s_D}
+$$
+
+### Cohen's Effect Size Guidelines
+
+*d* | description
+----| -----------
+ 0.2 | Small
+0.2 - 0.8 | Medium
+0.8  | Large
+
+But don't take these guidelines too seriously. It's more important to compare the effect size to thos expected or typical within the field of study.
+
+## Proportion of Variance Effect Size Measures
+
+$$
+\text{Proportion of Variance} = \frac{\text{variability explained}}{\text{total variability}}
+$$
+
+### Eta-Squared ($\eta^2$)
+
+$$
+\eta^2 = \frac{t^2}{t^2 + df}.
+$$
+
+### Omega-Squared ($\omega^2$)
+
+While very popular, $\eta^2$ is biased and tends to overestimate effect size, particularly for studies with small sample size.
+Therefore, with small samples it is recommended that $\omega^2$ be used instead, which is a modified vesion of $\eta^2$.
+Note that $\omega^2$ is very similar to $\eta^2$, the only difference is that 1 is substraced from the numerator. 
+This has the effect of making $\omega^2$ more conservative than $\eta^2$.
+
+
+$$
+\omega^2 =  \frac{t^2 - 1}{t^2 + df}.
+$$
