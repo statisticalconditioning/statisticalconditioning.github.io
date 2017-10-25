@@ -3,7 +3,7 @@
 date = "2017-10-16"
 
 # Project title.
-title = "Design and Analysis I"
+title = "ERMA 7300: Design and Analysis I"
 
 # Project summary to display on homepage.
 summary = "ERMA 7300 page"
@@ -13,7 +13,7 @@ image_preview = "background.jpg"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
-tags = ["DesignAnalysisI"]
+tags = ["ERMA7300"]
 
 # Courses: ERMA coures numer
 courses = ["ERMA7300"]
@@ -55,6 +55,8 @@ Upon completion of this course, the student will be able to:
 ## 0-Introduction
 
 ## 1-Visualizing and Describing Data
+
+[Central Tendency](http://www.statisticalconditioning.com/post/central-tendency/)
 
 ## 2-Probability and Sampling
 

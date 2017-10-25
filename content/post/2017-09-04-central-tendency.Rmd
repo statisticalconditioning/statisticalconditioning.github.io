@@ -4,7 +4,7 @@ author: William Murrah
 date: '2017-09-04'
 slug: central-tendency
 categories: []
-tags: []
+tags: ["ERMA7300"]
 ---
 
 ## Important Notation

@@ -77,6 +77,17 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/courses/erma7300/" hreflang="en"/>
+    
+      <loc>/courses/erma7300/</loc>
+      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/talk/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     </url>
@@ -96,6 +107,7 @@
     <url>
     
       <loc>/courses/</loc>
+      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -104,8 +116,8 @@
     
     <url>
     
-      <loc>/tags/designanalysisi/</loc>
-      <lastmod>2017-10-16T00:00:00+00:00</lastmod>
+      <loc>/tags/erma7300/</loc>
+      <lastmod>2017-10-24T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -113,9 +125,31 @@
     
     
     <url>
+    
+      <xhtml:link rel="alternate" href="/courses/erma7300/" hreflang="en"/>
     
       <loc>/courses/erma7300/</loc>
-      <lastmod>2017-10-16T00:00:00+00:00</lastmod>
+      <lastmod>2017-10-22T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/categories/import/</loc>
+      <lastmod>2017-10-22T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/units/programming/</loc>
+      <lastmod>2017-10-22T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -126,6 +160,26 @@
     
       <loc>/project/</loc>
       <lastmod>2017-10-16T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/tags/r/</loc>
+      <lastmod>2017-10-22T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/tags/spss/</loc>
+      <lastmod>2017-10-22T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -146,6 +200,16 @@
     
       <loc>/tags/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/units/</loc>
+      <lastmod>2017-10-22T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     

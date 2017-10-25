@@ -47,7 +47,7 @@ defaultContentLanguageInSubdir = false
   address = "4064 Haley Center Auburn AL, 36489, USA"
   office_hours = "Tuesday 3-5, Wednesday 2-4 or email for appointment"
   phone = "334 844 3806"
-  skype = "williammurrah1"
+  skype = ""
   telegram = ""
 
   # Enable Keybase in Contact section by entering your keybase.io username.
@@ -208,7 +208,7 @@ defaultContentLanguageInSubdir = false
   tag = "tags"
   category = "categories"
   course = "courses"
-
+  unit = "units"
 # Languages
 #   Create a [languages.X] block for each language you want, where X is the language ID.
 

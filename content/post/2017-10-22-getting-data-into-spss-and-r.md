@@ -3,8 +3,10 @@ title: Getting Data Into SPSS and R
 author: William Murrah
 date: '2017-10-22'
 slug: getting-data-into-spss-and-r
-categories: []
-tags: []
+courses: ["ERMA7300"]
+units: ["programming"]
+categories: ["Import"]
+tags: ["R", "ERMA7300", "SPSS"]
 header:
   caption: ''
   image: ''
