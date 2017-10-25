@@ -116,8 +116,10 @@
     
     <url>
     
-      <loc>/tags/erma7300/</loc>
-      <lastmod>2017-10-24T00:00:00+00:00</lastmod>
+      <xhtml:link rel="alternate" href="/courses/erma7300/" hreflang="en"/>
+    
+      <loc>/courses/erma7300/</loc>
+      <lastmod>2017-10-22T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -126,10 +128,8 @@
     
     <url>
     
-      <xhtml:link rel="alternate" href="/courses/erma7300/" hreflang="en"/>
-    
-      <loc>/courses/erma7300/</loc>
-      <lastmod>2017-10-22T00:00:00+00:00</lastmod>
+      <loc>/tags/erma7300/</loc>
+      <lastmod>2017-10-24T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
