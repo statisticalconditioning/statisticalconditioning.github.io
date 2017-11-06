@@ -5,6 +5,15 @@
     
     <url>
     
+      <loc>/post/one-way-anova/</loc>
+      <lastmod>2017-11-05T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/post/getting-started/</loc>
       <lastmod>2017-10-24T00:00:00+00:00</lastmod>
     </url>
@@ -125,6 +134,16 @@
     
     <url>
     
+      <loc>/tags/erma7300/</loc>
+      <lastmod>2017-11-05T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <xhtml:link rel="alternate" href="/courses/erma7300/" hreflang="en"/>
     
       <loc>/courses/erma7300/</loc>
@@ -137,17 +156,7 @@
     
     <url>
     
-      <loc>/tags/erma7300/</loc>
-      <lastmod>2017-10-24T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/courses/erma7310/</loc>
+      <loc>/tags/erma7310/</loc>
       <lastmod>2017-10-16T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -157,7 +166,7 @@
     
     <url>
     
-      <loc>/tags/erma7310/</loc>
+      <loc>/courses/erma7310/</loc>
       <lastmod>2017-10-16T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
