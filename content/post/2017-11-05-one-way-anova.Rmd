@@ -290,6 +290,10 @@ In stata you can execute ANOVA as follows:
 ```
 . oneway score group
 
+```
+Which give you:
+
+```
                         Analysis of Variance
     Source              SS         df      MS            F     Prob > F
 ------------------------------------------------------------------------
