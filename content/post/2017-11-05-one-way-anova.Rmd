@@ -41,18 +41,18 @@ A foundational technique for this purpose is analysis of variance (ANOVA). This 
 
 The following table includes new notation we need to understand ANOVA. Note that sometimes you will see the $E$ subscript replace the $W$ subscript as the within subject variation is what is not explained by the model and is therefore captured in the error term in these models. In other words, the sum of squared deviations with subjects ($SS_W$) is the same as the sum of squared errors ($SS_E$). Also note that for now, we are assuming that the
 
-Symbol     | Description
+Symbol      | Description
 :-----------|:-------------
-$k$        | number of groups
-$n_j$        | number in each group
-$N$        | total number of participants ($N = n_j \times k$)
-$df_{B}$  | between group degrees of freedom
+$k$         | number of groups
+$n_j$       | number in each group
+$N$         | total number of participants ($N = n_j \times k$)
+$df_{B}$    | between group degrees of freedom
 $df_E$ or $df_{W}$   | error or within-group degrees of freedom
-$SS_{B}$  | sum of squares between group
-$SS_W$     | sum of squares error
-$SS_T$     | sum of squares total
-$MS_{B}$  | mean square between group
-$MS_W$     | mean square error
+$SS_{B}$    | sum of squares between group
+$SS_W$      | sum of squares error
+$SS_T$      | sum of squares total
+$MS_{B}$    | mean square between group
+$MS_W$      | mean square error
 
 ## Assumptions of One Way ANOVA
 
