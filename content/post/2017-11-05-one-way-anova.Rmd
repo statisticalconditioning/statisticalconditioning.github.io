@@ -37,6 +37,9 @@ mng_aov <- function(x){
 When comparing a continuous outcome between two groups, the $t$ test is the basic test used. But, what do you do when you have more than two groups to compare? 
 A foundational technique for this purpose is analysis of variance (ANOVA). This post is a conceptual overveiw of ANOVA, leading to example analyses aimed at developing intuitions about how ANOVA works. To get the most out of this post, you should work through a textbook chapter on one way ANOVA ahead of time.
 
+<br>
+<br>
+
 ## New Notation
 
 The following table includes new notation we need to understand ANOVA. Note that sometimes you will see the $E$ subscript replace the $W$ subscript as the within subject variation is what is not explained by the model and is therefore captured in the error term in these models. In other words, the sum of squared deviations with subjects ($SS_W$) is the same as the sum of squared errors ($SS_E$). Also note that for now, we are assuming that the
@@ -54,6 +57,9 @@ $SS_T$      | sum of squares total
 $MS_{B}$    | mean square between group
 $MS_W$      | mean square error
 
+<br>
+<br>
+
 ## Assumptions of One Way ANOVA
 
 **Normality** - We assume a normal population distribution for the dependent variable for each group. ANOVA is generally robust to violations of normality.
@@ -63,11 +69,13 @@ $MS_W$      | mean square error
 **Statistical Independence** - We assume that the scores are independent of each other. ANOVA is NOT robust to violations of independence. So, if this assumptions is questionable, your results could be very misleading.
 
 **Random Sampling** - We assume that individuals in each group were randomly sampled from their respective populations. ANOVA is also NOT very robust to violation of this assumption. If you sample does not represent your population of interest, you must really be careful with the inferences you make.
-
+<br>
+<br>
 ## Formulae
 
 This section introduces the formulae needed to calculate the test statistic associated with ANOVA
-
+<br>
+<br>
 ### Degrees of freedom
 
 Recall that degrees of freedom are closely related to the number of parameters being estimated, and the number of data points used to estimate these parameters.
@@ -86,7 +94,8 @@ Add these two together ($df_B + df_W$), and you get the total degrees of freedom
 $$
 df_T = df_{B} + df_W = N - 1
 $$
-
+<br>
+<br>
 ### $F$ statistic
 
 When we used the $t$ test, we used the $t$ distribution, which like the normal distribution captures all values between negative and positive infinity. This makes sense because mean differences, for which the $t$ test evaluates, can be positive or negative. 
@@ -104,6 +113,8 @@ F = \frac{\text{variance between groups}}{{\text{variance within groups}}} = \fr
 $$
 
 To calculate the $F$ statistics, we first need to calculate $MS_B$ and $MS_W$. 
+<br>
+<br>
 
 ### Statistical hypotheses
 
@@ -119,7 +130,10 @@ $$
 $$
 H_a: \sigma^2_\mu > 0.
 $$
-\newpage
+<br>
+<br>
+<br>
+<br>
 
 ## Conceptual Example 1: Substantial Between Subjects Variance, with Negligible Within Group Variance
 
@@ -281,7 +295,12 @@ anova score by group.
 
 which give the same results.
 
-![SPSSoutput](/img/spss/anova.png)
+![SPSS output](/img/spss/anova.png)
+	
+<br>
+<br>
+<br>
+<br>
 
 #### Stata
 
@@ -305,6 +324,13 @@ Between groups              10      2            5    500.00     0.0000
 Bartlett's test for equal variances:  chi2(2) =   0.0000  Prob>chi2 = 1.000
 
 ```
+	
+<br>
+<br>
+<br>
+<br>
+
+
 ## Conceptual Example 2: Negligible Between Subject Variance, with Substantial Within Group Variance
 
 ```{r, results='asis'}
@@ -434,7 +460,10 @@ res <- aov(score ~ group, d)
 ztable(anova(res))
 ```
 
-\newpage
+<br>
+<br>
+<br>
+<br>
 
 ## Conceptual Example 3: Post-Hoc Comparisons
 
@@ -617,3 +646,5 @@ $$
 ## References
 
 Privitera, G. J. (2015). Statistics for the behavioral sciences. Los Angeles: Sage.
+
+

@@ -11,6 +11,7 @@ tags: ["ERMA7300"]
 
 
 <p>When comparing a continuous outcome between two groups, the <span class="math inline">\(t\)</span> test is the basic test used. But, what do you do when you have more than two groups to compare? A foundational technique for this purpose is analysis of variance (ANOVA). This post is a conceptual overveiw of ANOVA, leading to example analyses aimed at developing intuitions about how ANOVA works. To get the most out of this post, you should work through a textbook chapter on one way ANOVA ahead of time.</p>
+<p><br> <br></p>
 <div id="new-notation" class="section level2">
 <h2>New Notation</h2>
 <p>The following table includes new notation we need to understand ANOVA. Note that sometimes you will see the <span class="math inline">\(E\)</span> subscript replace the <span class="math inline">\(W\)</span> subscript as the within subject variation is what is not explained by the model and is therefore captured in the error term in these models. In other words, the sum of squared deviations with subjects (<span class="math inline">\(SS_W\)</span>) is the same as the sum of squared errors (<span class="math inline">\(SS_E\)</span>). Also note that for now, we are assuming that the</p>
@@ -64,19 +65,15 @@ tags: ["ERMA7300"]
 </tr>
 </tbody>
 </table>
+<p><br> <br></p>
 </div>
 <div id="assumptions-of-one-way-anova" class="section level2">
 <h2>Assumptions of One Way ANOVA</h2>
 <p><strong>Normality</strong> - We assume a normal population distribution for the dependent variable for each group. ANOVA is generally robust to violations of normality.</p>
 <p><strong>Equality of Variances</strong> - We assume that the population variance is the same for each group. ANOVA is generally robust to mild violations of this assumption.</p>
 <p><strong>Statistical Independence</strong> - We assume that the scores are independent of each other. ANOVA is NOT robust to violations of independence. So, if this assumptions is questionable, your results could be very misleading.</p>
-<p><strong>Random Sampling</strong> - We assume that individuals in each group were randomly sampled from their respective populations. ANOVA is also NOT very robust to violation of this assumption. If you sample does not represent your population of interest, you must really be careful with the inferences you make.</p>
-</div>
-<div id="formulae" class="section level2">
-<h2>Formulae</h2>
-<p>This section introduces the formulae needed to calculate the test statistic associated with ANOVA</p>
-<div id="degrees-of-freedom" class="section level3">
-<h3>Degrees of freedom</h3>
+<p><strong>Random Sampling</strong> - We assume that individuals in each group were randomly sampled from their respective populations. ANOVA is also NOT very robust to violation of this assumption. If you sample does not represent your population of interest, you must really be careful with the inferences you make. <br> <br> ## Formulae</p>
+<p>This section introduces the formulae needed to calculate the test statistic associated with ANOVA <br> <br> ### Degrees of freedom</p>
 <p>Recall that degrees of freedom are closely related to the number of parameters being estimated, and the number of data points used to estimate these parameters. The degrees of freedom between groups, <span class="math inline">\(df_B\)</span>, is the number of groups, <span class="math inline">\(k\)</span>, minus 1.</p>
 <p><span class="math display">\[
 df_{B} = k - 1,
@@ -86,17 +83,13 @@ df_W = N - k
 \]</span></p>
 <p>Add these two together (<span class="math inline">\(df_B + df_W\)</span>), and you get the total degrees of freedom, which can also be calculated by taking the total number of cases, <span class="math inline">\(N\)</span>, and subtracting 1. <span class="math display">\[
 df_T = df_{B} + df_W = N - 1
-\]</span></p>
-</div>
-<div id="f-statistic" class="section level3">
-<h3><span class="math inline">\(F\)</span> statistic</h3>
+\]</span> <br> <br> ### <span class="math inline">\(F\)</span> statistic</p>
 <p>When we used the <span class="math inline">\(t\)</span> test, we used the <span class="math inline">\(t\)</span> distribution, which like the normal distribution captures all values between negative and positive infinity. This makes sense because mean differences, for which the <span class="math inline">\(t\)</span> test evaluates, can be positive or negative. But, for ANOVA, we are evaluating the variance of means instead of mean differences. And variances cannot be negative, so we need a different test distribution, namely, the <span class="math inline">\(F\)</span> distribution. This distribution contains all values from 0 to positive infinity, which include all possible values for a variance. Just like the shape of the <span class="math inline">\(t\)</span> distribution depends on the degrees freedom of the <span class="math inline">\(t\)</span> test, the shape of the <span class="math inline">\(F\)</span> distribution depends on the degrees of freedom associated with the <span class="math inline">\(F\)</span> test.</p>
 <p>The <span class="math inline">\(F\)</span> statistic can be thought of as the ratio of the variance of the means, or the between group variance, and the typical variability scores among individuals within the groups, or the within group variance. We call the variance between groups the mean square between groups, or <span class="math inline">\(MS_B\)</span>, and the variance within groups the mean square within groups, or <span class="math inline">\(MS_W\)</span>. So, conceptually, the <span class="math inline">\(F\)</span> statistic is given as</p>
 <p><span class="math display">\[
 F = \frac{\text{variance between groups}}{{\text{variance within groups}}} = \frac{MS_{B}}{MS_W}.
 \]</span></p>
-<p>To calculate the <span class="math inline">\(F\)</span> statistics, we first need to calculate <span class="math inline">\(MS_B\)</span> and <span class="math inline">\(MS_W\)</span>.</p>
-</div>
+<p>To calculate the <span class="math inline">\(F\)</span> statistics, we first need to calculate <span class="math inline">\(MS_B\)</span> and <span class="math inline">\(MS_W\)</span>. <br> <br></p>
 <div id="statistical-hypotheses" class="section level3">
 <h3>Statistical hypotheses</h3>
 <div id="null" class="section level4">
@@ -109,7 +102,7 @@ H_0: \sigma^2_{\mu} = 0.
 <h4>Alternative</h4>
 <p><span class="math display">\[
 H_a: \sigma^2_\mu &gt; 0.
-\]</span> </p>
+\]</span> <br> <br> <br> <br></p>
 </div>
 </div>
 </div>
@@ -637,9 +630,10 @@ Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&
 <pre><code>anova score by group.</code></pre>
 <p>which give the same results.</p>
 <div class="figure">
-<img src="/img/spss/anova.png" alt="SPSSoutput" />
-<p class="caption">SPSSoutput</p>
+<img src="/img/spss/anova.png" alt="SPSS output" />
+<p class="caption">SPSS output</p>
 </div>
+<p><br> <br> <br> <br></p>
 </div>
 <div id="stata" class="section level4">
 <h4>Stata</h4>
@@ -657,6 +651,7 @@ Between groups              10      2            5    500.00     0.0000
 
 Bartlett&#39;s test for equal variances:  chi2(2) =   0.0000  Prob&gt;chi2 = 1.000
 </code></pre>
+<p><br> <br> <br> <br></p>
 </div>
 </div>
 </div>
@@ -1167,7 +1162,7 @@ Residuals
 </td>
 </tr>
 </table>
-
+<p><br> <br> <br> <br></p>
 </div>
 </div>
 </div>
