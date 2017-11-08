@@ -66,4 +66,6 @@ Upon completion of this course, the student will be able to:
 
 ## 4-One Way ANOVA
 
+[One Way ANOVA](http://www.statisticalconditioning.com/post/one-way-anova/)
+
 ## 5-Factorial ANOVA
