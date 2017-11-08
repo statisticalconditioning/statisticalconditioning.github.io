@@ -72,8 +72,15 @@ tags: ["ERMA7300"]
 <p><strong>Normality</strong> - We assume a normal population distribution for the dependent variable for each group. ANOVA is generally robust to violations of normality.</p>
 <p><strong>Equality of Variances</strong> - We assume that the population variance is the same for each group. ANOVA is generally robust to mild violations of this assumption.</p>
 <p><strong>Statistical Independence</strong> - We assume that the scores are independent of each other. ANOVA is NOT robust to violations of independence. So, if this assumptions is questionable, your results could be very misleading.</p>
-<p><strong>Random Sampling</strong> - We assume that individuals in each group were randomly sampled from their respective populations. ANOVA is also NOT very robust to violation of this assumption. If you sample does not represent your population of interest, you must really be careful with the inferences you make. <br> <br> ## Formulae</p>
-<p>This section introduces the formulae needed to calculate the test statistic associated with ANOVA <br> <br> ### Degrees of freedom</p>
+<p><strong>Random Sampling</strong> - We assume that individuals in each group were randomly sampled from their respective populations. ANOVA is also NOT very robust to violation of this assumption. If you sample does not represent your population of interest, you must really be careful with the inferences you make.</p>
+<p><br> <br></p>
+</div>
+<div id="formulae" class="section level2">
+<h2>Formulae</h2>
+<p>This section introduces the formulae needed to calculate the test statistic associated with ANOVA</p>
+<p><br> <br></p>
+<div id="degrees-of-freedom" class="section level3">
+<h3>Degrees of freedom</h3>
 <p>Recall that degrees of freedom are closely related to the number of parameters being estimated, and the number of data points used to estimate these parameters. The degrees of freedom between groups, <span class="math inline">\(df_B\)</span>, is the number of groups, <span class="math inline">\(k\)</span>, minus 1.</p>
 <p><span class="math display">\[
 df_{B} = k - 1,
@@ -83,13 +90,19 @@ df_W = N - k
 \]</span></p>
 <p>Add these two together (<span class="math inline">\(df_B + df_W\)</span>), and you get the total degrees of freedom, which can also be calculated by taking the total number of cases, <span class="math inline">\(N\)</span>, and subtracting 1. <span class="math display">\[
 df_T = df_{B} + df_W = N - 1
-\]</span> <br> <br> ### <span class="math inline">\(F\)</span> statistic</p>
+\]</span></p>
+<p><br> <br></p>
+</div>
+<div id="f-statistic" class="section level3">
+<h3><span class="math inline">\(F\)</span> statistic</h3>
 <p>When we used the <span class="math inline">\(t\)</span> test, we used the <span class="math inline">\(t\)</span> distribution, which like the normal distribution captures all values between negative and positive infinity. This makes sense because mean differences, for which the <span class="math inline">\(t\)</span> test evaluates, can be positive or negative. But, for ANOVA, we are evaluating the variance of means instead of mean differences. And variances cannot be negative, so we need a different test distribution, namely, the <span class="math inline">\(F\)</span> distribution. This distribution contains all values from 0 to positive infinity, which include all possible values for a variance. Just like the shape of the <span class="math inline">\(t\)</span> distribution depends on the degrees freedom of the <span class="math inline">\(t\)</span> test, the shape of the <span class="math inline">\(F\)</span> distribution depends on the degrees of freedom associated with the <span class="math inline">\(F\)</span> test.</p>
 <p>The <span class="math inline">\(F\)</span> statistic can be thought of as the ratio of the variance of the means, or the between group variance, and the typical variability scores among individuals within the groups, or the within group variance. We call the variance between groups the mean square between groups, or <span class="math inline">\(MS_B\)</span>, and the variance within groups the mean square within groups, or <span class="math inline">\(MS_W\)</span>. So, conceptually, the <span class="math inline">\(F\)</span> statistic is given as</p>
 <p><span class="math display">\[
 F = \frac{\text{variance between groups}}{{\text{variance within groups}}} = \frac{MS_{B}}{MS_W}.
 \]</span></p>
-<p>To calculate the <span class="math inline">\(F\)</span> statistics, we first need to calculate <span class="math inline">\(MS_B\)</span> and <span class="math inline">\(MS_W\)</span>. <br> <br></p>
+<p>To calculate the <span class="math inline">\(F\)</span> statistics, we first need to calculate <span class="math inline">\(MS_B\)</span> and <span class="math inline">\(MS_W\)</span>.</p>
+<p><br> <br></p>
+</div>
 <div id="statistical-hypotheses" class="section level3">
 <h3>Statistical hypotheses</h3>
 <div id="null" class="section level4">

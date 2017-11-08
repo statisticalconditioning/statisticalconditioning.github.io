@@ -69,13 +69,19 @@ $MS_W$      | mean square error
 **Statistical Independence** - We assume that the scores are independent of each other. ANOVA is NOT robust to violations of independence. So, if this assumptions is questionable, your results could be very misleading.
 
 **Random Sampling** - We assume that individuals in each group were randomly sampled from their respective populations. ANOVA is also NOT very robust to violation of this assumption. If you sample does not represent your population of interest, you must really be careful with the inferences you make.
+
 <br>
 <br>
+
+
+
 ## Formulae
 
 This section introduces the formulae needed to calculate the test statistic associated with ANOVA
+
 <br>
 <br>
+
 ### Degrees of freedom
 
 Recall that degrees of freedom are closely related to the number of parameters being estimated, and the number of data points used to estimate these parameters.
@@ -94,8 +100,10 @@ Add these two together ($df_B + df_W$), and you get the total degrees of freedom
 $$
 df_T = df_{B} + df_W = N - 1
 $$
+
 <br>
 <br>
+
 ### $F$ statistic
 
 When we used the $t$ test, we used the $t$ distribution, which like the normal distribution captures all values between negative and positive infinity. This makes sense because mean differences, for which the $t$ test evaluates, can be positive or negative. 
@@ -113,6 +121,7 @@ F = \frac{\text{variance between groups}}{{\text{variance within groups}}} = \fr
 $$
 
 To calculate the $F$ statistics, we first need to calculate $MS_B$ and $MS_W$. 
+
 <br>
 <br>
 
