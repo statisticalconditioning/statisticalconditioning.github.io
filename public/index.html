@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="theme" content="hugo-academic">
-  <meta name="generator" content="Hugo 0.30.2" />
+  <meta name="generator" content="Hugo 0.29" />
   <meta name="author" content="William M. (Hank) Murrah, III">
   <meta name="description" content="Assistant Professor of Quantitative Methods">
 
@@ -181,7 +181,7 @@ url('/img/headers/background.jpg');
     </h1>
 
     
-    <p class="hero-lead">A website to promote statistical reasoning through the practice of statistical programming.</p>
+    <p class="hero-lead">Reasoning with <code>code</code>.</p>
     
 
     
@@ -208,8 +208,8 @@ url('/img/headers/background.jpg');
     <div id="profile">
 
       
-      <div class="portrait" style="background-image: url('https://s.gravatar.com/avatar/c36a2b0fb7d0458199dcddfb3b2d4683?s=200');"></div>
-      <meta itemprop="image" content="https://s.gravatar.com/avatar/c36a2b0fb7d0458199dcddfb3b2d4683?s=200">
+      <div class="portrait" style="background-image: url('/img/thinker.jpg');"></div>
+      <meta itemprop="image" content="/img/thinker.jpg">
       
 
       <div class="portrait-title">
@@ -270,19 +270,33 @@ url('/img/headers/background.jpg');
 
 <h1 id="about-statistical-conditioning">About Statistical Conditioning</h1>
 
-<p>Welcome! The purpose of this site it to serve as a repository for exercises useful for mastering the basics of common statistical methods. Learning statistics is a lot like getting into shape. You wouldn&rsquo;t expect to get into shape simply by going to the gym and listening to your personal trainer talk about the types of exercises you can do; you have to use that knowledge, which means you have repeatedly do the exercises. Expecting to learning statistics through lecture is very similar to getting fit by listening to your personal trainer talk about fitness. While listening can be helpful, it is just the beginning. You have to apply what you learn to become proficient at using the statistical methods.</p>
+<p>Learning statistics is a lot like getting into shape. Just as you can&rsquo;t get fit  by listening to a personal trainer talk about exercises, you can&rsquo;t master statistics by listening to lectures.
+While listening can be helpful, it is just the beginning.
+You have to apply what you learn to become proficient at using the statistical methods.
+Like many things in life, you learn statistics by doing statistics.</p>
+
+<p>But, there are different ways to do statistics.
+Some ways can get you results quickly, but you might not really understand what you did.
+Other ways may require more time and effort, but also promote a better understanding.
+The least appealing aspect of statistics for most people is the math.
+Statistics is math, so there is really know way around that.
+You have to know the math to understand statistics.
+But let&rsquo;s be clear on what we mean by math.
+Math is more than computational procedures.
+Fundamentally, math is formal reasoning, and it is this aspect of math that is most important to understand if you want to master statistics.
+We can get a computer to do the computational aspects of math for us, but, at least for now, computers will not replace good reasoning.
+But, a good statistical programming language can allow us to pass off the tedious computations to the computer while still being very close to the reasoning needed to understand statistical methods</p>
+
+<p>This site demonstrates quantitative methods commonly used in the social science, using statistical programming.
+There are two primary goals for developing these demonstrations.</p>
+
+<ol>
+<li><strong>Reasoning with Code</strong> - A primary goal is to provide opportunities to help build intuitive understanding and practical skills upon the theoretical knowledge emphasized in most formal statistical training.</li>
+<li><strong>Statistical Programming</strong> - Another goal is to provide opportunities to learn the R statistical  programming language, for those that know programs such as SPSS.
+<br /></li>
+</ol>
 
 <p>This site is aimed at supplementing &ndash; but not replacing &ndash; formal statistical training. Returning to the fitness analogy, you could walk into a gym and use the equipment with no understanding of the correct technique. At best this could be inefficient; at worst, it could lead to injury. Likewise, to best use this site you need some formal training in statistics. Statistical concepts can be complex and are not always intuitive. So, mastering the basics of statistics requires active practice using the concepts and procedures taught in the classroom. Indeed, one reason for creating this site it to use as a resource supplementing my own teaching.</p>
-
-<h1 id="software">Software</h1>
-
-<p>I currently teach basic statistics courses in SPSS. While SPSS is relatively easy to learn for simple statistical procedures, it has some very real limitations. First, it is extremely expensive. While many university pay for licenses that make SPSS available to students and faculty, this program is not always available after students graduate. Second, SPSS is closed source. So if you want to know what is going on &ldquo;under the hood&rdquo;, you are mostly out of luck. Third, SPSS is not very flexible. If you want to do anything that is not in the SPSS menu, and you haven&rsquo;t learned to use the very cryptic syntax of SPSS, you are again out of luck.</p>
-
-<p>I prefer to do most of my own statistical work in R. I prefer R because it is extremely flexible and allows you to really understand exactly what you are doing. It is also free and open source. So you don&rsquo;t have to pay for R and you can dig into the code to see exactly what R is doing. The downside is that R is more difficult to learn.</p>
-
-<p>So which should you use? I think that depends on what you plan to do with your statistical skills. If you plan on only conducting simple statistical procedures, SPSS might be all you need. But if you might need to do more complex analyses, R is worth the additional investment of time and energy. If you are a graduate student ask yourself this: Will I take only the statistics courses that are required for my graduate program, or am I interested in taking additional courses? If you plan on going beyond the basics, I think you should learn to use R.</p>
-
-<p>But you don&rsquo;t have to make this decision as you start learning statistics. I suspect many people will start learning one of these programs and decide later to learn the other. There may also be some brave enough to try and learn both. I hope this website will be helpful in each of these cases. I will include code for both R and SPSS, and maybe for other programs (Stata next on my list). I also encourage others to provide code for software they may use.</p>
 
 
     <div class="row">
@@ -593,9 +607,9 @@ url('/img/headers/background.jpg');
 
   <div class="article-style" itemprop="articleBody">
     
-    Cohen’s DCohen’s D is the number of standard deviations an effect is shifted above or below the populations mean stated by the null hypothesis.
-z testWhen we have known population parameters, we use them to calculate \[d = \frac{\bar{X} - \mu}{\sigma}\] Note that \(\sigma\) is the standard deviation and NOT the standard error of the mean.
-One-sample t test\[d = \frac{\bar{X} - \mu}{s}\]
+    Cohen’s D Cohen’s D is the number of standard deviations an effect is shifted above or below the populations mean stated by the null hypothesis.
+z test When we have known population parameters, we use them to calculate \[ d = \frac{\bar{X} - \mu}{\sigma} \] Note that \(\sigma\) is the standard deviation and NOT the standard error of the mean.
+ One-sample t test \[ d = \frac{\bar{X} - \mu}{s} \]
     
   </div>
   <p class="read-more">
@@ -662,9 +676,9 @@ z testWhen we have known population parameters, we use them to calculate \[d =
 
   <div class="article-style" itemprop="articleBody">
     
-    Important NotationScientific notation, while often confusing and frustrating initially, is very useful in helping to convey complex ideas in a compact and precise manner. The table below contains scientific notations relevant to the previous tutorial on central tendency and this one on variability.
+    Important Notation Scientific notation, while often confusing and frustrating initially, is very useful in helping to convey complex ideas in a compact and precise manner. The table below contains scientific notations relevant to the previous tutorial on central tendency and this one on variability.
 We will be using the following notation in this class:
-Symbolmeaning\(y\)Dependent Variable\(x\)Independent Variable\(N\)Population size\(n\)Sample size\(\Sigma\)Sum of\(\mu\)Population mean\(M\)sample mean (also often \(\bar{x}\))\(M_w\)Weighted mean (or \(\bar{x}_w\) )\(IQR\)Interquartile range\(\sigma^2\)Population variance\(s^2\)sample variance\(\sigma\)Population standard deviation\(s\)sample standard deviationRangeGRE scores for two classes with the same mean (151.
+  Symbol meaning    \(y\) Dependent Variable  \(x\) Independent Variable  \(N\) Population size  \(n\) Sample size  \(\Sigma\) Sum of  \(\mu\) Population mean  \(M\) sample mean (also often \(\bar{x}\))  \(M_w\) Weighted mean (or \(\bar{x}_w\) )  \(IQR\) Interquartile range  \(\sigma^2\) Population variance  \(s^2\) sample variance  \(\sigma\) Population standard deviation  \(s\) sample standard deviation     Range GRE scores for two classes with the same mean (151.
     
   </div>
   <p class="read-more">

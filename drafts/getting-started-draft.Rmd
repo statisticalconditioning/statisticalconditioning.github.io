@@ -1,0 +1,35 @@
+---
+title: Getting started draft material
+author: William Murrah
+date: '2017-10-24'
+slug: getting-started-draft
+categories: []
+tags: ["ERMA7300"]
+---
+
+
+This post decribes how best to use the statisticalconditioning.com site.
+
+## Reasoning with Code: Building Statistical Intuitions
+
+
+
+## Statistical Programming vs. Statistical Procedures
+
+
+Software
+
+Many statistics courses in the social science use SPSS as the primary software for statistical anaysis. 
+The popularity of SPSS is surely related to its ease of use. SPSS provides a graphical user interface (GUI) for the most popular statistical methods. 
+This allows users to conduct statistical procedures within a point-and-click framework common with modern computer operating systems.
+But the ease of use of such procedural programs come at at price.
+While it is relatively simple to get the "correct" output, the steps
+
+
+I currently teach basic statistics courses in SPSS. While SPSS is relatively easy to learn for simple statistical procedures, it has some very real limitations. First, it is extremely expensive. While many university pay for licenses that make SPSS available to students and faculty, this program is not always available after students graduate. Second, SPSS is closed source. So if you want to know what is going on "under the hood", you are mostly out of luck. Third, SPSS is not very flexible. If you want to do anything that is not in the SPSS menu, and you haven't learned to use the very cryptic syntax of SPSS, you are again out of luck.
+
+I prefer to do most of my own statistical work in R. I prefer R because it is extremely flexible and allows you to really understand exactly what you are doing. It is also free and open source. So you don't have to pay for R and you can dig into the code to see exactly what R is doing. The downside is that R is more difficult to learn.
+
+So which should you use? I think that depends on what you plan to do with your statistical skills. If you plan on only conducting simple statistical procedures, SPSS might be all you need. But if you might need to do more complex analyses, R is worth the additional investment of time and energy. If you are a graduate student ask yourself this: Will I take only the statistics courses that are required for my graduate program, or am I interested in taking additional courses? If you plan on going beyond the basics, I think you should learn to use R.
+
+But you don't have to make this decision as you start learning statistics. I suspect many people will start learning one of these programs and decide later to learn the other. There may also be some brave enough to try and learn both. I hope this website will be helpful in each of these cases. I will include code for both R and SPSS, and maybe for other programs (Stata next on my list). I also encourage others to provide code for software they may use.
