@@ -19,7 +19,7 @@
   
     
     
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/R.min.css">
     
   
   
@@ -37,6 +37,19 @@
   <link rel="stylesheet" href="/styles.css">
   
 
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-36666113-2', 'auto');
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
   
 
   <link rel="alternate" href="" type="application/rss+xml" title="Statistical Conditioning">
@@ -438,6 +451,73 @@ There are two primary goals for developing these demonstrations.</p>
   
   
   <h3 class="article-title" itemprop="name">
+    <a href="/post/factorial-anova-two-way-between-subjects-anova/" itemprop="url">Factorial Anova: Two-Way Between Subjects ANOVA</a>
+  </h3>
+  
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    
+    <time datetime="2017-11-27 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+      Nov 27, 2017
+    </time>
+  </span>
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    1 min read
+  </span>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/post/factorial-anova-two-way-between-subjects-anova/#disqus_thread"></a>
+  
+
+  
+
+  
+
+</div>
+
+  <div class="article-style" itemprop="articleBody">
+    
+    library(knitr) library(AMCP) library(car) opts_chunk$set(echo = TRUE, comment = NULL, highlight = FALSE) data(C7T5) df &lt;- within(C7T5, { Feedback &lt;- factor(Feedback) Drug &lt;- factor(Drug) }) Anova(lm(Score ~ Feedback*Drug, df)) Anova Table (Type II tests) Response: Score Sum Sq Df F value Pr(&gt;F) Feedback 1080 1 6.9342 0.0145635 * Drug 3420 2 10.9791 0.0004113 *** Feedback:Drug 780 2 2.5040 0.1028767 Residuals 3738 24 --- Signif. codes: 0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.
+    
+  </div>
+  <p class="read-more">
+    <a href="/post/factorial-anova-two-way-between-subjects-anova/" class="btn btn-primary btn-outline">
+      CONTINUE READING
+    </a>
+  </p>
+</div>
+
+      
+
+      
+
+        
+
+        
+        
+
+        
+        
+          
+      
+
+      
+      
+        
+        
+
+<div class="article-list-item" itemscope itemprop="blogPost">
+  
+  
+  <h3 class="article-title" itemprop="name">
     <a href="/post/one-way-anova/" itemprop="url">One Way ANOVA </a>
   </h3>
   
@@ -703,90 +783,6 @@ We will be using the following notation in this class:
       
 
       
-
-        
-
-        
-        
-
-        
-        
-          
-      
-          
-      
-          
-      
-
-      
-      
-        
-        
-
-<div class="article-list-item" itemscope itemprop="blogPost">
-  
-  
-  <h3 class="article-title" itemprop="name">
-    <a href="/post/getting-data-into-spss-and-r/" itemprop="url">Getting Data Into SPSS and R</a>
-  </h3>
-  
-
-<div class="article-metadata">
-
-  <span class="article-date">
-    
-    <time datetime="2017-10-22 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-      Oct 22, 2017
-    </time>
-  </span>
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    4 min read
-  </span>
-  
-
-  
-  
-  <span class="middot-divider"></span>
-  <a href="/post/getting-data-into-spss-and-r/#disqus_thread"></a>
-  
-
-  
-  
-  
-  <span class="middot-divider"></span>
-  <span class="article-categories">
-    <i class="fa fa-folder"></i>
-    
-    <a href="/categories/import">Import</a
-    >
-    
-  </span>
-  
-  
-
-  
-
-</div>
-
-  <div class="article-style" itemprop="articleBody">
-    
-    The first step in analyzing data is often getting the data into your chosen software. In this tutorial, I demonstrate how to manually enter data into SPSS and R as well as how to import existing date from two common formats.
-Manually Entering Data Let&rsquo;s assume you had the following data on five students grades you wanted to enter into SPSS and R. You have 5 cases, in this example students, and two variables, the student&rsquo;s name and their grade.
-    
-  </div>
-  <p class="read-more">
-    <a href="/post/getting-data-into-spss-and-r/" class="btn btn-primary btn-outline">
-      CONTINUE READING
-    </a>
-  </p>
-</div>
-
-      
-
-      
     
 
   </div>
@@ -963,7 +959,7 @@ Manually Entering Data Let&rsquo;s assume you had the following data on five stu
           
           
           
-          <a href="/tags/erma7300" style="font-size:2.3908344558326426rem">ERMA7300</a>
+          <a href="/tags/erma7300" style="font-size:2.408870871607216rem">ERMA7300</a>
         
           
           

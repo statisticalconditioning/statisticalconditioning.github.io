@@ -1,0 +1,33 @@
+---
+title: 'Factorial Anova: Two-Way Between Subjects ANOVA'
+draft: true
+author: William Murrah
+date: '2017-11-27'
+tags:
+  - ERMA7300
+slug: factorial-anova-two-way-between-subjects-anova
+---
+
+
+
+<pre class="r"><code>library(knitr)
+library(AMCP)
+library(car)
+
+opts_chunk$set(echo = TRUE, comment = NULL, highlight = FALSE)
+data(C7T5)
+df &lt;- within(C7T5, {
+  Feedback &lt;- factor(Feedback)
+  Drug     &lt;- factor(Drug)
+})</code></pre>
+<pre class="text"><code>Anova(lm(Score ~ Feedback*Drug, df))</code></pre>
+<pre><code>Anova Table (Type II tests)
+
+Response: Score
+              Sum Sq Df F value    Pr(&gt;F)    
+Feedback        1080  1  6.9342 0.0145635 *  
+Drug            3420  2 10.9791 0.0004113 ***
+Feedback:Drug    780  2  2.5040 0.1028767    
+Residuals       3738 24                      
+---
+Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>

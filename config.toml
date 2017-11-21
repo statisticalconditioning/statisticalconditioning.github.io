@@ -12,7 +12,7 @@ paginate = 10
 disqusShortname = "statisticalconditioning"
 
 # Enable analytics by entering your Google Analytics tracking ID
-googleAnalytics = ""
+googleAnalytics = "UA-36666113-2"
 
 # Default language to use (if you setup multilingual support)
 defaultContentLanguage = "en"
@@ -107,7 +107,7 @@ defaultContentLanguageInSubdir = false
   #   https://sourcethemes.com/academic/post/writing-markdown-latex/#highlighting-options
   highlight = true
   highlight_languages = []
-   highlight_style = "github"
+   highlight_style = "R"
 
   # Enable native social sharing buttons?
   sharing = true
