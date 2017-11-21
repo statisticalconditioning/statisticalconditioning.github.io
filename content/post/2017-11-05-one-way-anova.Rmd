@@ -16,7 +16,6 @@ library(tidyverse, warn.conflicts = FALSE)
 library(xtable)
 library(ztable)
 library(mosaic)
-
 options(ztable.type = "html")
 options(scipen=1, digits=2)
 ```
@@ -33,6 +32,7 @@ mng_aov <- function(x){
   return(d)
 }
 ```
+
 
 When comparing a continuous outcome between two groups, the $t$ test is the basic test used. But, what do you do when you have more than two groups to compare? 
 A foundational technique for this purpose is analysis of variance (ANOVA). This post is a conceptual overveiw of ANOVA, leading to example analyses aimed at developing intuitions about how ANOVA works. To get the most out of this post, you should work through a textbook chapter on one way ANOVA ahead of time.
@@ -650,7 +650,6 @@ q_a <- round(qtukey(.95, 3, df_W),2)
 $$
 \text{Tukey's HSD} = `r q_a` \sqrt{\frac{`r MS_W`}{`r n`}} = `r  q_a*(sqrt(MS_W/n))`.
 $$
-
 
 ## References
 

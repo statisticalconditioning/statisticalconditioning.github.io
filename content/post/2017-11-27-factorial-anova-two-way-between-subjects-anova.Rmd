@@ -12,8 +12,14 @@ slug: factorial-anova-two-way-between-subjects-anova
 library(knitr)
 library(AMCP)
 library(car)
+library(pander)
+library(ztable)
+library(emmeans)
 
 opts_chunk$set(echo = TRUE, comment = NULL, highlight = FALSE)
+options(ztable.type = "html")
+options(scipen=1, digits=3)
+
 data(C7T5)
 df <- within(C7T5, {
   Feedback <- factor(Feedback)
@@ -22,9 +28,43 @@ df <- within(C7T5, {
 
 ```
 
+# ANOVA
+
+Some text.
+
+```{r, results = 'asis'}
+mod <- lm(Score ~ Feedback*Drug, df)
+
+ztable(aov(mod), digits = 3)
+```
+
+# Other stuff
 
 
 ```{r}
-Anova(lm(Score ~ Feedback*Drug, df))
+emmeans(mod, "Drug")
+```
+```{r}
+emmeans(mod, "Feedback")
 ```
 
+```{r}
+emmip(mod, Feedback ~ Drug)
+```
+
+
+```{r}
+emmip(mod, Drug ~ Feedback)
+```
+
+
+```{r}
+emmod <- emmeans(mod, pairwise ~ Drug)
+emmod
+```
+
+More text.
+
+{{% alert note %}}
+Can this note contain `code`
+{{% /alert %}}

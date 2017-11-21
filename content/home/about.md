@@ -9,30 +9,6 @@ widget = "about"
 # Order that this section will appear in.
 weight = 5
 
-# List your academic interests.
-[interests]
-  interests = [
-    "Design, Implementation and Evaluation of STEM interventions",
-    "Longitudinal and Predictive Modeling",
-    "Program Evaluation"
-  ]
-
-# List your qualifications (such as academic degrees).
-[[education.courses]]
-  course = "PhD in Educational Psychology"
-  institution = "University of Virginia"
-  year = 2010
-
-[[education.courses]]
-  course = "M.Ed. in Counseling"
-  institution = "University of Montevallo"
-  year = 1997
-
-[[education.courses]]
-  course = "B.S. Psychology"
-  institution = "University of Montevallo"
-  year = 1993
- 
 +++
 
 # About Statistical Conditioning 
