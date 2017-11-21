@@ -1,0 +1,255 @@
+---
+title: "FIML in Lavaan: Descriptive Statistics"
+author: "William Murrah"
+date:
+slug: "fiml-descriptives"
+categories: ["Missing Data"]
+tags: ["ERMA7310","ERMA8340"]
+---
+
+# FIML for Missing Data in Lavaan
+
+Full information maximum likelihood (FIML) is a modern statistical technique for handling missing data. If you are not familiar with FIML, I would recommend the book entitled [Applied Missing Data Analysis][2] by Craig Enders. The book is both thorough and accessible, and a good place to start for those not familiar with the ins and outs of modern missing data techniques.
+
+The purpose of the **FIML in Lavaan** series of posts and the related [git repository][4] is to take some of the examples related to FIML estimation within a regression framework from the Applied Missing Data [website][1], and translate them into code for the R package `lavaan`. The code on the Applied Missing Data website in mostly for Mplus, which is quite expensive software. I hope this will give those who don’t have access to Mplus the ability to work through the examples using free and open source software. 
+
+In this first tutorial I start with the basics: how to get descriptive statistics using FIML. The data and Mplus code for this example can be found on the [Book Examples][3] page of the Applied Missing Data website. I also created a github repository with the data and R files with equivalent code in `lavaan`, which can be found [here][4]. Remember to replace the file path in the R code below with the file path to the folder in which you unzip the data files.
+
+You will also want to read over the `lavaan` documentation and visit the very helpful `lavaan` [website][5] to take advantage of the tutorials there. With these resources at your disposal, you should be able to use replicate the examples in `lavaan`. Here, I walk through the major sections of the R code. This is the same code found in the github repository in the R file entitled *FIMLdescriptivesCorrelations.R*.
+
+## Header
+
+I always include a header with basic information in my code files. 
+```
+#***********************************************************************
+# section 4.14 Summary Statistics --------------------------------------
+# Author: William M. Murrah
+# Description: This code replicates the section 4.14 example on the 
+#              the appliedmissingdata.com website, which generates 
+#              descriptive statistics and correlations,
+# Version history ------------------------------------------------------
+# 2014.05.30: code created
+# 2014.06.01: rewrote heading
+#***********************************************************************
+# R packages used
+library(lavaan)
+```
+## Import and prepare data
+
+First, import the data into R. MPlus uses *.dat* files which can only contain numbers. Variable names are not included in the *.dat* file, but instead are included in the Mplus *.inp* file. I use the *read.table* function to read the *.dat* file.
+```    
+    employee <- read.table("data/employee.dat")
+```
+
+Next, I assign names to the variables in the new data frame.
+
+```
+    # Assign names to variables.
+    names(employee) <- c("id", "age", "tenure", "female", "wbeing", 
+                         "jobsat", "jobperf", "turnover", "iq")
+```
+The final step in preparing the data is to recode the data values -99, which are used as missing data values in the *.dat* file, to `NA`, which is the missing value indicator in R.
+```
+    # Replace all missing values (-99) with R missing value character 'NA'.
+    employee[employee==-99] <- NA
+```
+## Create Model Object
+Now that the data are ready, I create a character string with the model using the `lavaan` syntax. For descriptives and correlations I model the mean, variances, and covariance/correlations. 
+```    
+    # Create descriptive model object
+    model <- '
+    # means
+    age      ~ 1
+    tenure   ~ 1
+    female   ~ 1
+    wbeing   ~ 1
+    jobsat   ~ 1
+    jobperf  ~ 1
+    turnover ~ 1
+    iq       ~ 1
+    
+    # variances
+    age      ~~ age
+    tenure   ~~ tenure
+    female   ~~ female
+    wbeing   ~~ wbeing
+    jobsat   ~~ jobsat
+    jobperf  ~~ jobperf
+    turnover ~~ turnover
+    iq       ~~ iq
+    
+    # covariances/correlations
+    age      ~~ tenure + female + wbeing + jobsat + jobperf + turnover + iq
+    tenure   ~~ female + wbeing + jobsat + jobperf + turnover + iq
+    female   ~~ wbeing + jobsat + jobperf + turnover + iq
+    wbeing   ~~ jobsat + jobperf + turnover + iq
+    jobsat   ~~ jobperf + turnover + iq
+    jobperf  ~~ turnover + iq
+    turnover ~~ iq
+    '
+```
+## Fit the Model
+
+To fit the model, I use the `lavaan` *fit* function. This function takes the first two argument model and data. The third argument is `missing ='fiml'`, which tells lavaan to use FIML (the default is to use listwise deletion).  
+```    
+    fit <- sem(model, employee, missing='fiml')
+```
+Alternatively, you could leave the section of the model code under the `# means` section and use the `meanstructure=TRUE` argument in the fit function as follows, which give the same results:
+```
+    fit <- sem(model, employee, missing='fiml', meanstructure=TRUE)
+```
+## Generate Output
+
+To print the results to the console, use the `summary` function. 
+
+```
+    summary(fit, fit.measures=TRUE, standardize=TRUE)
+```
+The `fit.measures=TRUE` calls fit statistics in the output. This should look familiar to those who have used Mplus.
+
+```
+lavaan (0.5-16) converged normally after 141 iterations
+
+  Number of observations                           480
+
+  Number of missing patterns                         3
+
+  Estimator                                         ML
+  Minimum Function Test Statistic                0.000
+  Degrees of freedom                                 0
+  P-value (Chi-square)                           1.000
+
+Model test baseline model:
+
+  Minimum Function Test Statistic              527.884
+  Degrees of freedom                                28
+  P-value                                        0.000
+
+User model versus baseline model:
+
+  Comparative Fit Index (CFI)                    1.000
+  Tucker-Lewis Index (TLI)                       1.000
+
+Loglikelihood and Information Criteria:
+
+  Loglikelihood user model (H0)              -6621.805
+  Loglikelihood unrestricted model (H1)      -6621.805
+
+  Number of free parameters                         44
+  Akaike (AIC)                               13331.609
+  Bayesian (BIC)                             13515.256
+  Sample-size adjusted Bayesian (BIC)        13375.604
+
+Root Mean Square Error of Approximation:
+
+  RMSEA                                          0.000
+  90 Percent Confidence Interval          0.000  0.000
+  P-value RMSEA <= 0.05                          1.000
+
+Standardized Root Mean Square Residual:
+
+  SRMR                                           0.000
+```
+The `standardize=TRUE` argument includes columns with standardized output. the *std.all* column in `lavaan` output is the same as the *STDYX* section in Mplus. 
+
+```
+Parameter estimates:
+
+  Information                                 Observed
+  Standard Errors                             Standard
+
+                   Estimate  Std.err  Z-value  P(>|z|)   Std.lv  Std.all
+Covariances:
+  age ~~
+    tenure            8.459    0.858    9.865    0.000    8.459    0.504
+    female           -0.028    0.122   -0.229    0.819   -0.028   -0.010
+    wbeing            1.148    0.334    3.433    0.001    1.148    0.182
+    jobsat            0.861    0.340    2.531    0.011    0.861    0.136
+    jobperf          -0.330    0.308   -1.072    0.284   -0.330   -0.049
+    turnover         -0.377    0.116   -3.255    0.001   -0.377   -0.150
+    iq                0.674    2.066    0.326    0.744    0.674    0.015
+  tenure ~~
+    female           -0.052    0.071   -0.736    0.462   -0.052   -0.034
+    wbeing            0.569    0.195    2.916    0.004    0.569    0.155
+    jobsat            0.565    0.200    2.822    0.005    0.565    0.154
+    jobperf           0.061    0.178    0.344    0.731    0.061    0.016
+    turnover          0.016    0.066    0.240    0.810    0.016    0.011
+    iq                0.026    1.199    0.022    0.983    0.026    0.001
+  female ~~
+    wbeing            0.067    0.031    2.156    0.031    0.067    0.115
+    jobsat            0.028    0.031    0.881    0.378    0.028    0.047
+    jobperf          -0.009    0.029   -0.323    0.747   -0.009   -0.015
+    turnover          0.001    0.011    0.114    0.909    0.001    0.005
+    iq                0.284    0.192    1.481    0.139    0.284    0.068
+  wbeing ~~
+    jobsat            0.446    0.095    4.714    0.000    0.446    0.322
+    jobperf           0.671    0.084    8.030    0.000    0.671    0.456
+    turnover         -0.141    0.030   -4.768    0.000   -0.141   -0.257
+    iq                2.876    0.530    5.430    0.000    2.876    0.291
+  jobsat ~~
+    jobperf           0.271    0.080    3.378    0.001    0.271    0.184
+    turnover         -0.129    0.030   -4.248    0.000   -0.129   -0.234
+    iq                4.074    0.566    7.195    0.000    4.074    0.411
+  jobperf ~~
+    turnover         -0.203    0.028   -7.168    0.000   -0.203   -0.346
+    iq                4.496    0.523    8.588    0.000    4.496    0.426
+  turnover ~~
+    iq               -0.706    0.182   -3.872    0.000   -0.706   -0.180
+
+Intercepts:
+    age              37.948    0.245  154.633    0.000   37.948    7.058
+    tenure           10.054    0.142   70.601    0.000   10.054    3.222
+    female            0.542    0.023   23.817    0.000    0.542    1.087
+    wbeing            6.288    0.062  100.701    0.000    6.288    5.349
+    jobsat            5.950    0.063   94.052    0.000    5.950    5.053
+    jobperf           6.021    0.057  105.262    0.000    6.021    4.805
+    turnover          0.321    0.021   15.058    0.000    0.321    0.687
+    iq              100.102    0.384  260.475    0.000  100.102   11.889
+
+Variances:
+    age              28.908    1.866                     28.908    1.000
+    tenure            9.735    0.628                      9.735    1.000
+    female            0.248    0.016                      0.248    1.000
+    wbeing            1.382    0.107                      1.382    1.000
+    jobsat            1.386    0.108                      1.386    1.000
+    jobperf           1.570    0.101                      1.570    1.000
+    turnover          0.218    0.014                      0.218    1.000
+    iq               70.892    4.576                     70.892    1.000
+```
+Recall that correlations are standardized covariances, so correlations are found in the *std.all* column in the *Covariances* section. Also, intercepts are means, and can be interpreted as the FIML means for the variables.
+
+Finally, to get the missing data patterns and covariance coverage output that can be included in Mplus output use the following code:
+```
+    # Get missing data patterns and covariance coverage similar
+    # to that found in Mplus output.
+    inspect(fit, 'patterns') 
+    inspect(fit, 'coverage')
+```    
+
+which leads to the following output:
+
+### Missing Data Patterns
+```
+    age tenure female wbeing jobsat jobprf turnvr iq
+160   1      1      1      1      1      1      1  1
+160   1      1      1      1      0      1      1  1
+160   1      1      1      0      1      1      1  1
+```
+### Covariance Coverage
+```
+
+         age   tenure female wbeing jobsat jobprf turnvr iq   
+age      1.000                                                
+tenure   1.000 1.000                                          
+female   1.000 1.000  1.000                                   
+wbeing   0.667 0.667  0.667  0.667                            
+jobsat   0.667 0.667  0.667  0.333  0.667                     
+jobperf  1.000 1.000  1.000  0.667  0.667  1.000              
+turnover 1.000 1.000  1.000  0.667  0.667  1.000  1.000       
+iq       1.000 1.000  1.000  0.667  0.667  1.000  1.000  1.000
+```
+ [1]: http://www.amazon.com/Applied-Missing-Analysis-Methodology-Sciences/dp/1606236393/ref=sr_1_1?s=books&ie=UTF8&qid=1401312750&sr=1-1&keywords=applied%20missing%20data%20analysis
+ [2]: http://www.appliedmissingdata.com/
+ [3]: http://www.appliedmissingdata.com/book-examples.html
+ [4]: https://github.com/wmmurrah/lavaanFIML
+ [5]: http://lavaan.org

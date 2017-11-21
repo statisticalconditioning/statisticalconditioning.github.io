@@ -1,0 +1,122 @@
+---
+title: "FIML in Lavaan: Regression Analysis"
+author: "William Murrah"
+date:
+slug: fiml-regression
+categories: ["Missing Data"]
+tags: ["ERMA7310","ERMA8340"]
+---
+
+This tutorial demonstrates how to use full information maximum likelihood (FIML) estimation to deal with missing data in a regression model using `lavaan`. 
+
+<h2>Import Data</h2>
+
+<p>In this post I use FIML to deal with missing data in a multiple regression framework. First, I import the data from a text file named 'employee.dat'. You can download a zip file of the data from <a href="http://www.appliedmissingdata.com/book-examples.html">Applied Missing Data website</a>. I also have a github page for these examples <a href="https://github.com/wmmurrah/lavaanFIML">here</a>. Remember to replace the file path in the <strong>read.table</strong> function with the path to the text file location on your computer.</p>
+
+<pre><code>employee &lt;- read.table("data/employee.dat")
+</code></pre>
+
+<p>Because the original text file does not include variable names, I name the variables in the new data frame:</p>
+
+<pre><code>names(employee) &lt;- c("id", "age", "tenure", "female", "wbeing", "jobsat", 
+                     "jobperf", "turnover", "iq")
+</code></pre>
+
+<p>then I recode all data points with the value of -99 in the original text file, which indicates a missing value, to <code>NA</code>, the missing data value recognized by R.</p>
+
+<pre><code>employee[employee == -99] &lt;- NA
+</code></pre>
+
+<h2>Create Regression Model Object</h2>
+
+<p>Now we are ready to create a character string containing the regression model using the <code>lavaan</code> model conventions. Note that <strong>b1</strong> and <strong>b2</strong> are labels that will be used later for the Wald test. These labels are equivalent to <strong>(b1)</strong> and <strong>(b2)</strong> after these variables in the Mplus code.</p>
+
+<pre><code>model &lt;- '
+# Regression model 
+jobperf ~ b1*wbeing + b2*jobsat
+
+# Variances
+wbeing ~~ wbeing
+jobsat ~~ jobsat
+
+# Covariance/correlation
+wbeing ~~ jobsat
+'
+</code></pre>
+
+<p>In addition to the regression model, I also estimated the variances and covariances of the predictors. I did this to replicate the results of the original Mplus example. In Mplus you have to estimate the variances of all of the predictors if any of them have missing data that you would like to model. In <code>lavaan</code> the <em>fixed.x=FALSE</em> argument has the same effect (see below).</p>
+
+<h2>Fit the Model</h2>
+
+<p>Next, I use the <strong>sem</strong> function to fit the model.</p>
+
+<pre><code>fit &lt;- sem(model, employee, missing='fiml', meanstructure=TRUE, 
+           fixed.x=FALSE)
+</code></pre>
+
+<p>Listwise deletion is the default, so the <em>missing='fiml'</em> argument tell <code>lavaan</code> to use the FIML instead. I also included the <em>meanstructure=TRUE</em> argument to include the means of the observed variables in the model, and the <em>fixed.x=FALSE</em> argument to estimate the means, variances, and covariances. Again, I do this to replicate the results of the original Mplus example.</p>
+
+<h2>Generate Output</h2>
+
+<p>We are now ready to look at the results.</p>
+
+<pre><code>summary(fit, fit.measures=TRUE, rsquare=TRUE, standardize=TRUE)
+</code></pre>
+
+<p>Compared to what we learned in the last post, the only thing new to the <strong>summary</strong> function is the <em>rsquare=TRUE</em> argument, which, not surprisingly, results in the model R<sup>2</sup> being included in the summary output.</p>
+
+<p>I only show the <strong>Parameter estimates</strong> section here:</p>
+
+<pre><code>Parameter estimates:
+
+  Information                                 Observed
+  Standard Errors                             Standard
+
+                   Estimate  Std.err  Z-value  P(&gt;|z|)   Std.lv  Std.all
+Regressions:
+  jobperf ~
+    wbeing   (b1)     0.476    0.055    8.665    0.000    0.476    0.447
+    jobsat   (b2)     0.027    0.060    0.444    0.657    0.027    0.025
+
+Covariances:
+  wbeing ~~
+    jobsat            0.467    0.098    4.780    0.000    0.467    0.336
+
+Intercepts:
+    jobperf           2.869    0.382    7.518    0.000    2.869    2.289
+    wbeing            6.286    0.063   99.692    0.000    6.286    5.338
+    jobsat            5.959    0.065   91.836    0.000    5.959    5.055
+
+Variances:
+    wbeing            1.387    0.108                      1.387    1.000
+    jobsat            1.390    0.109                      1.390    1.000
+    jobperf           1.243    0.087                      1.243    0.792
+
+R-Square:
+
+    jobperf           0.208
+</code></pre>
+
+<h2>Wald Test</h2>
+
+<p>In <code>lavaan</code> the Wald test is called separately from the estimation function. This function will use the labels assigned in the model object above.</p>
+
+<pre><code># Wald test is called seperately.
+lavTestWald(fit,  constraints='b1 == 0
+                               b2 == 0')
+</code></pre>
+
+<p>Results of Wald Test</p>
+
+<pre><code>$stat
+[1] 95.88081
+
+$df
+[1] 2
+
+$p.value
+[1] 0
+</code></pre>
+
+<p>There you have it! Regression with FIML in R. But, what if you have variables that you are not interested in incorporating in your model, but may have information about the missingness in the variables that are in your model? I will talk about that in the next post.</p>
+
