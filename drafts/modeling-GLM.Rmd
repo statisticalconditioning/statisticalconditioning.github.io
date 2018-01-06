@@ -1,0 +1,17 @@
+---
+title: Modeling, Model Comparison,  and the General Linear Model
+author: William Murrah
+date:
+slug: modeling-GLM
+categories:
+tags: ["ERMA7300", "ERMA7310", "ERMA8320", "ERMA8340"]
+---
+
+
+Example of Theory, process models, hypotheses, as presented by McElreath, but as an education example.
+
+
+
+$$
+Y_i = \mu + \varepsilon_i
+$$
