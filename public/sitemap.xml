@@ -5,6 +5,15 @@
     
     <url>
     
+      <loc>/post/modeling-glm/</loc>
+      <lastmod>2018-01-10T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/post/factorial-anova-two-way-between-subjects-anova/</loc>
       <lastmod>2017-11-27T00:00:00+00:00</lastmod>
     </url>
@@ -143,6 +152,16 @@
     
     <url>
     
+      <loc>/tags/erma7300/</loc>
+      <lastmod>2018-01-10T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <xhtml:link rel="alternate" href="/courses/erma7300/" hreflang="en"/>
     
       <loc>/courses/erma7300/</loc>
@@ -155,8 +174,8 @@
     
     <url>
     
-      <loc>/tags/erma7300/</loc>
-      <lastmod>2017-11-27T00:00:00+00:00</lastmod>
+      <loc>/tags/erma7310/</loc>
+      <lastmod>2018-01-10T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -175,8 +194,18 @@
     
     <url>
     
-      <loc>/tags/erma7310/</loc>
-      <lastmod>2017-10-16T00:00:00+00:00</lastmod>
+      <loc>/tags/erma8320/</loc>
+      <lastmod>2018-01-10T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/tags/erma8340/</loc>
+      <lastmod>2018-01-10T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
