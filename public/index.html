@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="theme" content="hugo-academic">
-  <meta name="generator" content="Hugo 0.30.2" />
+  <meta name="generator" content="Hugo 0.29" />
   <meta name="author" content="William M. (Hank) Murrah, III">
   <meta name="description" content="Assistant Professor of Quantitative Methods">
 
@@ -16,11 +16,6 @@
   
     
   
-  
-    
-    
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
-    
   
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
@@ -37,6 +32,19 @@
   <link rel="stylesheet" href="/styles.css">
   
 
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-36666113-2', 'auto');
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
   
 
   <link rel="alternate" href="" type="application/rss+xml" title="Statistical Conditioning">
@@ -181,7 +189,7 @@ url('/img/headers/background.jpg');
     </h1>
 
     
-    <p class="hero-lead">A website to promote statistical reasoning through the practice of statistical programming.</p>
+    <p class="hero-lead">Reasoning with <code>code</code>.</p>
     
 
     
@@ -208,8 +216,8 @@ url('/img/headers/background.jpg');
     <div id="profile">
 
       
-      <div class="portrait" style="background-image: url('https://s.gravatar.com/avatar/c36a2b0fb7d0458199dcddfb3b2d4683?s=200');"></div>
-      <meta itemprop="image" content="https://s.gravatar.com/avatar/c36a2b0fb7d0458199dcddfb3b2d4683?s=200">
+      <div class="portrait" style="background-image: url('/img/thinker.jpg');"></div>
+      <meta itemprop="image" content="/img/thinker.jpg">
       
 
       <div class="portrait-title">
@@ -270,99 +278,42 @@ url('/img/headers/background.jpg');
 
 <h1 id="about-statistical-conditioning">About Statistical Conditioning</h1>
 
-<p>Welcome! The purpose of this site it to serve as a repository for exercises useful for mastering the basics of common statistical methods. Learning statistics is a lot like getting into shape. You wouldn&rsquo;t expect to get into shape simply by going to the gym and listening to your personal trainer talk about the types of exercises you can do; you have to use that knowledge, which means you have repeatedly do the exercises. Expecting to learning statistics through lecture is very similar to getting fit by listening to your personal trainer talk about fitness. While listening can be helpful, it is just the beginning. You have to apply what you learn to become proficient at using the statistical methods.</p>
+<p>Learning statistics is a lot like getting into shape. Just as you can&rsquo;t get fit  by listening to a personal trainer talk about exercises, you can&rsquo;t master statistics by listening to lectures.
+While listening can be helpful, it is just the beginning.
+You have to apply what you learn to become proficient with statistical methods.
+With statistics, like many things in life, you learn by doing.</p>
+
+<p>But, there are different ways to do statistics.
+Some ways can get you results quickly, but you might not really understand what you did.
+Other ways may require more time and effort, but also promote a better understanding.
+The least appealing aspect of statistics for most people is the math.
+Statistics is math, so there is really know way around that.
+You have to know the math to understand statistics.
+But let&rsquo;s be clear on what we mean by math.
+Math is more than computational procedures.
+Fundamentally, math is formal reasoning, and it is this aspect of math that is most important to understand if you want to master statistics.
+We can get a computer to do the computational aspects of math for us, but, at least for now, computers will not replace good reasoning.
+But, a good statistical programming language can allow us to pass off the tedious computations to the computer while still being very close to the reasoning needed to understand statistical methods.</p>
+
+<p>This site demonstrates quantitative methods commonly used in the social sciences, using statistical programming.
+There are two primary goals for developing these demonstrations.</p>
+
+<ol>
+<li><strong>Reasoning with Code</strong> - First, to provide opportunities to help build intuitive understanding and practical skills upon the theoretical knowledge emphasized in most formal statistical training.</li>
+<li><strong>Statistical Programming</strong> - Second, to provide opportunities to learn the R statistical  programming language, for those that know orocedural programs such as SPSS.
+<br /></li>
+</ol>
 
 <p>This site is aimed at supplementing &ndash; but not replacing &ndash; formal statistical training. Returning to the fitness analogy, you could walk into a gym and use the equipment with no understanding of the correct technique. At best this could be inefficient; at worst, it could lead to injury. Likewise, to best use this site you need some formal training in statistics. Statistical concepts can be complex and are not always intuitive. So, mastering the basics of statistics requires active practice using the concepts and procedures taught in the classroom. Indeed, one reason for creating this site it to use as a resource supplementing my own teaching.</p>
-
-<h1 id="software">Software</h1>
-
-<p>I currently teach basic statistics courses in SPSS. While SPSS is relatively easy to learn for simple statistical procedures, it has some very real limitations. First, it is extremely expensive. While many university pay for licenses that make SPSS available to students and faculty, this program is not always available after students graduate. Second, SPSS is closed source. So if you want to know what is going on &ldquo;under the hood&rdquo;, you are mostly out of luck. Third, SPSS is not very flexible. If you want to do anything that is not in the SPSS menu, and you haven&rsquo;t learned to use the very cryptic syntax of SPSS, you are again out of luck.</p>
-
-<p>I prefer to do most of my own statistical work in R. I prefer R because it is extremely flexible and allows you to really understand exactly what you are doing. It is also free and open source. So you don&rsquo;t have to pay for R and you can dig into the code to see exactly what R is doing. The downside is that R is more difficult to learn.</p>
-
-<p>So which should you use? I think that depends on what you plan to do with your statistical skills. If you plan on only conducting simple statistical procedures, SPSS might be all you need. But if you might need to do more complex analyses, R is worth the additional investment of time and energy. If you are a graduate student ask yourself this: Will I take only the statistics courses that are required for my graduate program, or am I interested in taking additional courses? If you plan on going beyond the basics, I think you should learn to use R.</p>
-
-<p>But you don&rsquo;t have to make this decision as you start learning statistics. I suspect many people will start learning one of these programs and decide later to learn the other. There may also be some brave enough to try and learn both. I hope this website will be helpful in each of these cases. I will include code for both R and SPSS, and maybe for other programs (Stata next on my list). I also encourage others to provide code for software they may use.</p>
 
 
     <div class="row">
 
       
-      <div class="col-sm-5">
-        <h3>Interests</h3>
-        <ul class="ul-interests">
-          
-          <li>Design, Implementation and Evaluation of STEM interventions</li>
-          
-          <li>Longitudinal and Predictive Modeling</li>
-          
-          <li>Program Evaluation</li>
-          
-        </ul>
-      </div>
-      
 
-      
-      <div class="col-sm-7">
-        <h3>Education</h3>
-        <ul class="ul-edu fa-ul">
-          
-          <li>
-            <i class="fa-li fa fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">PhD in Educational Psychology, 2010</p>
-              <p class="institution">University of Virginia</p>
-            </div>
-          </li>
-          
-          <li>
-            <i class="fa-li fa fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">M.Ed. in Counseling, 1997</p>
-              <p class="institution">University of Montevallo</p>
-            </div>
-          </li>
-          
-          <li>
-            <i class="fa-li fa fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">B.S. Psychology, 1993</p>
-              <p class="institution">University of Montevallo</p>
-            </div>
-          </li>
-          
-        </ul>
-      </div>
       
 
     </div>
-  </div>
-</div>
-
-    </div>
-  </section>
-  
-
-  
-  
-  
-  <section id="talks" class="home-section">
-    <div class="container">
-      
-
-
-
-
-<div class="row">
-  <div class="col-xs-12 col-md-4 section-heading">
-    <h1>Recent &amp; Upcoming Talks</h1>
-    
-    
-  </div>
-  <div class="col-xs-12 col-md-8">
-    
-
-    
   </div>
 </div>
 
@@ -414,6 +365,361 @@ url('/img/headers/background.jpg');
         
           
       
+          
+      
+          
+      
+          
+      
+
+      
+      
+        
+        
+
+<div class="article-list-item" itemscope itemprop="blogPost">
+  
+  
+  <h3 class="article-title" itemprop="name">
+    <a href="/post/modeling-glm/" itemprop="url">Modeling, Model Comparison,  and the General Linear Model</a>
+  </h3>
+  
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    
+    <time datetime="2018-01-10 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+      Jan 10, 2018
+    </time>
+  </span>
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    3 min read
+  </span>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/post/modeling-glm/#disqus_thread"></a>
+  
+
+  
+
+  
+
+</div>
+
+  <div class="article-style" itemprop="articleBody">
+    
+    In this post I present a brief overview of a model comparison approach to the general linear model. The goal is to establish a framework to understand basic statistical methods including \(t\) tests, analysis of variance, and linear regression. This framework and the example data are from Maxwell, Delaney, and Kelly (2018). Follow this link to find information on this textbook and the accompanying website. Both are excellent, but the text is somewhat advanced for those just learning statistical methods.
+    
+  </div>
+  <p class="read-more">
+    <a href="/post/modeling-glm/" class="btn btn-primary btn-outline">
+      CONTINUE READING
+    </a>
+  </p>
+</div>
+
+      
+
+      
+
+        
+
+        
+        
+
+        
+        
+          
+      
+
+      
+      
+        
+        
+
+<div class="article-list-item" itemscope itemprop="blogPost">
+  
+  
+  <h3 class="article-title" itemprop="name">
+    <a href="/post/factorial-anova-two-way-between-subjects-anova/" itemprop="url">Factorial Anova: Two-Way Between Subjects ANOVA</a>
+  </h3>
+  
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    
+    <time datetime="2017-11-27 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+      Nov 27, 2017
+    </time>
+  </span>
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    5 min read
+  </span>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/post/factorial-anova-two-way-between-subjects-anova/#disqus_thread"></a>
+  
+
+  
+
+  
+
+</div>
+
+  <div class="article-style" itemprop="articleBody">
+    
+    <pre class="r"><code>library(knitr)
+library(AMCP)
+library(car)
+library(pander)
+library(ztable)</code></pre>
+<pre><code>## Welcome to package ztable ver 0.1.5</code></pre>
+<pre class="r"><code>library(emmeans)
+library(tidyverse)</code></pre>
+<pre><code>## ── Attaching packages ───────────────────────────────────────────────────────── tidyverse 1.2.1 ──</code></pre>
+<pre><code>## ✔ ggplot2 2.2.1     ✔ purrr   0.2.4
+## ✔ tibble  1.3.4     ✔ dplyr   0.7.4
+## ✔ tidyr   0.7.2     ✔ stringr 1.2.0
+## ✔ readr   1.1.1     ✔ forcats 0.2.0</code></pre>
+<pre><code>## ── Conflicts ──────────────────────────────────────────────────────────── tidyverse_conflicts() ──
+## ✖ dplyr::filter() masks stats::filter()
+## ✖ dplyr::lag()    masks stats::lag()
+## ✖ dplyr::recode() masks car::recode()
+## ✖ purrr::some()   masks car::some()</code></pre>
+<pre class="r"><code>opts_chunk$set(echo = TRUE, comment = NULL, highlight = FALSE)
+options(ztable.type = &quot;html&quot;)
+options(scipen=1, digits=3)
+
+data(C7T5)
+df &lt;- within(C7T5, {
+  Feedback &lt;- factor(Feedback)
+  Drug     &lt;- factor(Drug)
+})</code></pre>
+<div id="anova" class="section level1">
+<h1>ANOVA</h1>
+<p>Some text.</p>
+<pre class="text"><code>mod &lt;- lm(Score ~ Feedback*Drug, df)
+summary(mod)</code></pre>
+<pre><code>
+Call:
+lm(formula = Score ~ Feedback * Drug, data = df)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-20.00  -8.75  -1.50  10.75  18.00 
+
+Coefficients:
+                Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)       170.00       5.58   30.46  &lt; 2e-16 ***
+Feedback2          16.00       7.89    2.03  0.05390 .  
+Drug2              33.00       7.89    4.18  0.00033 ***
+Drug3              18.00       7.89    2.28  0.03175 *  
+Feedback2:Drug2   -18.00      11.16   -1.61  0.11992    
+Feedback2:Drug3     6.00      11.16    0.54  0.59586    
+---
+Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+
+Residual standard error: 12.5 on 24 degrees of freedom
+Multiple R-squared:  0.585, Adjusted R-squared:  0.499 
+F-statistic: 6.78 on 5 and 24 DF,  p-value: 0.000453</code></pre>
+<pre class="text"><code>avmod &lt;- aov(mod)
+summary(avmod)</code></pre>
+<pre><code>          Df Sum Sq Mean Sq F value  Pr(&gt;F)    </code></pre>
+<p>Feedback 1 1080 1080 6.93 0.01456 *<br />
+Drug 2 3420 1710 10.98 0.00041 *** Feedback:Drug 2 780 390 2.50 0.10288<br />
+Residuals 24 3738 156<br />
+— Signif. codes: 0 ‘<em><strong>’ 0.001 ’</strong>’ 0.01 ’</em>’ 0.05 ‘.’ 0.1 ‘’ 1</p>
+</div>
+<div id="other-stuff" class="section level1">
+<h1>Other stuff</h1>
+<pre class="text"><code>emmeans(mod, &quot;Drug&quot;)</code></pre>
+<pre><code>NOTE: Results may be misleading due to involvement in interactions</code></pre>
+<pre><code> Drug emmean   SE df lower.CL upper.CL
+ 1       178 3.95 24      170      186
+ 2       202 3.95 24      194      210
+ 3       199 3.95 24      191      207
+
+Results are averaged over the levels of: Feedback 
+Confidence level used: 0.95 </code></pre>
+<pre class="text"><code>emmeans(mod, &quot;Feedback&quot;)</code></pre>
+<pre><code>NOTE: Results may be misleading due to involvement in interactions</code></pre>
+<pre><code> Feedback emmean   SE df lower.CL upper.CL
+ 1           187 3.22 24      180      194
+ 2           199 3.22 24      192      206
+
+Results are averaged over the levels of: Drug 
+Confidence level used: 0.95 </code></pre>
+<pre class="text"><code>emmip(mod, Feedback ~ Drug)</code></pre>
+<p><img src="/post/2017-11-27-factorial-anova-two-way-between-subjects-anova_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<pre class="text"><code>emmip(mod, Drug ~ Feedback)</code></pre>
+<p><img src="/post/2017-11-27-factorial-anova-two-way-between-subjects-anova_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+<pre class="text"><code>emmod &lt;- emmeans(mod, pairwise ~ Drug)</code></pre>
+<pre><code>NOTE: Results may be misleading due to involvement in interactions</code></pre>
+<pre class="text"><code>emmod</code></pre>
+<pre><code>$emmeans
+ Drug emmean   SE df lower.CL upper.CL
+ 1       178 3.95 24      170      186
+ 2       202 3.95 24      194      210
+ 3       199 3.95 24      191      207
+
+Results are averaged over the levels of: Feedback 
+Confidence level used: 0.95 
+
+$contrasts
+ contrast estimate   SE df t.ratio p.value
+ 1 - 2         -24 5.58 24  -4.300  0.0007
+ 1 - 3         -21 5.58 24  -3.763  0.0027
+ 2 - 3           3 5.58 24   0.538  0.8537
+
+Results are averaged over the levels of: Feedback 
+P value adjustment: tukey method for comparing a family of 3 estimates </code></pre>
+<p>More text.</p>
+<div class="alert alert-note">
+  <p>Can this note contain <code>code</code></p>
+
+</div>
+
+<div id="another-example" class="section level2">
+<h2>another Example</h2>
+<pre class="text"><code>n = 25
+Beta_0 = 70 # 80
+Beta_tx = 10 # 9
+Beta_sch = 15 # 15
+Beta_ab = -12 # -12
+
+Tx &lt;- rep(c(0, 1, 0, 1), each = n)
+Sch &lt;- rep(c(0, 1), each = 2*n)
+set.seed(20171024)
+y &lt;- Beta_0 + Beta_tx*Tx + Beta_sch*Sch + Beta_ab*Tx*Sch + rnorm(2*n, 0, 15)
+df &lt;- data.frame(y = round(y, 1), 
+                 Tx = factor(Tx, labels = c(&quot;control&quot;, &quot;treatment&quot;)), 
+                 Sch = factor(Sch, labels = c(&quot;public&quot;, &quot;private&quot;)))</code></pre>
+<pre class="text"><code>df %&gt;% 
+  group_by(Tx) %&gt;% 
+  summarise(Mean_y = mean(y),
+            SD_y = sd(y))</code></pre>
+<pre><code># A tibble: 2 x 3
+         Tx Mean_y  SD_y
+     &lt;fctr&gt;  &lt;dbl&gt; &lt;dbl&gt;
+1   control   74.2  18.0
+2 treatment   82.3  12.5</code></pre>
+<pre class="text"><code>df %&gt;% 
+  group_by(Sch) %&gt;% 
+  summarise(mean_y = mean(y),
+            SD_y = sd(y))</code></pre>
+<pre><code># A tibble: 2 x 3
+      Sch mean_y  SD_y
+   &lt;fctr&gt;  &lt;dbl&gt; &lt;dbl&gt;
+1  public   73.7  16.1
+2 private   82.7  14.5</code></pre>
+<pre class="text"><code>mod &lt;- lm(y ~ Tx*Sch, df)
+summary(mod)</code></pre>
+<pre><code>
+Call:
+lm(formula = y ~ Tx * Sch, data = df)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-30.26 -10.56  -0.63   9.64  40.19 
+
+Coefficients:
+                       Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)               66.71       2.92   22.84  &lt; 2e-16 ***
+Txtreatment               14.05       4.13    3.40  0.00098 ***
+Schprivate                15.00       4.13    3.63  0.00045 ***
+Txtreatment:Schprivate   -12.00       5.84   -2.05  0.04265 *  
+---
+Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+
+Residual standard error: 14.6 on 96 degrees of freedom
+Multiple R-squared:  0.182, Adjusted R-squared:  0.156 
+F-statistic:  7.1 on 3 and 96 DF,  p-value: 0.000232</code></pre>
+<pre class="text"><code>anova(mod)</code></pre>
+<pre><code>Analysis of Variance Table
+
+Response: y
+          Df Sum Sq Mean Sq F value Pr(&gt;F)   
+Tx         1   1619    1619    7.59 0.0070 **
+Sch        1   2025    2025    9.50 0.0027 **
+Tx:Sch     1    900     900    4.22 0.0427 * 
+Residuals 96  20471     213                  
+---
+Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<pre class="text"><code>emmeans(mod, &quot;Sch&quot;)</code></pre>
+<pre><code>NOTE: Results may be misleading due to involvement in interactions</code></pre>
+<pre><code> Sch     emmean   SE df lower.CL upper.CL
+ public    73.7 2.07 96     69.6     77.8
+ private   82.7 2.07 96     78.6     86.8
+
+Results are averaged over the levels of: Tx 
+Confidence level used: 0.95 </code></pre>
+<pre class="text"><code>pmmip(mod, Tx ~ Sch)  + ylim(0, 100)</code></pre>
+<p><img src="/post/2017-11-27-factorial-anova-two-way-between-subjects-anova_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
+<pre class="text"><code>pmmip(mod, Sch ~ Tx)  + ylim(0, 100)</code></pre>
+<p><img src="/post/2017-11-27-factorial-anova-two-way-between-subjects-anova_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
+</div>
+<div id="controling-familywise-alpha-level-in-factorial-anova" class="section level2">
+<h2>Controling Familywise Alpha level in Factorial ANOVA</h2>
+</div>
+<div id="measuring-effects" class="section level2">
+<h2>Measuring Effects</h2>
+<p><span class="math display">\[
+R^2_{\text{partial}} = \frac{SS_{\text{effect}}}{SS_W + SS_{\text{effect}}}
+\]</span></p>
+<p><span class="math display">\[
+R^2_{\text{A,partial}} = \frac{SS_A}{SS_W + SS_A}
+\]</span> <span class="math display">\[
+R^2_{\text{AB, partial}} = \frac{SS_{AB}}{SS_W + SS_{AB}}
+\]</span></p>
+<p>For type of drug:</p>
+<p><span class="math display">\[
+R^2_{\text{drug,partial}} = \frac{SS_{\text{drug}}}{SS_W + SS_{\text{drug}}} = \frac{3420}{3738 + 3420} = 0.48
+\]</span> ## Follow-up Analyses</p>
+<div id="futher-main-effects-analyses" class="section level3">
+<h3>Futher Main Effects Analyses</h3>
+</div>
+<div id="exploring-interactions-with-simple-effects" class="section level3">
+<h3>Exploring Interactions with Simple Effects</h3>
+</div>
+</div>
+</div>
+
+    
+  </div>
+  <p class="read-more">
+    <a href="/post/factorial-anova-two-way-between-subjects-anova/" class="btn btn-primary btn-outline">
+      CONTINUE READING
+    </a>
+  </p>
+</div>
+
+      
+
+      
+
+        
+
+        
+        
+
+        
+        
+          
+      
 
       
       
@@ -445,6 +751,9 @@ url('/img/headers/background.jpg');
   
 
   
+  
+  <span class="middot-divider"></span>
+  <a href="/post/one-way-anova/#disqus_thread"></a>
   
 
   
@@ -512,6 +821,9 @@ url('/img/headers/background.jpg');
   
 
   
+  
+  <span class="middot-divider"></span>
+  <a href="/post/getting-started/#disqus_thread"></a>
   
 
   
@@ -581,6 +893,9 @@ url('/img/headers/background.jpg');
 
   
   
+  <span class="middot-divider"></span>
+  <a href="/post/effects-size-estimates/#disqus_thread"></a>
+  
 
   
   
@@ -593,9 +908,9 @@ url('/img/headers/background.jpg');
 
   <div class="article-style" itemprop="articleBody">
     
-    Cohen’s DCohen’s D is the number of standard deviations an effect is shifted above or below the populations mean stated by the null hypothesis.
-z testWhen we have known population parameters, we use them to calculate \[d = \frac{\bar{X} - \mu}{\sigma}\] Note that \(\sigma\) is the standard deviation and NOT the standard error of the mean.
-One-sample t test\[d = \frac{\bar{X} - \mu}{s}\]
+    Cohen’s D Cohen’s D is the number of standard deviations an effect is shifted above or below the populations mean stated by the null hypothesis.
+z test When we have known population parameters, we use them to calculate \[ d = \frac{\bar{X} - \mu}{\sigma} \] Note that \(\sigma\) is the standard deviation and NOT the standard error of the mean.
+ One-sample t test \[ d = \frac{\bar{X} - \mu}{s} \]
     
   </div>
   <p class="read-more">
@@ -608,156 +923,86 @@ z testWhen we have known population parameters, we use them to calculate \[d =
       
 
       
-
-        
-
-        
-        
-
-        
-        
-          
-      
-
-      
-      
-        
-        
-
-<div class="article-list-item" itemscope itemprop="blogPost">
-  
-  
-  <h3 class="article-title" itemprop="name">
-    <a href="/post/variability/" itemprop="url">Variability</a>
-  </h3>
-  
-
-<div class="article-metadata">
-
-  <span class="article-date">
     
-    <time datetime="2017-10-23 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-      Oct 23, 2017
-    </time>
-  </span>
 
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    4 min read
-  </span>
-  
-
-  
-  
-
-  
-  
-  
-  
-
-  
-
+  </div>
 </div>
 
-  <div class="article-style" itemprop="articleBody">
-    
-    Important NotationScientific notation, while often confusing and frustrating initially, is very useful in helping to convey complex ideas in a compact and precise manner. The table below contains scientific notations relevant to the previous tutorial on central tendency and this one on variability.
-We will be using the following notation in this class:
-Symbolmeaning\(y\)Dependent Variable\(x\)Independent Variable\(N\)Population size\(n\)Sample size\(\Sigma\)Sum of\(\mu\)Population mean\(M\)sample mean (also often \(\bar{x}\))\(M_w\)Weighted mean (or \(\bar{x}_w\) )\(IQR\)Interquartile range\(\sigma^2\)Population variance\(s^2\)sample variance\(\sigma\)Population standard deviation\(s\)sample standard deviationRangeGRE scores for two classes with the same mean (151.
+    </div>
+  </section>
+  
+
+  
+  
+  
+  <section id="tags" class="home-section">
+    <div class="container">
+      
+
+
+<div class="row">
+  <div class="col-xs-12 col-md-4 section-heading">
+    <h1>Tags</h1>
     
   </div>
-  <p class="read-more">
-    <a href="/post/variability/" class="btn btn-primary btn-outline">
-      CONTINUE READING
-    </a>
-  </p>
-</div>
+  <div class="col-xs-12 col-md-8">
+    
 
+    
+      
       
 
       
+      
+      
+      
+      
 
-        
-
-        
-        
-
-        
+      <div id="tag-cloud">
         
           
-      
           
-      
           
-      
-
-      
-      
+          
+          
+          <a href="/tags/erma7300" style="font-size:2.422212266046852rem">ERMA7300</a>
         
+          
+          
+          
+          
+          
+          <a href="/tags/erma7310" style="font-size:1.311750992628768rem">ERMA7310</a>
         
-
-<div class="article-list-item" itemscope itemprop="blogPost">
-  
-  
-  <h3 class="article-title" itemprop="name">
-    <a href="/post/getting-data-into-spss-and-r/" itemprop="url">Getting Data Into SPSS and R</a>
-  </h3>
-  
-
-<div class="article-metadata">
-
-  <span class="article-date">
-    
-    <time datetime="2017-10-22 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-      Oct 22, 2017
-    </time>
-  </span>
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    4 min read
-  </span>
-  
-
-  
-  
-
-  
-  
-  
-  <span class="middot-divider"></span>
-  <span class="article-categories">
-    <i class="fa fa-folder"></i>
-    
-    <a href="/categories/import">Import</a
-    >
-    
-  </span>
-  
-  
-
-  
-
-</div>
-
-  <div class="article-style" itemprop="articleBody">
-    
-    The first step in analyzing data is often getting the data into your chosen software. In this tutorial, I demonstrate how to manually enter data into SPSS and R as well as how to import existing date from two common formats.
-Manually Entering Data Let&rsquo;s assume you had the following data on five students grades you wanted to enter into SPSS and R. You have 5 cases, in this example students, and two variables, the student&rsquo;s name and their grade.
-    
-  </div>
-  <p class="read-more">
-    <a href="/post/getting-data-into-spss-and-r/" class="btn btn-primary btn-outline">
-      CONTINUE READING
-    </a>
-  </p>
-</div>
-
-      
-
-      
+          
+          
+          
+          
+          
+          <a href="/tags/erma8320" style="font-size:0.8rem">ERMA8320</a>
+        
+          
+          
+          
+          
+          
+          <a href="/tags/erma8340" style="font-size:0.8rem">ERMA8340</a>
+        
+          
+          
+          
+          
+          
+          <a href="/tags/r" style="font-size:0.8rem">R</a>
+        
+          
+          
+          
+          
+          
+          <a href="/tags/spss" style="font-size:0.8rem">SPSS</a>
+        
+      </div>
     
 
   </div>
@@ -904,62 +1149,23 @@ Manually Entering Data Let&rsquo;s assume you had the following data on five stu
   
   
   
-  <section id="tags" class="home-section">
+  <section id="talks" class="home-section">
     <div class="container">
       
 
 
+
+
 <div class="row">
   <div class="col-xs-12 col-md-4 section-heading">
-    <h1>Tags</h1>
+    <h1>Recent &amp; Upcoming Talks</h1>
+    
     
   </div>
   <div class="col-xs-12 col-md-8">
     
 
     
-      
-      
-
-      
-      
-      
-      
-      
-
-      <div id="tag-cloud">
-        
-          
-          
-          
-          
-          
-          <a href="/tags/erma7300" style="font-size:2.3908344558326426rem">ERMA7300</a>
-        
-          
-          
-          
-          
-          
-          <a href="/tags/erma7310" style="font-size:0.8rem">ERMA7310</a>
-        
-          
-          
-          
-          
-          
-          <a href="/tags/r" style="font-size:0.8rem">R</a>
-        
-          
-          
-          
-          
-          
-          <a href="/tags/spss" style="font-size:0.8rem">SPSS</a>
-        
-      </div>
-    
-
   </div>
 </div>
 
@@ -1066,6 +1272,8 @@ Manually Entering Data Let&rsquo;s assume you had the following data on five stu
 
     
     
+    <script id="dsq-count-scr" src="//statisticalconditioning.disqus.com/count.js" async></script>
+    
 
     
     <script async defer src="//maps.googleapis.com/maps/api/js?key=AIzaSyBNrEFFN9mUmRs4enTvhQdfXz8TrVGZmII"></script>
@@ -1082,17 +1290,6 @@ Manually Entering Data Let&rsquo;s assume you had the following data on five stu
     
 
     
-    
-      
-      
-      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
-      
-
-      
-
-      
-
-      <script>hljs.initHighlightingOnLoad();</script>
     
 
     

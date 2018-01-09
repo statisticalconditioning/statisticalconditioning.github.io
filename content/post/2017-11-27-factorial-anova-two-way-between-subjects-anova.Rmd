@@ -1,0 +1,155 @@
+---
+title: 'Factorial Anova: Two-Way Between Subjects ANOVA'
+draft: true
+author: William Murrah
+date: '2017-11-27'
+tags:
+  - ERMA7300
+slug: factorial-anova-two-way-between-subjects-anova
+---
+
+```{r}
+library(knitr)
+library(AMCP)
+library(car)
+library(pander)
+library(ztable)
+library(emmeans)
+library(tidyverse)
+
+opts_chunk$set(echo = TRUE, comment = NULL, highlight = FALSE)
+options(ztable.type = "html")
+options(scipen=1, digits=3)
+
+data(C7T5)
+df <- within(C7T5, {
+  Feedback <- factor(Feedback)
+  Drug     <- factor(Drug)
+})
+
+```
+
+# ANOVA
+
+Some text.
+
+```{r}
+mod <- lm(Score ~ Feedback*Drug, df)
+summary(mod)
+```
+
+
+```{r, results = 'asis'}
+avmod <- aov(mod)
+summary(avmod)
+```
+
+# Other stuff
+
+
+```{r}
+emmeans(mod, "Drug")
+```
+```{r}
+emmeans(mod, "Feedback")
+```
+
+```{r}
+emmip(mod, Feedback ~ Drug)
+```
+
+
+```{r}
+emmip(mod, Drug ~ Feedback)
+```
+
+
+```{r}
+emmod <- emmeans(mod, pairwise ~ Drug)
+emmod
+```
+
+More text.
+
+{{% alert note %}}
+Can this note contain `code`
+{{% /alert %}}
+
+## another Example
+
+```{r}
+n = 25
+Beta_0 = 70 # 80
+Beta_tx = 10 # 9
+Beta_sch = 15 # 15
+Beta_ab = -12 # -12
+
+Tx <- rep(c(0, 1, 0, 1), each = n)
+Sch <- rep(c(0, 1), each = 2*n)
+set.seed(20171024)
+y <- Beta_0 + Beta_tx*Tx + Beta_sch*Sch + Beta_ab*Tx*Sch + rnorm(2*n, 0, 15)
+df <- data.frame(y = round(y, 1), 
+                 Tx = factor(Tx, labels = c("control", "treatment")), 
+                 Sch = factor(Sch, labels = c("public", "private")))
+```
+
+
+```{r}
+df %>% 
+  group_by(Tx) %>% 
+  summarise(Mean_y = mean(y),
+            SD_y = sd(y))
+```
+
+```{r}
+df %>% 
+  group_by(Sch) %>% 
+  summarise(mean_y = mean(y),
+            SD_y = sd(y))
+```
+
+```{r}
+mod <- lm(y ~ Tx*Sch, df)
+summary(mod)
+anova(mod)
+```
+
+```{r}
+emmeans(mod, "Sch")
+```
+
+```{r}
+pmmip(mod, Tx ~ Sch)  + ylim(0, 100)
+```
+
+```{r}
+pmmip(mod, Sch ~ Tx)  + ylim(0, 100)
+```
+
+
+## Controling Familywise Alpha level in Factorial ANOVA
+
+## Measuring Effects
+
+
+$$
+R^2_{\text{partial}} = \frac{SS_{\text{effect}}}{SS_W + SS_{\text{effect}}}
+$$
+
+$$
+R^2_{\text{A,partial}} = \frac{SS_A}{SS_W + SS_A}
+$$
+$$
+R^2_{\text{AB, partial}} = \frac{SS_{AB}}{SS_W + SS_{AB}}
+$$
+
+For type of drug:
+
+$$
+R^2_{\text{drug,partial}} = \frac{SS_{\text{drug}}}{SS_W + SS_{\text{drug}}} = \frac{3420}{3738 + 3420} = 0.48
+$$
+## Follow-up Analyses
+
+### Futher Main Effects Analyses
+
+### Exploring Interactions with Simple Effects

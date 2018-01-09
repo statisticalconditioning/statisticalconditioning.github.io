@@ -9,10 +9,10 @@ preserveTaxonomyNames = true
 paginate = 10
 
 # Enable comments by entering your Disqus shortname
-disqusShortname = ""
+disqusShortname = "statisticalconditioning"
 
 # Enable analytics by entering your Google Analytics tracking ID
-googleAnalytics = ""
+googleAnalytics = "UA-36666113-2"
 
 # Default language to use (if you setup multilingual support)
 defaultContentLanguage = "en"
@@ -41,8 +41,8 @@ defaultContentLanguageInSubdir = false
   #   Separate multiple entries with a comma, using the form: `[ {name="Org1", url=""}, {name="Org2", url=""} ]`.
   organizations = [ { name = "Auburn University", url = "https://auburn.edu" } ]
 
-  gravatar = true  # Get your avatar from Gravatar.com? (true/false)
-  avatar = "portrait.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
+  gravatar = false  # Get your avatar from Gravatar.com? (true/false)
+  avatar = "thinker.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
   email = "wmm0017@auburn.edu"
   address = "4064 Haley Center Auburn AL, 36489, USA"
   office_hours = "Tuesday 3-5, Wednesday 2-4 or email for appointment"
@@ -105,9 +105,9 @@ defaultContentLanguageInSubdir = false
   #
   #   For more info on the highlighting options, see:
   #   https://sourcethemes.com/academic/post/writing-markdown-latex/#highlighting-options
-  highlight = true
+  highlight = false
   highlight_languages = []
-   highlight_style = "github"
+   highlight_style = "solarized-dark"
 
   # Enable native social sharing buttons?
   sharing = true

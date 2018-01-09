@@ -1,0 +1,12 @@
+---
+title: Contrasts
+author: "William Murrah"
+date:
+slug:
+categories: []
+tags: ["ERMA7300", "ERMA7310"]  
+---
+
+# Paired Comparisons
+
+# Planned Contrasts

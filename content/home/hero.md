@@ -25,6 +25,6 @@ weight = 3
   label = '<i class="fa fa-question-circle"></i> Start Here'
 +++
 
-A website to promote statistical reasoning through the practice of statistical programming.
+Reasoning with `code`.
 
 
