@@ -1,0 +1,19 @@
+---
+title: Modeling the World
+author: William Murrah
+draft: true
+date: []
+slug: modeling-the-world
+categories: []
+tags: ["ERMA7300", "ERMA7310", "ERMA8320", "ERMA8340"]
+---
+
+The world is extremely complicated. Science is a sytematic means of understanding the world
+
+## Theories, Models, and Hypotheses
+
+
+
+## The Data Generating Process 
+
+The data generating process (GDP)

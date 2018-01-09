@@ -41,6 +41,8 @@ Welcome! The purpose of this site it to serve as a repository for exercises usef
 
 This site is aimed at supplementing -- but not replacing -- formal statistical training. Returning to the fitness analogy, you could walk into a gym and use the equipment with no understanding of the correct technique. At best this could be inefficient; at worst, it could lead to injury. Likewise, to best use this site you need some formal training in statistics. Statistical concepts can be complex and are not always intuitive. So, mastering the basics of statistics requires active practice using the concepts and procedures taught in the classroom. Indeed, one reason for creating this site it to use as a resource supplementing my own teaching.
 
+This site may also be valuable to those who have been taught to use SPSS, but who want to learn to use R. Many of the computer examples will be demonstrated in both SPSS and R. 
+
 # Software
 
 I currently teach basic statistics courses in SPSS. While SPSS is relatively easy to learn for simple statistical procedures, it has some very real limitations. First, it is extremely expensive. While many university pay for licenses that make SPSS available to students and faculty, this program is not always available after students graduate. Second, SPSS is closed source. So if you want to know what is going on "under the hood", you are mostly out of luck. Third, SPSS is not very flexible. If you want to do anything that is not in the SPSS menu, and you haven't learned to use the very cryptic syntax of SPSS, you are again out of luck.
