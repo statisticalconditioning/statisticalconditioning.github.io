@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ERMA8320 on Statistical Conditioning</title>
+    <link>/tags/erma8320/</link>
+    <description>Recent content in ERMA8320 on Statistical Conditioning</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 William Murrah</copyright>
+    <lastBuildDate>Wed, 10 Jan 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/erma8320/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Modeling, Model Comparison,  and the General Linear Model</title>
+      <link>/post/modeling-glm/</link>
+      <pubDate>Wed, 10 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/modeling-glm/</guid>
+      <description>In this post I present a brief overview of a model comparison approach to the general linear model. The goal is to establish a framework to understand basic statistical methods including \(t\) tests, analysis of variance, and linear regression. This framework and the example data are from Maxwell, Delaney, and Kelly (2018). Follow this link to find information on this textbook and the accompanying website. Both are excellent, but the text is somewhat advanced for those just learning statistical methods.</description>
+    </item>
+    
+    <item>
+      <title>ERMA 8320: Design and Analysis III</title>
+      <link>/project/da3/</link>
+      <pubDate>Mon, 16 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/project/da3/</guid>
+      <description> Course Description Course Objectives Upon completion of this course, the student will be able to:
+Relevant Posts by Unit 0-Introduction 1-Review </description>
+    </item>
+    
+    <item>
+      <title>Modeling the World</title>
+      <link>/post/modeling-the-world/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/post/modeling-the-world/</guid>
+      <description>The world is extremely complicated. Science is a sytematic means of understanding the world
+Theories, Models, and Hypotheses  The Data Generating Process The data generating process (GDP)
+ </description>
+    </item>
+    
+  </channel>
+</rss>

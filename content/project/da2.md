@@ -9,11 +9,11 @@ title = "ERMA 7310: Design and Analysis II"
 summary = "ERMA 7310 page"
 
 # Optional image to display on homepage (relative to `static/img/` folder).
-image_preview = "background.jpg"
+image_preview = "linear.jpg"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
-tags = ["ERMA7310"]
+tags = ["ERMA7310", "course"]
 
 # Courses: ERMA coures numer
 courses = ["ERMA7310"]

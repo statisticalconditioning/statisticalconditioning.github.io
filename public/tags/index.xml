@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Statistical Conditioning</title>
+    <link>/tags/</link>
+    <description>Recent content in Tags on Statistical Conditioning</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 William Murrah</copyright>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Content tagged as &#39;Academic&#39;</title>
+      <link>/tags/academic/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/academic/</guid>
+      <description>Here is a list of all the content that has been tagged as academic.</description>
+    </item>
+    
+    <item>
+      <title>Course</title>
+      <link>/tags/course/</link>
+      <pubDate>Mon, 16 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/course/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ERMA7300</title>
+      <link>/tags/erma7300/</link>
+      <pubDate>Wed, 10 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/erma7300/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ERMA7310</title>
+      <link>/tags/erma7310/</link>
+      <pubDate>Wed, 10 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/erma7310/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ERMA8320</title>
+      <link>/tags/erma8320/</link>
+      <pubDate>Wed, 10 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/erma8320/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ERMA8340</title>
+      <link>/tags/erma8340/</link>
+      <pubDate>Wed, 10 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/erma8340/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Measurementerror</title>
+      <link>/tags/measurementerror/</link>
+      <pubDate>Thu, 10 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/measurementerror/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>/tags/r/</link>
+      <pubDate>Sun, 22 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Research</title>
+      <link>/tags/research/</link>
+      <pubDate>Thu, 10 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/research/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SPSS</title>
+      <link>/tags/spss/</link>
+      <pubDate>Sun, 22 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/spss/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Valencia</title>
+      <link>/tags/valencia/</link>
+      <pubDate>Thu, 10 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/valencia/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

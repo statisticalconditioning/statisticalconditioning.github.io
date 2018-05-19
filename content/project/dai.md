@@ -13,9 +13,9 @@ image_preview = "background.jpg"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
-tags = ["ERMA7300"]
+tags = ["ERMA7300", "course"]
 
-# Courses: ERMA coures numer
+# Courses: ERMA coures number
 courses = ["ERMA7300"]
 
 # Optional external URL for project (replaces project detail page).

@@ -5,6 +5,24 @@
     
     <url>
     
+      <loc>/project/measurementerror/</loc>
+      <lastmod>2018-05-10T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/project/valencia/</loc>
+      <lastmod>2018-05-10T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/post/modeling-glm/</loc>
       <lastmod>2018-01-10T00:00:00+00:00</lastmod>
     </url>
@@ -86,6 +104,15 @@
     
     <url>
     
+      <loc>/project/da3/</loc>
+      <lastmod>2017-10-16T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/post/central-tendency/</loc>
       <lastmod>2017-09-04T00:00:00+00:00</lastmod>
     </url>
@@ -112,8 +139,6 @@
     
     
     <url>
-    
-      <xhtml:link rel="alternate" href="/courses/erma7300/" hreflang="en"/>
     
       <loc>/courses/erma7300/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
@@ -142,6 +167,16 @@
     
     <url>
     
+      <loc>/tags/course/</loc>
+      <lastmod>2017-10-16T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/courses/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -154,18 +189,6 @@
     
       <loc>/tags/erma7300/</loc>
       <lastmod>2018-01-10T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <xhtml:link rel="alternate" href="/courses/erma7300/" hreflang="en"/>
-    
-      <loc>/courses/erma7300/</loc>
-      <lastmod>2017-10-22T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -224,6 +247,24 @@
     
     <url>
     
+      <loc>/tags/measurementerror/</loc>
+      <lastmod>2018-05-10T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/post/modeling-the-world/</loc>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/units/programming/</loc>
       <lastmod>2017-10-22T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -235,7 +276,7 @@
     <url>
     
       <loc>/project/</loc>
-      <lastmod>2017-10-16T00:00:00+00:00</lastmod>
+      <lastmod>2018-05-10T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -246,6 +287,24 @@
     
       <loc>/tags/r/</loc>
       <lastmod>2017-10-22T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/post/regression-analysis-with-auxiliary-variables/</loc>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/tags/research/</loc>
+      <lastmod>2018-05-10T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -286,6 +345,16 @@
     
       <loc>/units/</loc>
       <lastmod>2017-10-22T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/tags/valencia/</loc>
+      <lastmod>2018-05-10T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     

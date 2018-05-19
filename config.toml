@@ -1,6 +1,6 @@
 baseurl = "/"  # End your URL with a `/` trailing slash, e.g. `https://example.com/`.
 title = "Statistical Conditioning"
-copyright = "&copy; 2017 William Murrah"
+copyright = "&copy; 2018 William Murrah"
 theme = "hugo-academic"
 enableEmoji = true
 footnotereturnlinkcontents = "<sup>^</sup>"
@@ -173,8 +173,8 @@ defaultContentLanguageInSubdir = false
 
 
 # Navigation Links
-#   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
-#     desired widget in your `content/home/` folder.
+#   To link a homepage widget, specify the URL as a hash `#` followed by the
+#   filename of the desired widget in your `content/home/` folder.
 #   The weight parameter defines the order that the links will appear in.
 
 [[menu.main]]
@@ -196,12 +196,17 @@ defaultContentLanguageInSubdir = false
   name = "Teaching"
   url = "#teaching"
   weight = 5
+  
+[[menu.main]]
+  name = "Research"
+  url = "#research"
+  weight = 6  
 
 [[menu.main]]
   name = "Contact"
   url = "#contact"
-  weight = 6
-
+  weight = 7
+  
 # Taxonomies.
 # courses = ["ERMA7300", "ERMA7310", "ERMA8320", "ERMA8340"]
 [taxonomies]

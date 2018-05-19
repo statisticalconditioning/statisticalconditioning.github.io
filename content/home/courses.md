@@ -1,6 +1,6 @@
 +++
 # Projects widget.
-# This widget displays all projects from `content/course/`.
+# This widget displays all projects from `content/project/`.
 
 date = "2016-04-20T00:00:00"
 draft = false
@@ -27,24 +27,24 @@ filter_default = 0
 # To remove toolbar, delete/comment all instances of `[[filter]]` below.
 [[filter]]
   name = "All"
-  tag = "*"
-  
-[[filter]]
-  name = "Design and Analysis I"
-  course = "ERMA 7300"
-  
-[[filter]]  
-  name = "Design and Analysis II"
-  course = "ERMA 7310"
-  
-[[filter]]
-  name = "Design and Analysis III"
-  course = "ERMA 8320"
+  tag = ".course"
 
 [[filter]]
-  name = "Other"
-  tag = ".demo"
+  name = "Design and Analysis I"
+  tag = ".ERMA7300"
+
+[[filter]]
+  name = "Design and Analysis II"
+  tag = ".ERMA7310"
+
+[[filter]]
+  name = "Design and Analysis III"
+  tag = ".ERMA8320"
+  
+# [[filter]]
+#   name = "Other"
+#   tag = ".demo"
 
 +++
 
-Courses for which I use this site.
+Select a course for further information.

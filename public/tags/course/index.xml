@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Course on Statistical Conditioning</title>
+    <link>/tags/course/</link>
+    <description>Recent content in Course on Statistical Conditioning</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 William Murrah</copyright>
+    <lastBuildDate>Mon, 16 Oct 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/course/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ERMA 7300: Design and Analysis I</title>
+      <link>/project/dai/</link>
+      <pubDate>Mon, 16 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/project/dai/</guid>
+      <description>Course Description Basic methods of descriptive and inferential analysis including t-tests, between and within subjects ANOVA, mixed ANOVAs, hierarchical designs and chi-square tests as they are utilized in educational research. Emphasis is placed on developing a solid foundation in statistical reasoning, including the assumptions, limitations, and common mistakes in using statistical methods.
+Course Objectives Upon completion of this course, the student will be able to:
+ explain the process of hypothesis testing and apply it to research problems identify different types of research designs and variables found in published articles describe the strengths and limitations of different research designs identify applications of a wide variety of statistical procedures solve educational research problems using statistical tests of significance make accurate interpretations of statistical findings use data analysis software (SPSS) to solve statistical problems review published research literature to examine the application of measurement, design, and analysis procedures prepare a written summary of data analysis results in APA format  Relevant Posts by Unit 0-Introduction 1-Visualizing and Describing Data Central Tendency</description>
+    </item>
+    
+    <item>
+      <title>ERMA 7310: Design and Analysis II</title>
+      <link>/project/da2/</link>
+      <pubDate>Mon, 16 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/project/da2/</guid>
+      <description> Course Description Course Objectives Upon completion of this course, the student will be able to:
+Relevant Posts by Unit 0-Introduction 1-Review </description>
+    </item>
+    
+    <item>
+      <title>ERMA 8320: Design and Analysis III</title>
+      <link>/project/da3/</link>
+      <pubDate>Mon, 16 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/project/da3/</guid>
+      <description> Course Description Course Objectives Upon completion of this course, the student will be able to:
+Relevant Posts by Unit 0-Introduction 1-Review </description>
+    </item>
+    
+  </channel>
+</rss>

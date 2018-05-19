@@ -1,0 +1,1654 @@
+<!DOCTYPE html>
+<!-- saved from url=(0084)https://support.rstudio.com/hc/en-us/articles/206382178?version=1.1.447&mode=desktop -->
+<html dir="ltr" lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <!-- v13963 -->
+  <title>Customizing Keyboard Shortcuts – RStudio Support</title>
+
+  <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="gLpVUoApGx6t51MFkoULrKMe0LC6LQ4sDr2XWWfBnjfMvBr2zpx3ZAYqf6ELgYKOgY3MviUeIWDyfr7ueifWXA==">
+  <meta name="description" content="Customizing Keyboard Shortcuts  You can now customize keyboard shortcuts in RStudio -- you can bind keys to execute RStudio application..."><meta property="og:image" content="https://p14.zdassets.com/hc/settings_assets/267570/200010388/rkDkGNxu4jw8m34BjrkuJQ-RStudio-Logo-White_small.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RStudio Support">
+<meta property="og:title" content="Customizing Keyboard Shortcuts">
+<meta property="og:description" content="Customizing Keyboard Shortcuts
+You can now customize keyboard shortcuts in RStudio -- you can bind keys to execute RStudio application commands, editor commands, or (using RStudio Addins) even use...">
+<meta property="og:url" content="http://support.rstudio.com/hc/en-us/articles/206382178-Customizing-Keyboard-Shortcuts">
+<link rel="canonical" href="https://support.rstudio.com/hc/en-us/articles/206382178-Customizing-Keyboard-Shortcuts">
+<link rel="alternate" hreflang="en" href="https://support.rstudio.com/hc/en-us/articles/206382178-Customizing-Keyboard-Shortcuts">
+
+  <!-- Entypo pictograms by Daniel Bruce — www.entypo.com -->
+  <link rel="stylesheet" media="all" href="./Customizing Keyboard Shortcuts – RStudio Support_files/application-1bb1012613988b6129cdc3cec950bdd9.css" id="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./Customizing Keyboard Shortcuts – RStudio Support_files/style-99f69fc48b013864345bd8493d9dbcd7.css">
+
+  <link rel="shortcut icon" type="image/x-icon" href="https://p14.zdassets.com/hc/settings_assets/267570/200010388/ixVGUo6FXUvP0pmrxYHiWw-rstudio.png">
+
+  <!--[if lt IE 9]>
+  <script>
+    //Enable HTML5 elements for <IE9
+    'abbr article aside audio bdi canvas data datalist details dialog \
+    figcaption figure footer header hgroup main mark meter nav output \
+    progress section summary template time video'.replace(/\w+/g,function(n){document.createElement(n)});
+  </script>
+<![endif]-->
+
+  <script type="text/javascript" defer="" async="">let isCwZExtension = true;</script><script async="" src="./Customizing Keyboard Shortcuts – RStudio Support_files/analytics.js"></script><script src="./Customizing Keyboard Shortcuts – RStudio Support_files/jquery-b60ddb79ff2563b75442a6bac88b00b5.js"></script>
+  <script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-20375833-11', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+  
+  
+
+  <!-- add code here that should appear in the document head -->
+<script src="./Customizing Keyboard Shortcuts – RStudio Support_files/run_prettify.js"></script>
+  <script type="text/javascript" src="./Customizing Keyboard Shortcuts – RStudio Support_files/script-99f69fc48b013864345bd8493d9dbcd7.js"></script>
+<script src="./Customizing Keyboard Shortcuts – RStudio Support_files/answerBot.js"></script><script type="text/javascript" charset="utf-8" async="" src="./Customizing Keyboard Shortcuts – RStudio Support_files/SubscriptionControls-bc822735cfdb63b4cb8f73b7535fcf59.js"></script><style type="text/css">.backpack.dropzone {
+  font-family: 'SF UI Display', 'Segoe UI';
+  font-size: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 150px;
+  font-weight: lighter;
+  color: white;
+  will-change: right;
+  z-index: 2147483647;
+  bottom: 20%;
+  background: #333;
+  position: fixed;
+  user-select: none;
+  transition: left .5s, right .5s;
+  right: 0px; }
+  .backpack.dropzone .animation {
+    height: 80px;
+    width: 250px;
+    background: url("chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/assets/backpack/dropzone/hoverstate.png") left center; }
+  .backpack.dropzone .title::before {
+    content: 'Save to'; }
+  .backpack.dropzone.closed {
+    right: -250px; }
+  .backpack.dropzone.hover .animation {
+    animation: sxt-play-anim-hover 0.91s steps(21);
+    animation-fill-mode: forwards;
+    background: url("chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/assets/backpack/dropzone/hoverstate.png") left center; }
+
+@keyframes sxt-play-anim-hover {
+  from {
+    background-position: 0px; }
+  to {
+    background-position: -5250px; } }
+  .backpack.dropzone.saving .title::before {
+    content: 'Saving to'; }
+  .backpack.dropzone.saving .animation {
+    background: url("chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/assets/backpack/dropzone/saving_loop.png") left center;
+    animation: sxt-play-anim-saving steps(59) 2.46s infinite; }
+
+@keyframes sxt-play-anim-saving {
+  100% {
+    background-position: -14750px; } }
+  .backpack.dropzone.saved .title::before {
+    content: 'Saved to'; }
+  .backpack.dropzone.saved .animation {
+    background: url("chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/assets/backpack/dropzone/saved.png") left center;
+    animation: sxt-play-anim-saved steps(20) 0.83s forwards; }
+
+@keyframes sxt-play-anim-saved {
+  100% {
+    background-position: -5000px; } }
+</style></head>
+<body class="community-enabled">
+  
+  
+
+
+  
+
+
+  <header class="header">
+
+  <!--This should be added at the very top -->
+  <!-- commenting out for now because we only want this on the Community pages
+ <div class="alertbox"></div>   -->
+  
+  <div class="header-inner clearfix">
+    <div class="logo"><a title="Home" href="https://support.rstudio.com/hc/en-us">
+      <img src="./Customizing Keyboard Shortcuts – RStudio Support_files/rkDkGNxu4jw8m34BjrkuJQ-RStudio-Logo-White_small.png" alt="Logo">
+    </a></div>
+    <h2 style="
+    margin-top: 28px;
+    margin-left: 20px;
+    color: white;
+    float: left;
+    font-size: 2.3em;
+    text-shadow: 0 1px 0 #000000
+    ">Support</h2>
+    <nav class="user-nav">
+      
+      <a class="submit-a-request" href="https://support.rstudio.com/hc/en-us/requests/new">Premium support</a>
+        <a class="login" data-auth-action="signin" role="button" href="https://support.rstudio.com/hc/en-us/signin?return_to=https%3A%2F%2Fsupport.rstudio.com%2Fhc%2Fen-us%2Farticles%2F206382178%3Fversion%3D1.1.447%26mode%3Ddesktop&amp;locale=1">Sign in</a>
+
+    </nav>
+  </div>
+</header>
+
+  <main role="main">
+    <nav class="sub-nav sub-nav-far clearfix">
+  <ol class="breadcrumbs">
+  
+    <li title="RStudio Support">
+      
+        <a href="https://support.rstudio.com/hc/en-us">RStudio Support</a>
+      
+    </li>
+  
+    <li title="Documentation">
+      
+        <a href="https://support.rstudio.com/hc/en-us/categories/200035113-Documentation">Documentation</a>
+      
+    </li>
+  
+    <li title="Using the RStudio IDE">
+      
+        <a href="https://support.rstudio.com/hc/en-us/sections/200107586-Using-the-RStudio-IDE">Using the RStudio IDE</a>
+      
+    </li>
+  
+</ol>
+
+  <form role="search" class="search-small" data-search="" action="https://support.rstudio.com/hc/en-us/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="✓"><input type="search" name="query" id="query" placeholder="Search" aria-label="Search"></form>
+</nav>
+
+<div class="clearfix">
+
+  <article class="main-column">
+
+    <header class="article-header clearfix">
+      <h1> Customizing Keyboard Shortcuts</h1>
+      <div class="article-metadata">
+        <div class="article-avatar"><img src="./Customizing Keyboard Shortcuts – RStudio Support_files/Screen_Shot_2014-05-16_at_10.37.14_AM.png" alt="Avatar"></div>
+        <div class="article-author">
+          Kevin Ushey
+        </div>
+        <div class="article-updated"><time datetime="2018-05-10T17:05:24Z" title="2018-05-10 12:05" data-datetime="calendar">Thursday at 12:05</time></div>
+      </div>
+      <a class="article-subscribe" title="Opens a sign-in dialog" rel="nofollow" role="button" data-auth-action="signin" aria-selected="false" href="https://support.rstudio.com/hc/en-us/articles/206382178-Customizing-Keyboard-Shortcuts/subscription">Follow</a>
+    </header>
+
+    <div class="article-body">
+      <h2>Customizing Keyboard Shortcuts</h2>
+<p>You can now customize keyboard shortcuts in RStudio -- you can bind keys to execute RStudio application commands, editor commands, or (using <a href="https://rstudio.github.io/rstudioaddins/" target="_blank">RStudio Addins</a>) even user-defined R functions.</p>
+<p>Access the keyboard shortcuts by clicking&nbsp;<code>Tools -&gt; Modify Keyboard Shortcuts...</code>:</p>
+<p><img src="./Customizing Keyboard Shortcuts – RStudio Support_files/modify.png" alt="" width="570" height="215"></p>
+<p>You will then see the set of available editor commands (commands that affect the current&nbsp;document's contents, or the current selection), alongside RStudio commands (commands whose actions are scoped beyond just the current editor).</p>
+<p><img src="./Customizing Keyboard Shortcuts – RStudio Support_files/Screen Shot 2015-07-31 at 12.49.32 PM.png" alt="" width="560" height="454"></p>
+<p>Each row represents a particular command binding -- the command's <strong>Name</strong>, the keyboard <strong>Shortcut</strong> it is bound to, and the <strong>Scope</strong> where that binding is active.</p>
+<p>You can modify a command's shortcut by clicking on the cell containing the current shortcut key sequence, and typing the new sequence you'd like to bind the command to. As you type, the current row will be marked to show that the binding has been updated, and the shortcut field will be updated based on the keys entered.</p>
+<p><img src="./Customizing Keyboard Shortcuts – RStudio Support_files/Screen Shot 2015-07-31 at 12.52.59 PM.png" alt="" width="568" height="459">&nbsp;</p>
+<p>If you made a mistake, you can press <code>Backspace</code> to clear a single key combination, or <code>Delete</code>&nbsp;to reset that binding to the&nbsp;original value it had when the widget was opened.</p>
+<p>Commands&nbsp;can be either a single 'key chord'; for example, <code>Ctrl+Alt+F</code>, or also to&nbsp;a sequence of keys, as in <code>Ctrl+X Ctrl+F</code>.</p>
+<p>You can also filter, based on the names of commands, by typing within the <code>Filter...</code> search box at the top left, to more easily find commands of interest:</p>
+<p><img src="./Customizing Keyboard Shortcuts – RStudio Support_files/Screen Shot 2015-07-31 at 12.55.42 PM.png" alt="" width="567" height="456"></p>
+<p>After you've updated the bindings to your liking, click <code>Apply</code> and the shortcuts will be applied to the current session and saved for future sessions.</p>
+<h2>Handling Conflicts</h2>
+<p>By default, RStudio application command bindings will override editor command bindings. If an editor command and an RStudio command are both bound to the same key sequence, the RStudio command will take precedence and the editor command will not be executed. Editor commands&nbsp;that are masked by an RStudio command will be crossed out and have a small icon showing the masking command:</p>
+<p><img src="./Customizing Keyboard Shortcuts – RStudio Support_files/masked.png" alt="" width="564" height="391"></p>
+<p>If two commands are bound to the same key sequence, then that conflict will be highlighted and displayed in yellow.</p>
+<p><img src="./Customizing Keyboard Shortcuts – RStudio Support_files/conflict.png" alt="" width="561" height="391"></p>
+<h2>Saving and Loading</h2>
+<p>The RStudio keybindings are saved as JSON files in the directory <code>~/.R/rstudio/keybindings/</code> -- you can find the bindings for the editor and RStudio itself at:</p>
+<pre>&nbsp; &nbsp; ~/.R/rstudio/keybindings/rstudio_commands.json
+&nbsp; &nbsp; ~/.R/rstudio/keybindings/editor_commands.json</pre>
+<hr>
+<p>Questions? Comments? Suggestions? Please get in touch at <a href="http://support.rstudio.com/" target="_blank">RStudio Support</a>.</p>
+<p>-Kevin</p>
+    </div>
+
+    <div class="article-attachments">
+      <ul class="attachments">
+        
+      </ul>
+    </div>
+
+    <footer class="article-footer clearfix">
+      
+        <div class="article-vote">
+          <span class="article-vote-question">Was this article helpful?</span>
+          <div class="article-vote-controls">
+            <a role="button" rel="nofollow" class="article-vote-up" title="Yes" aria-selected="false" data-auth-action="signin" href="https://support.rstudio.com/hc/en-us/signin?return_to=https%3A%2F%2Fsupport.rstudio.com%2Fhc%2Fen-us%2Farticles%2F206382178-Customizing-Keyboard-Shortcuts"></a>
+            <a role="button" rel="nofollow" class="article-vote-down" title="No" aria-selected="false" data-auth-action="signin" href="https://support.rstudio.com/hc/en-us/signin?return_to=https%3A%2F%2Fsupport.rstudio.com%2Fhc%2Fen-us%2Farticles%2F206382178-Customizing-Keyboard-Shortcuts"></a>
+          </div>
+          <small class="article-vote-count">
+            <span class="article-vote-label">5 out of 6 found this helpful</span>
+          </small>
+        </div>
+      
+      <ul class="share">
+  <li><a href="https://www.facebook.com/share.php?title=Customizing+Keyboard+Shortcuts&amp;u=https%3A%2F%2Fsupport.rstudio.com%2Fhc%2Fen-us%2Farticles%2F206382178-Customizing-Keyboard-Shortcuts" class="share-facebook">Facebook</a></li>
+  <li><a href="https://twitter.com/share?lang=en&amp;text=Customizing+Keyboard+Shortcuts&amp;url=https%3A%2F%2Fsupport.rstudio.com%2Fhc%2Fen-us%2Farticles%2F206382178-Customizing-Keyboard-Shortcuts" class="share-twitter">Twitter</a></li>
+  <li><a href="https://www.linkedin.com/shareArticle?mini=true&amp;source=RStudio+Support&amp;title=Customizing+Keyboard+Shortcuts&amp;url=https%3A%2F%2Fsupport.rstudio.com%2Fhc%2Fen-us%2Farticles%2F206382178-Customizing-Keyboard-Shortcuts" class="share-linkedin">LinkedIn</a></li>
+  <li><a href="https://plus.google.com/share?hl=en-us&amp;url=https%3A%2F%2Fsupport.rstudio.com%2Fhc%2Fen-us%2Farticles%2F206382178-Customizing-Keyboard-Shortcuts" class="share-googleplus">Google+</a></li>
+</ul>
+
+    </footer>
+<!--
+    <div class="article-more-questions">
+      Have more questions? <a href="/hc/en-us/requests/new">Submit a request</a>
+    </div>
+-->
+    <section class="article-comments">
+      <h2>Comments</h2>
+      
+        <ul class="comment-list">
+          
+            <li id="comment_203441608" class="comment">
+              <div class="comment-avatar ">
+                <img src="./Customizing Keyboard Shortcuts – RStudio Support_files/a355b304344f016b0602ce69bee63002" alt="Avatar">
+              </div>
+              <div class="comment-container">
+                <header class="comment-header">
+                  <strong class="comment-author">
+                    
+                      Gregory Dougherty
+                    
+                  </strong>
+                  <span class="comment-published"><time datetime="2015-08-13T19:46:54Z" title="2015-08-13 14:46" data-datetime="calendar">August 13, 2015 14:46</time></span>
+                  
+                </header>
+                <div class="comment-body markdown"><p>How do I set a keybinding for a menu command?  IOW I want F2 to do Cut, F3 to do Copy, and F4 to do Paste.  I want to continue to allow cmd-X/C/V to continue to work as well.  Is this possible in RStudio?</p>
+</div>
+                
+                <footer class="comment-footer">
+                  <span class="comment-actions">
+                    
+                    
+  <span class="dropdown">
+    <span class="dropdown-toggle"></span>
+    <span class="dropdown-menu" role="menu">
+      
+      
+      
+      <a role="menuitem" rel="nofollow" data-action="show-permalink" href="https://support.rstudio.com/hc/en-us/articles/206382178/comments/203441608">Permalink</a>
+      
+    </span>
+  </span>
+
+
+                  </span>
+                </footer>
+              </div>
+            </li>
+          
+            <li id="comment_204691947" class="comment">
+              <div class="comment-avatar  comment-avatar-agent ">
+                <img src="./Customizing Keyboard Shortcuts – RStudio Support_files/Screen_Shot_2014-05-16_at_10.37.14_AM.png" alt="Avatar">
+              </div>
+              <div class="comment-container">
+                <header class="comment-header">
+                  <strong class="comment-author">
+                    
+                      Kevin Ushey
+                    
+                  </strong>
+                  <span class="comment-published"><time datetime="2015-08-19T17:12:10Z" title="2015-08-19 12:12" data-datetime="calendar">August 19, 2015 12:12</time></span>
+                  
+                </header>
+                <div class="comment-body markdown"><p>Hi Gregory,</p>
+
+<p>We currently don't allow users to rebind Cut / Copy / Paste, primarily due to some difficulties in getting this to work cross-platform and cross-browser. I'll see if this is something we can accommodate this in a future release.</p>
+
+<p>Thanks,<br>
+Kevin</p>
+</div>
+                
+                <footer class="comment-footer">
+                  <span class="comment-actions">
+                    
+                    
+  <span class="dropdown">
+    <span class="dropdown-toggle"></span>
+    <span class="dropdown-menu" role="menu">
+      
+      
+      
+      <a role="menuitem" rel="nofollow" data-action="show-permalink" href="https://support.rstudio.com/hc/en-us/articles/206382178/comments/204691947">Permalink</a>
+      
+    </span>
+  </span>
+
+
+                  </span>
+                </footer>
+              </div>
+            </li>
+          
+            <li id="comment_204704837" class="comment">
+              <div class="comment-avatar ">
+                <img src="./Customizing Keyboard Shortcuts – RStudio Support_files/bfebec52e714b9799ca5126e072de0db.jpeg" alt="Avatar">
+              </div>
+              <div class="comment-container">
+                <header class="comment-header">
+                  <strong class="comment-author">
+                    
+                      Alain Content
+                    
+                  </strong>
+                  <span class="comment-published"><time datetime="2015-08-30T14:04:23Z" title="2015-08-30 09:04" data-datetime="calendar">August 30, 2015 09:04</time></span>
+                  
+                </header>
+                <div class="comment-body markdown"><p>Is it possible to assign shortcuts to user scripts ?</p>
+</div>
+                
+                <footer class="comment-footer">
+                  <span class="comment-actions">
+                    
+                    
+  <span class="dropdown">
+    <span class="dropdown-toggle"></span>
+    <span class="dropdown-menu" role="menu">
+      
+      
+      
+      <a role="menuitem" rel="nofollow" data-action="show-permalink" href="https://support.rstudio.com/hc/en-us/articles/206382178/comments/204704837">Permalink</a>
+      
+    </span>
+  </span>
+
+
+                  </span>
+                </footer>
+              </div>
+            </li>
+          
+            <li id="comment_204726327" class="comment">
+              <div class="comment-avatar ">
+                <img src="./Customizing Keyboard Shortcuts – RStudio Support_files/6403b404828051397b81a5b9f99b65c9" alt="Avatar">
+              </div>
+              <div class="comment-container">
+                <header class="comment-header">
+                  <strong class="comment-author">
+                    
+                      Alexander Martin Loewi
+                    
+                  </strong>
+                  <span class="comment-published"><time datetime="2015-09-08T20:05:29Z" title="2015-09-08 15:05" data-datetime="calendar">September 08, 2015 15:05</time></span>
+                  
+                </header>
+                <div class="comment-body markdown"><p>I haven't been able to get Ctrl+P, "Move Upwards One Line," to work (an extremely important command to me, with bad wrist problems, and heavily dependent on keyboard navigation). I re-assigned Jump Between Brackets (which masks Ctrl+P), and then it gets un-crossed-out just fine -- but the command itself still doesn't work, even though it shows up in the .json. OTHER remappings are okay -- I reassigned Ctrl+G to be "Go To Line ..." and had no problems. Any help would be greatly appreciated.<br>
+Best,</p>
+</div>
+                
+                <footer class="comment-footer">
+                  <span class="comment-actions">
+                    
+                    
+  <span class="dropdown">
+    <span class="dropdown-toggle"></span>
+    <span class="dropdown-menu" role="menu">
+      
+      
+      
+      <a role="menuitem" rel="nofollow" data-action="show-permalink" href="https://support.rstudio.com/hc/en-us/articles/206382178/comments/204726327">Permalink</a>
+      
+    </span>
+  </span>
+
+
+                  </span>
+                </footer>
+              </div>
+            </li>
+          
+            <li id="comment_204752297" class="comment">
+              <div class="comment-avatar ">
+                <img src="./Customizing Keyboard Shortcuts – RStudio Support_files/12d8406bf4203200eaa9ba88329b5d6b.jpeg" alt="Avatar">
+              </div>
+              <div class="comment-container">
+                <header class="comment-header">
+                  <strong class="comment-author">
+                    
+                      Michał Bojanowski
+                    
+                  </strong>
+                  <span class="comment-published"><time datetime="2015-09-15T07:50:24Z" title="2015-09-15 02:50" data-datetime="calendar">September 15, 2015 02:50</time></span>
+                  
+                </header>
+                <div class="comment-body markdown"><p>Oh yes! Thank you for that!</p>
+
+<p>The following RStudio keyboard shortcuts are not usable when writing in Polish:  Ctrl+Alt+[a,c,e,n,o,s,z,x] as AltGr = Ctrl + LeftAlt. See <a href="https://en.wikipedia.org/wiki/AltGr_key#Polish" rel="nofollow noreferrer">https://en.wikipedia.org/wiki/AltGr_key#Polish</a>, and also google-translated Polish version <a href="https://pl.wikipedia.org/wiki/AltGr" rel="nofollow noreferrer">https://pl.wikipedia.org/wiki/AltGr</a></p>
+</div>
+                
+                <footer class="comment-footer">
+                  <span class="comment-actions">
+                    
+                    
+  <span class="dropdown">
+    <span class="dropdown-toggle"></span>
+    <span class="dropdown-menu" role="menu">
+      
+      
+      
+      <a role="menuitem" rel="nofollow" data-action="show-permalink" href="https://support.rstudio.com/hc/en-us/articles/206382178/comments/204752297">Permalink</a>
+      
+    </span>
+  </span>
+
+
+                  </span>
+                </footer>
+              </div>
+            </li>
+          
+            <li id="comment_204752387" class="comment">
+              <div class="comment-avatar  comment-avatar-agent ">
+                <img src="./Customizing Keyboard Shortcuts – RStudio Support_files/Screen_Shot_2014-05-16_at_10.37.14_AM.png" alt="Avatar">
+              </div>
+              <div class="comment-container">
+                <header class="comment-header">
+                  <strong class="comment-author">
+                    
+                      Kevin Ushey
+                    
+                  </strong>
+                  <span class="comment-published"><time datetime="2015-09-15T11:49:33Z" title="2015-09-15 06:49" data-datetime="calendar">September 15, 2015 06:49</time></span>
+                  
+                </header>
+                <div class="comment-body markdown"><p>Hi Alain,</p>
+
+<p>Mapping keyboard shortcuts to user scripts is something we have in the pipeline, but we haven't yet completed that work. Stay tuned!</p>
+
+<p>Best,<br>
+Kevin</p>
+</div>
+                
+                <footer class="comment-footer">
+                  <span class="comment-actions">
+                    
+                    
+  <span class="dropdown">
+    <span class="dropdown-toggle"></span>
+    <span class="dropdown-menu" role="menu">
+      
+      
+      
+      <a role="menuitem" rel="nofollow" data-action="show-permalink" href="https://support.rstudio.com/hc/en-us/articles/206382178/comments/204752387">Permalink</a>
+      
+    </span>
+  </span>
+
+
+                  </span>
+                </footer>
+              </div>
+            </li>
+          
+            <li id="comment_203494818" class="comment">
+              <div class="comment-avatar  comment-avatar-agent ">
+                <img src="./Customizing Keyboard Shortcuts – RStudio Support_files/Screen_Shot_2014-05-16_at_10.37.14_AM.png" alt="Avatar">
+              </div>
+              <div class="comment-container">
+                <header class="comment-header">
+                  <strong class="comment-author">
+                    
+                      Kevin Ushey
+                    
+                  </strong>
+                  <span class="comment-published"><time datetime="2015-09-15T11:51:31Z" title="2015-09-15 06:51" data-datetime="calendar">September 15, 2015 06:51</time></span>
+                  
+                </header>
+                <div class="comment-body markdown"><p>Hi Alexander,</p>
+
+<p>Thanks for reporting! This is a bug, and it should be fixed in the latest daily versions of RStudio -- if you have a chance, would you be willing to give it a try?</p>
+
+<p><a href="https://dailies.rstudio.com/" rel="nofollow noreferrer">https://dailies.rstudio.com/</a></p>
+
+<p>Alternatively, you can try turning on Emacs keybindings (available at <code>Tools</code> -&gt; <code>Global Options...</code> -&gt; <code>Code</code> -&gt; <code>Editing</code>, which should ensure that <code>Ctrl+P</code> is appropriately mapped.</p>
+
+<p>Thanks,<br>
+Kevin</p>
+</div>
+                
+                <footer class="comment-footer">
+                  <span class="comment-actions">
+                    
+                    
+  <span class="dropdown">
+    <span class="dropdown-toggle"></span>
+    <span class="dropdown-menu" role="menu">
+      
+      
+      
+      <a role="menuitem" rel="nofollow" data-action="show-permalink" href="https://support.rstudio.com/hc/en-us/articles/206382178/comments/203494818">Permalink</a>
+      
+    </span>
+  </span>
+
+
+                  </span>
+                </footer>
+              </div>
+            </li>
+          
+            <li id="comment_203495308" class="comment">
+              <div class="comment-avatar ">
+                <img src="./Customizing Keyboard Shortcuts – RStudio Support_files/6403b404828051397b81a5b9f99b65c9" alt="Avatar">
+              </div>
+              <div class="comment-container">
+                <header class="comment-header">
+                  <strong class="comment-author">
+                    
+                      Alexander Martin Loewi
+                    
+                  </strong>
+                  <span class="comment-published"><time datetime="2015-09-15T18:49:14Z" title="2015-09-15 13:49" data-datetime="calendar">September 15, 2015 13:49</time></span>
+                  
+                </header>
+                <div class="comment-body markdown"><p>Hi Kevin,</p>
+
+<p>Thanks a ton for the help.</p>
+
+<p>In the new build I can use Ctrl+P fine, but suddenly 'Up' doesn't work, and I only have one spot to map Move Upwards (instead of two from an earlier build, which allowed both Up AND Ctrl+P).</p>
+
+<p>But Emacs mode works great (thanks for the tip), and it plays well with the other custom bindings.</p>
+
+<p>Thanks again -- I've been waiting for this feature for a long time.</p>
+</div>
+                
+                <footer class="comment-footer">
+                  <span class="comment-actions">
+                    
+                    
+  <span class="dropdown">
+    <span class="dropdown-toggle"></span>
+    <span class="dropdown-menu" role="menu">
+      
+      
+      
+      <a role="menuitem" rel="nofollow" data-action="show-permalink" href="https://support.rstudio.com/hc/en-us/articles/206382178/comments/203495308">Permalink</a>
+      
+    </span>
+  </span>
+
+
+                  </span>
+                </footer>
+              </div>
+            </li>
+          
+            <li id="comment_203495338" class="comment">
+              <div class="comment-avatar  comment-avatar-agent ">
+                <img src="./Customizing Keyboard Shortcuts – RStudio Support_files/Screen_Shot_2014-05-16_at_10.37.14_AM.png" alt="Avatar">
+              </div>
+              <div class="comment-container">
+                <header class="comment-header">
+                  <strong class="comment-author">
+                    
+                      Kevin Ushey
+                    
+                  </strong>
+                  <span class="comment-published"><time datetime="2015-09-15T19:05:45Z" title="2015-09-15 14:05" data-datetime="calendar">September 15, 2015 14:05</time></span>
+                  
+                </header>
+                <div class="comment-body markdown"><p>Hi Alexander,</p>
+
+<p>Thanks for the bug report! I'll see what's going on and whether we can improve the situation here. Worst case scenario, you should be able to reset your keybindings (<code>Ctrl-P</code> is a default 'fall-back' keybinding for move up) so it should be restored following that (after which you can move 'jumpToMatching' out of the way).</p>
+
+<p>Best,<br>
+Kevin</p>
+</div>
+                
+                <footer class="comment-footer">
+                  <span class="comment-actions">
+                    
+                    
+  <span class="dropdown">
+    <span class="dropdown-toggle"></span>
+    <span class="dropdown-menu" role="menu">
+      
+      
+      
+      <a role="menuitem" rel="nofollow" data-action="show-permalink" href="https://support.rstudio.com/hc/en-us/articles/206382178/comments/203495338">Permalink</a>
+      
+    </span>
+  </span>
+
+
+                  </span>
+                </footer>
+              </div>
+            </li>
+          
+            <li id="comment_204783437" class="comment">
+              <div class="comment-avatar ">
+                <img src="./Customizing Keyboard Shortcuts – RStudio Support_files/91a3a4cef08c38efe7069ecdaebff4f4.jpeg" alt="Avatar">
+              </div>
+              <div class="comment-container">
+                <header class="comment-header">
+                  <strong class="comment-author">
+                    
+                      Valerio Biscione
+                    
+                  </strong>
+                  <span class="comment-published"><time datetime="2015-10-05T14:01:52Z" title="2015-10-05 09:01" data-datetime="calendar">October 05, 2015 09:01</time></span>
+                  
+                </header>
+                <div class="comment-body markdown"><p>Hi Kevin,<br>
+Is there any way to customize debugging shortcut?</p>
+</div>
+                
+                <footer class="comment-footer">
+                  <span class="comment-actions">
+                    
+                    
+  <span class="dropdown">
+    <span class="dropdown-toggle"></span>
+    <span class="dropdown-menu" role="menu">
+      
+      
+      
+      <a role="menuitem" rel="nofollow" data-action="show-permalink" href="https://support.rstudio.com/hc/en-us/articles/206382178/comments/204783437">Permalink</a>
+      
+    </span>
+  </span>
+
+
+                  </span>
+                </footer>
+              </div>
+            </li>
+          
+            <li id="comment_204784807" class="comment">
+              <div class="comment-avatar  comment-avatar-agent ">
+                <img src="./Customizing Keyboard Shortcuts – RStudio Support_files/Screen_Shot_2014-05-16_at_10.37.14_AM.png" alt="Avatar">
+              </div>
+              <div class="comment-container">
+                <header class="comment-header">
+                  <strong class="comment-author">
+                    
+                      Kevin Ushey
+                    
+                  </strong>
+                  <span class="comment-published"><time datetime="2015-10-06T13:08:20Z" title="2015-10-06 08:08" data-datetime="calendar">October 06, 2015 08:08</time></span>
+                  
+                </header>
+                <div class="comment-body markdown"><p>Hi Valerio,</p>
+
+<p>Unfortunately, the debugging shortcuts are not yet customizable -- I've filed an issue for our development team and we'll see what we can do down the road.</p>
+
+<p>Best,<br>
+Kevin</p>
+</div>
+                
+                <footer class="comment-footer">
+                  <span class="comment-actions">
+                    
+                    
+  <span class="dropdown">
+    <span class="dropdown-toggle"></span>
+    <span class="dropdown-menu" role="menu">
+      
+      
+      
+      <a role="menuitem" rel="nofollow" data-action="show-permalink" href="https://support.rstudio.com/hc/en-us/articles/206382178/comments/204784807">Permalink</a>
+      
+    </span>
+  </span>
+
+
+                  </span>
+                </footer>
+              </div>
+            </li>
+          
+            <li id="comment_204785087" class="comment">
+              <div class="comment-avatar ">
+                <img src="./Customizing Keyboard Shortcuts – RStudio Support_files/a355b304344f016b0602ce69bee63002" alt="Avatar">
+              </div>
+              <div class="comment-container">
+                <header class="comment-header">
+                  <strong class="comment-author">
+                    
+                      Gregory Dougherty
+                    
+                  </strong>
+                  <span class="comment-published"><time datetime="2015-10-06T16:09:49Z" title="2015-10-06 11:09" data-datetime="calendar">October 06, 2015 11:09</time></span>
+                  
+                </header>
+                <div class="comment-body markdown"><p>Hi Kevin,</p>
+
+<p>Any news on getting Cut Copy Paste support?  That's one of my absolute "must haves" for a development environment, so I'm really hoping RStudio can add it.</p>
+
+<p>Thank you,<br>
+Greg</p>
+</div>
+                
+                <footer class="comment-footer">
+                  <span class="comment-actions">
+                    
+                    
+  <span class="dropdown">
+    <span class="dropdown-toggle"></span>
+    <span class="dropdown-menu" role="menu">
+      
+      
+      
+      <a role="menuitem" rel="nofollow" data-action="show-permalink" href="https://support.rstudio.com/hc/en-us/articles/206382178/comments/204785087">Permalink</a>
+      
+    </span>
+  </span>
+
+
+                  </span>
+                </footer>
+              </div>
+            </li>
+          
+            <li id="comment_204126788" class="comment">
+              <div class="comment-avatar ">
+                <img src="./Customizing Keyboard Shortcuts – RStudio Support_files/4aae5e20f8d660188b68ffa4c973fced" alt="Avatar">
+              </div>
+              <div class="comment-container">
+                <header class="comment-header">
+                  <strong class="comment-author">
+                    
+                      Filipescorrea
+                    
+                  </strong>
+                  <span class="comment-published"><time datetime="2015-12-16T17:09:38Z" title="2015-12-16 12:09" data-datetime="calendar">December 16, 2015 12:09</time></span>
+                  
+                </header>
+                <div class="comment-body markdown"><p>Hi Kevin,</p>
+
+<p>After a while all my keyboard shortcuts stopped to work. I didn't do anything to change any configuration. Could it be any bug with the new released version? I have tryied to reinstall RStudio but I kept with the same problem, even after erasing the all the files in "%localappdata%\RStudio-Desktop". </p>
+
+<p>Best, </p>
+
+<p>Filipe</p>
+</div>
+                
+                  <div class="comment-edited meta">
+                    Edited by Filipescorrea <time datetime="2015-12-16T17:10:13Z" title="2015-12-16 12:10" data-datetime="relative">2 years ago</time>
+                  </div>
+                
+                <footer class="comment-footer">
+                  <span class="comment-actions">
+                    
+                    
+  <span class="dropdown">
+    <span class="dropdown-toggle"></span>
+    <span class="dropdown-menu" role="menu">
+      
+      
+      
+      <a role="menuitem" rel="nofollow" data-action="show-permalink" href="https://support.rstudio.com/hc/en-us/articles/206382178/comments/204126788">Permalink</a>
+      
+    </span>
+  </span>
+
+
+                  </span>
+                </footer>
+              </div>
+            </li>
+          
+            <li id="comment_204393498" class="comment">
+              <div class="comment-avatar ">
+                <img src="./Customizing Keyboard Shortcuts – RStudio Support_files/76eb38db3f71a213443ecf3f9df915f7.jpeg" alt="Avatar">
+              </div>
+              <div class="comment-container">
+                <header class="comment-header">
+                  <strong class="comment-author">
+                    
+                      robertob
+                    
+                  </strong>
+                  <span class="comment-published"><time datetime="2016-01-23T21:26:04Z" title="2016-01-23 16:26" data-datetime="calendar">January 23, 2016 16:26</time></span>
+                  
+                </header>
+                <div class="comment-body markdown"><p>Is the ask by @Valerio above pertaining to Debug menu options?</p>
+<p>If so then i 2nd that ask because i wanted to customize all the debug run keyboard shortcuts to align with my vstudio experience so i could move between vstudio and rstudio using same debugging keys.</p>
+<p>I'm finding i cannot customize any of those menu options in order to achieve that result.&nbsp; If it makes a difference i&nbsp;would be fine if initially support for this was provided by having to manually add entries %userprofile%\Documents\.R\rstudio\keybindings | editor_bindings.json or rstudio_bindings.json</p>
+<p>Also any work on the backlog to have keyboard shortcut customizations displayed in menus after you restart rstudio so you are shown current keyboard shortcuts in effect and not the defaults?</p></div>
+                
+                  <div class="comment-edited meta">
+                    Edited by robertob <time datetime="2016-01-23T21:38:40Z" title="2016-01-23 16:38" data-datetime="relative">2 years ago</time>
+                  </div>
+                
+                <footer class="comment-footer">
+                  <span class="comment-actions">
+                    
+                    
+  <span class="dropdown">
+    <span class="dropdown-toggle"></span>
+    <span class="dropdown-menu" role="menu">
+      
+      
+      
+      <a role="menuitem" rel="nofollow" data-action="show-permalink" href="https://support.rstudio.com/hc/en-us/articles/206382178/comments/204393498">Permalink</a>
+      
+    </span>
+  </span>
+
+
+                  </span>
+                </footer>
+              </div>
+            </li>
+          
+            <li id="comment_204393518" class="comment">
+              <div class="comment-avatar ">
+                <img src="./Customizing Keyboard Shortcuts – RStudio Support_files/76eb38db3f71a213443ecf3f9df915f7.jpeg" alt="Avatar">
+              </div>
+              <div class="comment-container">
+                <header class="comment-header">
+                  <strong class="comment-author">
+                    
+                      robertob
+                    
+                  </strong>
+                  <span class="comment-published"><time datetime="2016-01-23T21:31:51Z" title="2016-01-23 16:31" data-datetime="calendar">January 23, 2016 16:31</time></span>
+                  
+                </header>
+                <div class="comment-body markdown"><p>fyi</p>
+<p>with my windows 10 environment i was looking for&nbsp;customized keyboard shortcut settings&nbsp;under&nbsp;%appdata%/Rstudio and %localappdata%/RStudio-Desktop and couldn't find any&nbsp;rstudio_commands.json or editor_commands.json files there.&nbsp;&nbsp;</p>
+<p>i did find them both under %userprofile%\Documents\.R\rstudio\keybindings.</p></div>
+                
+                  <div class="comment-edited meta">
+                    Edited by robertob <time datetime="2016-01-23T21:36:23Z" title="2016-01-23 16:36" data-datetime="relative">2 years ago</time>
+                  </div>
+                
+                <footer class="comment-footer">
+                  <span class="comment-actions">
+                    
+                    
+  <span class="dropdown">
+    <span class="dropdown-toggle"></span>
+    <span class="dropdown-menu" role="menu">
+      
+      
+      
+      <a role="menuitem" rel="nofollow" data-action="show-permalink" href="https://support.rstudio.com/hc/en-us/articles/206382178/comments/204393518">Permalink</a>
+      
+    </span>
+  </span>
+
+
+                  </span>
+                </footer>
+              </div>
+            </li>
+          
+            <li id="comment_205819437" class="comment">
+              <div class="comment-avatar ">
+                <img src="./Customizing Keyboard Shortcuts – RStudio Support_files/28e69a7a18d299f35877dac82e502886.jpeg" alt="Avatar">
+              </div>
+              <div class="comment-container">
+                <header class="comment-header">
+                  <strong class="comment-author">
+                    
+                      matthewsigal
+                    
+                  </strong>
+                  <span class="comment-published"><time datetime="2016-02-08T17:59:02Z" title="2016-02-08 12:59" data-datetime="calendar">February 08, 2016 12:59</time></span>
+                  
+                </header>
+                <div class="comment-body markdown"><p>I am trying to set a keyboard shortcut for File -&gt; New File -&gt; R Markdown document, but I can't seem to find the listing in the Keyboard Shortcuts dialogue box?  Is there any way to set this shortcut?</p></div>
+                
+                <footer class="comment-footer">
+                  <span class="comment-actions">
+                    
+                    
+  <span class="dropdown">
+    <span class="dropdown-toggle"></span>
+    <span class="dropdown-menu" role="menu">
+      
+      
+      
+      <a role="menuitem" rel="nofollow" data-action="show-permalink" href="https://support.rstudio.com/hc/en-us/articles/206382178/comments/205819437">Permalink</a>
+      
+    </span>
+  </span>
+
+
+                  </span>
+                </footer>
+              </div>
+            </li>
+          
+            <li id="comment_205825567" class="comment">
+              <div class="comment-avatar ">
+                <img src="./Customizing Keyboard Shortcuts – RStudio Support_files/4544493918bc2a76e6e4bea85e59ca91.jpeg" alt="Avatar">
+              </div>
+              <div class="comment-container">
+                <header class="comment-header">
+                  <strong class="comment-author">
+                    
+                      lincolnfrias
+                    
+                  </strong>
+                  <span class="comment-published"><time datetime="2016-02-09T18:21:58Z" title="2016-02-09 13:21" data-datetime="calendar">February 09, 2016 13:21</time></span>
+                  
+                </header>
+                <div class="comment-body markdown"><p>Hi,</p>
+<p>Is it possible to use a shortcut to minimize panels?</p>
+<p>By the way, the shortcuts are great and it awesome to be able to customize them. Congrats!<br><br></p></div>
+                
+                  <div class="comment-edited meta">
+                    Edited by lincolnfrias <time datetime="2016-02-09T18:23:24Z" title="2016-02-09 13:23" data-datetime="relative">2 years ago</time>
+                  </div>
+                
+                <footer class="comment-footer">
+                  <span class="comment-actions">
+                    
+                    
+  <span class="dropdown">
+    <span class="dropdown-toggle"></span>
+    <span class="dropdown-menu" role="menu">
+      
+      
+      
+      <a role="menuitem" rel="nofollow" data-action="show-permalink" href="https://support.rstudio.com/hc/en-us/articles/206382178/comments/205825567">Permalink</a>
+      
+    </span>
+  </span>
+
+
+                  </span>
+                </footer>
+              </div>
+            </li>
+          
+            <li id="comment_205827397" class="comment">
+              <div class="comment-avatar ">
+                <img src="./Customizing Keyboard Shortcuts – RStudio Support_files/7ba689e6e5128845a83303ae562584b3" alt="Avatar">
+              </div>
+              <div class="comment-container">
+                <header class="comment-header">
+                  <strong class="comment-author">
+                    
+                      pmmwaniki06
+                    
+                  </strong>
+                  <span class="comment-published"><time datetime="2016-02-10T06:40:38Z" title="2016-02-10 01:40" data-datetime="calendar">February 10, 2016 01:40</time></span>
+                  
+                </header>
+                <div class="comment-body markdown"><p>Hi,
+<br>Is it possible to create an editor shortcut for inserting %in% into ones code similar to how %&gt;% is inserted with Ctrl-Shift-M</p></div>
+                
+                <footer class="comment-footer">
+                  <span class="comment-actions">
+                    
+                    
+  <span class="dropdown">
+    <span class="dropdown-toggle"></span>
+    <span class="dropdown-menu" role="menu">
+      
+      
+      
+      <a role="menuitem" rel="nofollow" data-action="show-permalink" href="https://support.rstudio.com/hc/en-us/articles/206382178/comments/205827397">Permalink</a>
+      
+    </span>
+  </span>
+
+
+                  </span>
+                </footer>
+              </div>
+            </li>
+          
+            <li id="comment_204787438" class="comment">
+              <div class="comment-avatar ">
+                <img src="./Customizing Keyboard Shortcuts – RStudio Support_files/55dfa3052f4b7ac3f5c7478eb19c58e6" alt="Avatar">
+              </div>
+              <div class="comment-container">
+                <header class="comment-header">
+                  <strong class="comment-author">
+                    
+                      GoDa
+                    
+                  </strong>
+                  <span class="comment-published"><time datetime="2016-02-15T12:20:56Z" title="2016-02-15 07:20" data-datetime="calendar">February 15, 2016 07:20</time></span>
+                  
+                </header>
+                <div class="comment-body markdown"><p>Hi, </p>
+
+<p>I recently updated RStudio for Windows via the RStudio website mainly due to interest in the new features of the most recent version 0.99.878. Unfortunaly after the installation some important hotkeys behave different in the source editor, while they still work in the Console. I.e. </p>
+
+<p>`Ctrl` + `S` starts an "isearch"
+<br>`Ctrl` + `V` jumps to the end of the document</p>
+
+<p>When I enter `Ctrl` + `X` + (`S` or `V`) the hotkeys work as they should. The hotkeys can be costumized, however when I open the Keyboard Sortcuts dialog it shows me the settings for the hotkeys.  Also the cursor has turned to a shiny green rectangle (`insert` isn't activated). </p>
+
+<p>The problems remains after switching the project. Also reinstalling Rstudio 0.99.878 didn't work out. Might I have accidently activated a special editor setting, of which I'm not aware yet?</p>
+
+<p>Thanks,
+<br>David</p></div>
+                
+                <footer class="comment-footer">
+                  <span class="comment-actions">
+                    
+                    
+  <span class="dropdown">
+    <span class="dropdown-toggle"></span>
+    <span class="dropdown-menu" role="menu">
+      
+      
+      
+      <a role="menuitem" rel="nofollow" data-action="show-permalink" href="https://support.rstudio.com/hc/en-us/articles/206382178/comments/204787438">Permalink</a>
+      
+    </span>
+  </span>
+
+
+                  </span>
+                </footer>
+              </div>
+            </li>
+          
+            <li id="comment_204794778" class="comment">
+              <div class="comment-avatar  comment-avatar-agent ">
+                <img src="./Customizing Keyboard Shortcuts – RStudio Support_files/Screen_Shot_2014-05-16_at_10.37.14_AM.png" alt="Avatar">
+              </div>
+              <div class="comment-container">
+                <header class="comment-header">
+                  <strong class="comment-author">
+                    
+                      Kevin Ushey
+                    
+                  </strong>
+                  <span class="comment-published"><time datetime="2016-02-15T20:10:54Z" title="2016-02-15 15:10" data-datetime="calendar">February 15, 2016 15:10</time></span>
+                  
+                </header>
+                <div class="comment-body markdown"><p>Hi David,</p>
+
+<p>It sounds like you've activated Emacs mode -- try going to Tools -&gt; Global Options... -&gt; Code, and change Keybindings from Emacs back to Default.</p>
+
+<p>Thanks,
+<br>Kevin</p></div>
+                
+                <footer class="comment-footer">
+                  <span class="comment-actions">
+                    
+                    
+  <span class="dropdown">
+    <span class="dropdown-toggle"></span>
+    <span class="dropdown-menu" role="menu">
+      
+      
+      
+      <a role="menuitem" rel="nofollow" data-action="show-permalink" href="https://support.rstudio.com/hc/en-us/articles/206382178/comments/204794778">Permalink</a>
+      
+    </span>
+  </span>
+
+
+                  </span>
+                </footer>
+              </div>
+            </li>
+          
+            <li id="comment_205863607" class="comment">
+              <div class="comment-avatar  comment-avatar-agent ">
+                <img src="./Customizing Keyboard Shortcuts – RStudio Support_files/Screen_Shot_2014-05-16_at_10.37.14_AM.png" alt="Avatar">
+              </div>
+              <div class="comment-container">
+                <header class="comment-header">
+                  <strong class="comment-author">
+                    
+                      Kevin Ushey
+                    
+                  </strong>
+                  <span class="comment-published"><time datetime="2016-02-15T20:12:04Z" title="2016-02-15 15:12" data-datetime="calendar">February 15, 2016 15:12</time></span>
+                  
+                </header>
+                <div class="comment-body markdown"><p>Hi pmmwaniki06,</p>
+
+<p>It's now possible to do this through the RStudio Addins system -- please see <a href="https://rstudio.github.io/rstudioaddins/" rel="nofollow noreferrer">https://rstudio.github.io/rstudioaddins/</a> for more details; in particular, this is an addin that implements the behavior you're looking for:</p>
+
+<p><a href="https://github.com/rstudio/addinexamples/blob/master/R/insertInAddin.R" rel="nofollow noreferrer">https://github.com/rstudio/addinexamples/blob/master/R/insertInAddin.R</a></p>
+
+<p>Best,
+<br>Kevin</p></div>
+                
+                <footer class="comment-footer">
+                  <span class="comment-actions">
+                    
+                    
+  <span class="dropdown">
+    <span class="dropdown-toggle"></span>
+    <span class="dropdown-menu" role="menu">
+      
+      
+      
+      <a role="menuitem" rel="nofollow" data-action="show-permalink" href="https://support.rstudio.com/hc/en-us/articles/206382178/comments/205863607">Permalink</a>
+      
+    </span>
+  </span>
+
+
+                  </span>
+                </footer>
+              </div>
+            </li>
+          
+            <li id="comment_204799498" class="comment">
+              <div class="comment-avatar ">
+                <img src="./Customizing Keyboard Shortcuts – RStudio Support_files/55dfa3052f4b7ac3f5c7478eb19c58e6" alt="Avatar">
+              </div>
+              <div class="comment-container">
+                <header class="comment-header">
+                  <strong class="comment-author">
+                    
+                      GoDa
+                    
+                  </strong>
+                  <span class="comment-published"><time datetime="2016-02-17T10:17:21Z" title="2016-02-17 05:17" data-datetime="calendar">February 17, 2016 05:17</time></span>
+                  
+                </header>
+                <div class="comment-body markdown"><p>Hi Kevin,</p>
+
+<p>thanks a lot that was indeed what happend.</p>
+
+<p>All the best,
+<br>David</p></div>
+                
+                <footer class="comment-footer">
+                  <span class="comment-actions">
+                    
+                    
+  <span class="dropdown">
+    <span class="dropdown-toggle"></span>
+    <span class="dropdown-menu" role="menu">
+      
+      
+      
+      <a role="menuitem" rel="nofollow" data-action="show-permalink" href="https://support.rstudio.com/hc/en-us/articles/206382178/comments/204799498">Permalink</a>
+      
+    </span>
+  </span>
+
+
+                  </span>
+                </footer>
+              </div>
+            </li>
+          
+            <li id="comment_206056017" class="comment">
+              <div class="comment-avatar ">
+                <img src="./Customizing Keyboard Shortcuts – RStudio Support_files/cafe1fbdcc27d12caf384951d934919c" alt="Avatar">
+              </div>
+              <div class="comment-container">
+                <header class="comment-header">
+                  <strong class="comment-author">
+                    
+                      Michaël Gras
+                    
+                  </strong>
+                  <span class="comment-published"><time datetime="2016-03-17T11:59:27Z" title="2016-03-17 06:59" data-datetime="calendar">March 17, 2016 06:59</time></span>
+                  
+                </header>
+                <div class="comment-body markdown"><p>Hi Kevin,</p>
+
+<p>I would like to use F5 instead of ctrl+R to run my R code in RStudio. I guess it could be done by a modification of ctrl+R or by creating an alias of ctrl+R. Would you have any idea how I can do that? </p>
+
+<p>Thanks in advance for your help. </p>
+
+<p>Michaël</p></div>
+                
+                <footer class="comment-footer">
+                  <span class="comment-actions">
+                    
+                    
+  <span class="dropdown">
+    <span class="dropdown-toggle"></span>
+    <span class="dropdown-menu" role="menu">
+      
+      
+      
+      <a role="menuitem" rel="nofollow" data-action="show-permalink" href="https://support.rstudio.com/hc/en-us/articles/206382178/comments/206056017">Permalink</a>
+      
+    </span>
+  </span>
+
+
+                  </span>
+                </footer>
+              </div>
+            </li>
+          
+            <li id="comment_204957538" class="comment">
+              <div class="comment-avatar  comment-avatar-agent ">
+                <img src="./Customizing Keyboard Shortcuts – RStudio Support_files/Screen_Shot_2014-05-16_at_10.37.14_AM.png" alt="Avatar">
+              </div>
+              <div class="comment-container">
+                <header class="comment-header">
+                  <strong class="comment-author">
+                    
+                      Kevin Ushey
+                    
+                  </strong>
+                  <span class="comment-published"><time datetime="2016-03-17T16:40:08Z" title="2016-03-17 11:40" data-datetime="calendar">March 17, 2016 11:40</time></span>
+                  
+                </header>
+                <div class="comment-body markdown"><p>Hi Michael,</p>
+
+<p>There is a command called 'Run Current Line or Selection', which is normally bound to 'Cmd + Enter'. You should be able to rebind this to F5, and then typing F5 will executed that command.</p>
+
+<p>Best,
+<br>Kevin</p></div>
+                
+                <footer class="comment-footer">
+                  <span class="comment-actions">
+                    
+                    
+  <span class="dropdown">
+    <span class="dropdown-toggle"></span>
+    <span class="dropdown-menu" role="menu">
+      
+      
+      
+      <a role="menuitem" rel="nofollow" data-action="show-permalink" href="https://support.rstudio.com/hc/en-us/articles/206382178/comments/204957538">Permalink</a>
+      
+    </span>
+  </span>
+
+
+                  </span>
+                </footer>
+              </div>
+            </li>
+          
+            <li id="comment_206057187" class="comment">
+              <div class="comment-avatar ">
+                <img src="./Customizing Keyboard Shortcuts – RStudio Support_files/cafe1fbdcc27d12caf384951d934919c" alt="Avatar">
+              </div>
+              <div class="comment-container">
+                <header class="comment-header">
+                  <strong class="comment-author">
+                    
+                      Michaël Gras
+                    
+                  </strong>
+                  <span class="comment-published"><time datetime="2016-03-17T16:52:40Z" title="2016-03-17 11:52" data-datetime="calendar">March 17, 2016 11:52</time></span>
+                  
+                </header>
+                <div class="comment-body markdown"><p>Hi Kevin,</p>
+
+<p>Thanks for your help, it's done and it works perfectly well. </p>
+
+<p>Regards</p>
+
+<p>Michaël</p></div>
+                
+                <footer class="comment-footer">
+                  <span class="comment-actions">
+                    
+                    
+  <span class="dropdown">
+    <span class="dropdown-toggle"></span>
+    <span class="dropdown-menu" role="menu">
+      
+      
+      
+      <a role="menuitem" rel="nofollow" data-action="show-permalink" href="https://support.rstudio.com/hc/en-us/articles/206382178/comments/206057187">Permalink</a>
+      
+    </span>
+  </span>
+
+
+                  </span>
+                </footer>
+              </div>
+            </li>
+          
+            <li id="comment_204988848" class="comment">
+              <div class="comment-avatar ">
+                <img src="./Customizing Keyboard Shortcuts – RStudio Support_files/avatar-1458825347.jpg" alt="Avatar">
+              </div>
+              <div class="comment-container">
+                <header class="comment-header">
+                  <strong class="comment-author">
+                    
+                      Brice Leclère
+                    
+                  </strong>
+                  <span class="comment-published"><time datetime="2016-03-24T13:08:52Z" title="2016-03-24 08:08" data-datetime="calendar">March 24, 2016 08:08</time></span>
+                  
+                </header>
+                <div class="comment-body markdown"><p>Hi Kevin,</p>
+
+<p>Is it possible to change the '</p></div>
+                
+                <footer class="comment-footer">
+                  <span class="comment-actions">
+                    
+                    
+  <span class="dropdown">
+    <span class="dropdown-toggle"></span>
+    <span class="dropdown-menu" role="menu">
+      
+      
+      
+      <a role="menuitem" rel="nofollow" data-action="show-permalink" href="https://support.rstudio.com/hc/en-us/articles/206382178/comments/204988848">Permalink</a>
+      
+    </span>
+  </span>
+
+
+                  </span>
+                </footer>
+              </div>
+            </li>
+          
+            <li id="comment_205005828" class="comment">
+              <div class="comment-avatar ">
+                <img src="./Customizing Keyboard Shortcuts – RStudio Support_files/2715c442373cf161ac43fe3c4ed6823a" alt="Avatar">
+              </div>
+              <div class="comment-container">
+                <header class="comment-header">
+                  <strong class="comment-author">
+                    
+                      Pierre Gramme
+                    
+                  </strong>
+                  <span class="comment-published"><time datetime="2016-03-30T14:28:41Z" title="2016-03-30 09:28" data-datetime="calendar">March 30, 2016 09:28</time></span>
+                  
+                </header>
+                <div class="comment-body markdown"><p>Hi Kevin and the team,</p>
+
+<p>Maybe a dumb question: on Ubuntu, how can I differentiate between Ctrl and Cmd keys?</p>
+
+<p>I would like to use the standard Ctrl+Y shortcut for "Redo". But when I type it, it gets interpreted as "Insert Yanked Text" (as I guess from the shortcut quick ref).</p>
+
+<p>Can I disable this shortcut for "Insert Yanked Text" even if it's not listed in the dialog box? Can I assign Ctrl+Y to "Redo"?</p>
+
+<p>Thanks
+<br>Pierre</p></div>
+                
+                <footer class="comment-footer">
+                  <span class="comment-actions">
+                    
+                    
+  <span class="dropdown">
+    <span class="dropdown-toggle"></span>
+    <span class="dropdown-menu" role="menu">
+      
+      
+      
+      <a role="menuitem" rel="nofollow" data-action="show-permalink" href="https://support.rstudio.com/hc/en-us/articles/206382178/comments/205005828">Permalink</a>
+      
+    </span>
+  </span>
+
+
+                  </span>
+                </footer>
+              </div>
+            </li>
+          
+            <li id="comment_206135217" class="comment">
+              <div class="comment-avatar  comment-avatar-agent ">
+                <img src="./Customizing Keyboard Shortcuts – RStudio Support_files/Screen_Shot_2014-05-16_at_10.37.14_AM.png" alt="Avatar">
+              </div>
+              <div class="comment-container">
+                <header class="comment-header">
+                  <strong class="comment-author">
+                    
+                      Kevin Ushey
+                    
+                  </strong>
+                  <span class="comment-published"><time datetime="2016-03-30T17:47:28Z" title="2016-03-30 12:47" data-datetime="calendar">March 30, 2016 12:47</time></span>
+                  
+                </header>
+                <div class="comment-body markdown"><p>Hi Pierre,</p>
+
+<p>This is an unfortunate limitation in the current version of RStudio, as the various 'yank' commands are hard-coded to these bindings (and have been for some time). We plan to resolve this for the next release.</p>
+
+<p>Thanks,
+<br>Kevin</p></div>
+                
+                <footer class="comment-footer">
+                  <span class="comment-actions">
+                    
+                    
+  <span class="dropdown">
+    <span class="dropdown-toggle"></span>
+    <span class="dropdown-menu" role="menu">
+      
+      
+      
+      <a role="menuitem" rel="nofollow" data-action="show-permalink" href="https://support.rstudio.com/hc/en-us/articles/206382178/comments/206135217">Permalink</a>
+      
+    </span>
+  </span>
+
+
+                  </span>
+                </footer>
+              </div>
+            </li>
+          
+            <li id="comment_205006728" class="comment">
+              <div class="comment-avatar ">
+                <img src="./Customizing Keyboard Shortcuts – RStudio Support_files/2715c442373cf161ac43fe3c4ed6823a" alt="Avatar">
+              </div>
+              <div class="comment-container">
+                <header class="comment-header">
+                  <strong class="comment-author">
+                    
+                      Pierre Gramme
+                    
+                  </strong>
+                  <span class="comment-published"><time datetime="2016-03-30T21:29:40Z" title="2016-03-30 16:29" data-datetime="calendar">March 30, 2016 16:29</time></span>
+                  
+                </header>
+                <div class="comment-body markdown"><p>Ok, no problem. Thanks for the explanation!
+<br>And about the difference between Ctrl and Cmd: is it only available on a Mac?</p>
+
+<p>Pierre</p></div>
+                
+                <footer class="comment-footer">
+                  <span class="comment-actions">
+                    
+                    
+  <span class="dropdown">
+    <span class="dropdown-toggle"></span>
+    <span class="dropdown-menu" role="menu">
+      
+      
+      
+      <a role="menuitem" rel="nofollow" data-action="show-permalink" href="https://support.rstudio.com/hc/en-us/articles/206382178/comments/205006728">Permalink</a>
+      
+    </span>
+  </span>
+
+
+                  </span>
+                </footer>
+              </div>
+            </li>
+          
+            <li id="comment_206138367" class="comment">
+              <div class="comment-avatar  comment-avatar-agent ">
+                <img src="./Customizing Keyboard Shortcuts – RStudio Support_files/Screen_Shot_2014-05-16_at_10.37.14_AM.png" alt="Avatar">
+              </div>
+              <div class="comment-container">
+                <header class="comment-header">
+                  <strong class="comment-author">
+                    
+                      Kevin Ushey
+                    
+                  </strong>
+                  <span class="comment-published"><time datetime="2016-03-31T22:09:35Z" title="2016-03-31 17:09" data-datetime="calendar">March 31, 2016 17:09</time></span>
+                  
+                </header>
+                <div class="comment-body markdown"><p>Hi Pierre,</p>
+
+<p>The nomenclature here is a bit confusing, unfortunately -- within the keyboard shortcuts dialog, 'Cmd' implies either the 'Ctrl' or 'Meta' keys (for non-Mac systems). We'll look into improving the display of information here.</p>
+
+<p>Best,
+<br>Kevin</p></div>
+                
+                <footer class="comment-footer">
+                  <span class="comment-actions">
+                    
+                    
+  <span class="dropdown">
+    <span class="dropdown-toggle"></span>
+    <span class="dropdown-menu" role="menu">
+      
+      
+      
+      <a role="menuitem" rel="nofollow" data-action="show-permalink" href="https://support.rstudio.com/hc/en-us/articles/206382178/comments/206138367">Permalink</a>
+      
+    </span>
+  </span>
+
+
+                  </span>
+                </footer>
+              </div>
+            </li>
+          
+        </ul>
+      
+      <nav class="pagination">
+  <ul>
+    
+
+    
+      
+        <li class="pagination-current">
+          <span>1</span>
+        </li>
+      
+    
+      
+        <li>
+          <a href="https://support.rstudio.com/hc/en-us/articles/206382178?mode=desktop&amp;page=2&amp;version=1.1.414#comments" rel="next">2</a>
+        </li>
+      
+    
+
+    
+      <li class="pagination-next">
+        <a href="https://support.rstudio.com/hc/en-us/articles/206382178?mode=desktop&amp;page=2&amp;version=1.1.414#comments" rel="next">›</a>
+      </li>
+
+      <li class="pagination-last">
+        <a href="https://support.rstudio.com/hc/en-us/articles/206382178?mode=desktop&amp;page=2&amp;version=1.1.414#comments">»</a>
+      </li>
+    
+  </ul>
+</nav>
+
+      
+    </section>
+
+  </article>
+
+  <aside class="article-sidebar side-column">
+    <section class="recent-articles"><h3>Recently viewed articles</h3><ul><li><a href="https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN">Version Control with Git and SVN</a></li></ul></section>
+    
+  <section class="related-articles">
+    <h3>Related articles</h3>
+    <ul>
+      
+        <li>
+          <a href="https://support.rstudio.com/hc/en-us/related/click?data=BAh7CjobZGVzdGluYXRpb25fYXJ0aWNsZV9pZGkErZ72CzoYcmVmZXJyZXJfYXJ0aWNsZV9pZGkEYiRNDDoLbG9jYWxlSSIKZW4tdXMGOgZFVDoIdXJsSSI0L2hjL2VuLXVzL2FydGljbGVzLzIwMDcxMTg1My1LZXlib2FyZC1TaG9ydGN1dHMGOwhUOglyYW5raQY%3D--63f0fab13274539869eb0d25d6543cb4531ac46f">Keyboard Shortcuts</a>
+        </li>
+      
+        <li>
+          <a href="https://support.rstudio.com/hc/en-us/related/click?data=BAh7CjobZGVzdGluYXRpb25fYXJ0aWNsZV9pZGkEAIKSDDoYcmVmZXJyZXJfYXJ0aWNsZV9pZGkEYiRNDDoLbG9jYWxlSSIKZW4tdXMGOgZFVDoIdXJsSSI6L2hjL2VuLXVzL2FydGljbGVzLzIxMDkyODEyOC1FbWFjcy1FZGl0b3ItS2V5YmluZGluZ3MGOwhUOglyYW5raQc%3D--17cbaa4d2b9cb75f57c73dd27141990ba29759e3">Emacs Editor Keybindings</a>
+        </li>
+      
+        <li>
+          <a href="https://support.rstudio.com/hc/en-us/related/click?data=BAh7CjobZGVzdGluYXRpb25fYXJ0aWNsZV9pZGkEU2ZBDDoYcmVmZXJyZXJfYXJ0aWNsZV9pZGkEYiRNDDoLbG9jYWxlSSIKZW4tdXMGOgZFVDoIdXJsSSI4L2hjL2VuLXVzL2FydGljbGVzLzIwNTYxMjYyNy1EZWJ1Z2dpbmctd2l0aC1SU3R1ZGlvBjsIVDoJcmFua2kI--389b538960ac5f12ebe6c6a6ee455620e04fbed9">Debugging with RStudio</a>
+        </li>
+      
+        <li>
+          <a href="https://support.rstudio.com/hc/en-us/related/click?data=BAh7CjobZGVzdGluYXRpb25fYXJ0aWNsZV9pZGkECcEHDToYcmVmZXJyZXJfYXJ0aWNsZV9pZGkEYiRNDDoLbG9jYWxlSSIKZW4tdXMGOgZFVDoIdXJsSSI9L2hjL2VuLXVzL2FydGljbGVzLzIxODYxMTk3Ny1JbXBvcnRpbmctRGF0YS13aXRoLVJTdHVkaW8GOwhUOglyYW5raQk%3D--80d66dfa542fd342017f79d761de5cd3b1aaa5a2">Importing Data with RStudio</a>
+        </li>
+      
+        <li>
+          <a href="https://support.rstudio.com/hc/en-us/related/click?data=BAh7CjobZGVzdGluYXRpb25fYXJ0aWNsZV9pZGkExCzJDDoYcmVmZXJyZXJfYXJ0aWNsZV9pZGkEYiRNDDoLbG9jYWxlSSIKZW4tdXMGOgZFVDoIdXJsSSJIL2hjL2VuLXVzL2FydGljbGVzLzIxNDUxMDc4OC1TZXR0aW5nLXVwLVItdG8tY29ubmVjdC10by1TUUwtU2VydmVyLQY7CFQ6CXJhbmtpCg%3D%3D--bbf22d67ef154b64380388a37a9a4462bbb06da8">Setting up R to connect to SQL Server </a>
+        </li>
+      
+    </ul>
+  </section>
+
+
+  </aside>
+
+</div>
+  </main>
+
+  <footer class="footer">
+  <div class="footer-inner">
+    <!-- Footer content -->
+  </div>
+</footer>
+
+
+  <!-- / -->
+
+  <script type="text/javascript" src="./Customizing Keyboard Shortcuts – RStudio Support_files/en-us-e1d33f8b1a56dd768508439f596a9f33.js"></script>
+  <script src="./Customizing Keyboard Shortcuts – RStudio Support_files/host.js" data-brand-id="2321856" data-return-to="https://support.rstudio.com/hc/en-us/articles/206382178" data-theme="hc" data-locale="1" data-auth-origin="2321856,true,true"></script>
+  <script type="text/javascript" src="./Customizing Keyboard Shortcuts – RStudio Support_files/zendesk_pci_hc.v4.js"></script>
+
+  <script type="text/javascript">
+  /*
+
+    Greetings sourcecode lurker!
+
+    This is for internal Zendesk and legacy usage,
+    we don't support or guarantee any of these values
+    so please don't build stuff on top of them.
+
+  */
+
+  HelpCenter = {};
+  HelpCenter.account = {"subdomain":"rstudioide","environment":"production","name":"RStudio Support"};
+  HelpCenter.user = {"identifier":"da39a3ee5e6b4b0d3255bfef95601890afd80709","email":null,"name":null,"role":"anonymous","avatar_url":"https://assets.zendesk.com/hc/assets/default_avatar.png","organizations":[],"groups":[]};
+  HelpCenter.internal = {"asset_url":"//p14.zdassets.com/hc/assets/","current_session":{"locale":"en-us","csrf_token":"DWyicDqP+duDXOtOXovKDuCiAqs/F93rnYnryqoxjqtBau3UdDqVoSiRx+rHj0MswjEepaAk8qdhSsJ9t9fGwA==","shared_csrf_token":null},"settings":{"zopim_enabled":true,"spam_filter_enabled":true},"current_record_id":"206382178","current_record_url":"/hc/en-us/articles/206382178-Customizing-Keyboard-Shortcuts","current_record_title":"Customizing Keyboard Shortcuts","search_results_count":null,"current_text_direction":"ltr","current_brand_url":"https://rstudioide.zendesk.com","current_host_mapping":"support.rstudio.com","current_path":"/hc/en-us/articles/206382178-Customizing-Keyboard-Shortcuts","authentication_domain":"https://rstudioide.zendesk.com","show_autocomplete_breadcrumbs":true,"rollbar_config":{"enabled":true,"endpoint":"https://rollbar-us.zendesk.com/api/1/item/","accessToken":"731a5a953e9a4b7ab6cac9623f50c732","captureUncaught":true,"captureUnhandledRejections":true,"payload":{"environment":"production","client":{"javascript":{"source_map_enabled":true,"code_version":null,"guess_uncaught_frames":true}}}},"user_info_changing_enabled":false,"has_user_profiles_enabled":false,"has_anonymous_kb_voting":false,"has_professional_upsell":false,"has_multi_language_help_center":true,"mobile_device":false,"mobile_site_enabled":true,"show_at_mentions":false,"has_copied_content":false,"embeddables_config":{"embeddables_web_widget":false,"embeddables_connect_ipms":false},"base_domain":"zendesk.com","answer_bot_subdomain":"static","plans_url":"https://support.rstudio.com/hc/admin/plan?locale=en-us","manage_content_url":"https://support.rstudio.com/hc/en-us","arrange_content_url":"https://support.rstudio.com/hc/admin/arrange_contents?locale=en-us","general_settings_url":"https://support.rstudio.com/hc/admin/general_settings?locale=en-us","user_segments_url":"https://support.rstudio.com/hc/admin/user_segments?locale=en-us","import_articles_url":"https://support.rstudio.com/hc/admin/import_articles?locale=en-us","has_community_enabled":true,"has_multiselect_field":true,"has_groups":true,"has_internal_sections":true,"has_organizations":true,"has_tag_restrictions":true,"has_answer_bot_enabled_in_classic":true,"has_answer_bot_web_form_enabled":false,"has_close_the_loop_enabled":false,"billing_url":"/access/return_to?return_to=https://rstudioide.zendesk.com/agent/admin/subscription","has_answer_bot":true,"has_guide_docs_importer":true,"has_guide_permission_groups":false,"answer_bot_management_url":"https://support.rstudio.com/hc/admin/answer_bot?locale=en-us","is_account_owner":false,"has_theming_templates":false,"theming_center_url":"https://support.rstudio.com/theming","theming_cookie_key":"hc-da39a3ee5e6b4b0d3255bfef95601890afd80709-preview","is_preview":false};
+</script>
+
+  <script src="./Customizing Keyboard Shortcuts – RStudio Support_files/hc_enduser-794fc3a90ecbd45580216c3b46118046.js"></script>
+  
+
+  <script type="text/javascript">
+    (function() {
+  var Tracker = {};
+
+  Tracker.track = function(eventName, data) {
+    var url = "https://support.rstudio.com/hc/tracking/events?locale=en-us";
+
+    var payload = {
+      "event": eventName,
+      "data": data,
+      "referrer": document.referrer
+    };
+
+    var xhr = new XMLHttpRequest();
+
+    xhr.open("POST", url, true);
+    xhr.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+    xhr.send(JSON.stringify(payload));
+  };
+
+    Tracker.track("article_viewed", "BAh7BzoLbG9jYWxlSSIKZW4tdXMGOgZFVDoPYXJ0aWNsZV9pZGkEYiRNDA==--3ebbf31a7f468ec1bbc21664f94d8ee2b27c5725");
+})();
+
+  </script>
+
+<div><iframe data-reactroot="" id="automaticAnswers" class="zEWidget-automaticAnswers" tabindex="-1" style="border: none; background: transparent; transform: translateZ(0px); position: fixed; opacity: 0; bottom: 0px; margin: 0px 6px 6px 0px; z-index: 2147483647; right: 0px; height: 188px; width: 410px; transition-property: none; transition-timing-function: unset; top: -9999px;" src="./Customizing Keyboard Shortcuts – RStudio Support_files/saved_resource.html"></iframe></div></body></html>
