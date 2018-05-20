@@ -197,8 +197,8 @@
     
     <url>
     
-      <loc>/courses/erma7310/</loc>
-      <lastmod>2017-10-16T00:00:00+00:00</lastmod>
+      <loc>/tags/erma7310/</loc>
+      <lastmod>2018-01-10T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -207,8 +207,8 @@
     
     <url>
     
-      <loc>/tags/erma7310/</loc>
-      <lastmod>2018-01-10T00:00:00+00:00</lastmod>
+      <loc>/courses/erma7310/</loc>
+      <lastmod>2017-10-16T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -257,14 +257,6 @@
     
     <url>
     
-      <loc>/post/modeling-the-world/</loc>
-    </url>
-    
-  
-    
-    
-    <url>
-    
       <loc>/units/programming/</loc>
       <lastmod>2017-10-22T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -288,14 +280,6 @@
       <loc>/tags/r/</loc>
       <lastmod>2017-10-22T00:00:00+00:00</lastmod>
       <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/post/regression-analysis-with-auxiliary-variables/</loc>
     </url>
     
   
