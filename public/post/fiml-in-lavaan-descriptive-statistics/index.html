@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.51" />
+  <meta name="author" content="William M. (Hank) Murrah, III">
+  <meta name="description" content="Assistant Professor of Quantitative Methods">
+
+  
+  
+  
+  
+    
+  
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.1/css/academicons.min.css" integrity="sha512-NThgw3XKQ1absAahW6to7Ey42uycrVvfNfyjqcFNgCmOCQ5AR4AO0SiXrN+8ZtYeappp56lk1WtvjVmEa+VR6A==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+  
+  
+
+
+  
+
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700%7cRoboto:400,400italic,700%7cRoboto&#43;Mono">
+  
+  <link rel="stylesheet" href="/styles.css">
+  
+
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-36666113-2', 'auto');
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+
+  <link rel="alternate" href="" type="application/rss+xml" title="Statistical Conditioning">
+  <link rel="feed" href="" type="application/rss+xml" title="Statistical Conditioning">
+
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
+
+  <link rel="canonical" href="/post/fiml-in-lavaan-descriptive-statistics/">
+
+  
+
+  <title>FIML in Lavaan: Descriptive Statistics | Statistical Conditioning</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <a class="navbar-brand" href="/">Statistical Conditioning</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#about">
+            
+            <span>Home</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#courses">
+            
+            <span>Courses</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#posts">
+            
+            <span>Posts</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#teaching">
+            
+            <span>Teaching</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#research">
+            
+            <span>Research</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#contact">
+            
+            <span>Contact</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+  <div class="article-container">
+    <h1 itemprop="name">FIML in Lavaan: Descriptive Statistics</h1>
+    
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    
+    <time datetime="2018-11-14 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+      Nov 14, 2018
+    </time>
+  </span>
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    7 min read
+  </span>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/post/fiml-in-lavaan-descriptive-statistics/#disqus_thread"></a>
+  
+
+  
+  
+  
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=FIML%20in%20Lavaan%3a%20Descriptive%20Statistics&amp;url=%2fpost%2ffiml-in-lavaan-descriptive-statistics%2f"
+         target="_blank">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=%2fpost%2ffiml-in-lavaan-descriptive-statistics%2f"
+         target="_blank">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fpost%2ffiml-in-lavaan-descriptive-statistics%2f&amp;title=FIML%20in%20Lavaan%3a%20Descriptive%20Statistics"
+         target="_blank">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=%2fpost%2ffiml-in-lavaan-descriptive-statistics%2f&amp;title=FIML%20in%20Lavaan%3a%20Descriptive%20Statistics"
+         target="_blank">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=FIML%20in%20Lavaan%3a%20Descriptive%20Statistics&amp;body=%2fpost%2ffiml-in-lavaan-descriptive-statistics%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+
+<div id="fiml-for-missing-data-in-lavaan" class="section level1">
+<h1>FIML for Missing Data in Lavaan</h1>
+<p>Full information maximum likelihood (FIML) is a modern statistical technique for handling missing data. If you are not familiar with FIML, I would recommend the book entitled <a href="http://www.appliedmissingdata.com/">Applied Missing Data Analysis</a> by Craig Enders. The book is both thorough and accessible, and a good place to start for those not familiar with the ins and outs of modern missing data techniques.</p>
+<p>The purpose of the <strong>FIML in Lavaan</strong> series of posts and the related <a href="https://github.com/wmmurrah/lavaanFIML">git repository</a> is to take some of the examples related to FIML estimation within a regression framework from the Applied Missing Data <a href="http://www.amazon.com/Applied-Missing-Analysis-Methodology-Sciences/dp/1606236393/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1401312750&amp;sr=1-1&amp;keywords=applied%20missing%20data%20analysis">website</a>, and translate them into code for the R package <code>lavaan</code>. The code on the Applied Missing Data website in mostly for Mplus, which is quite expensive software. I hope this will give those who don’t have access to Mplus the ability to work through the examples using free and open source software.</p>
+<p>In this first tutorial I start with the basics: how to get descriptive statistics using FIML. The data and Mplus code for this example can be found on the <a href="http://www.appliedmissingdata.com/book-examples.html">Book Examples</a> page of the Applied Missing Data website. I also created a github repository with the data and R files with equivalent code in <code>lavaan</code>, which can be found <a href="https://github.com/wmmurrah/lavaanFIML">here</a>. Remember to replace the file path in the R code below with the file path to the folder in which you unzip the data files.</p>
+<p>You will also want to read over the <code>lavaan</code> documentation and visit the very helpful <code>lavaan</code> <a href="http://lavaan.org">website</a> to take advantage of the tutorials there. With these resources at your disposal, you should be able to use replicate the examples in <code>lavaan</code>. Here, I walk through the major sections of the R code. This is the same code found in the github repository in the R file entitled <em>FIMLdescriptivesCorrelations.R</em>.</p>
+<div id="header" class="section level2">
+<h2>Header</h2>
+<p>I always include a header with basic information in my code files.</p>
+<pre><code>#***********************************************************************
+# section 4.14 Summary Statistics --------------------------------------
+# Author: William M. Murrah
+# Description: This code replicates the section 4.14 example on the 
+#              the appliedmissingdata.com website, which generates 
+#              descriptive statistics and correlations,
+# Version history ------------------------------------------------------
+# 2014.05.30: code created
+# 2014.06.01: rewrote heading
+#***********************************************************************
+# R packages used
+library(lavaan)</code></pre>
+</div>
+<div id="import-and-prepare-data" class="section level2">
+<h2>Import and prepare data</h2>
+<p>First, import the data into R. MPlus uses <em>.dat</em> files which can only contain numbers. Variable names are not included in the <em>.dat</em> file, but instead are included in the Mplus <em>.inp</em> file. I use the <em>read.table</em> function to read the <em>.dat</em> file.</p>
+<pre><code>    employee &lt;- read.table(&quot;data/employee.dat&quot;)</code></pre>
+<p>Next, I assign names to the variables in the new data frame.</p>
+<pre><code>    # Assign names to variables.
+    names(employee) &lt;- c(&quot;id&quot;, &quot;age&quot;, &quot;tenure&quot;, &quot;female&quot;, &quot;wbeing&quot;, 
+                         &quot;jobsat&quot;, &quot;jobperf&quot;, &quot;turnover&quot;, &quot;iq&quot;)</code></pre>
+<p>The final step in preparing the data is to recode the data values -99, which are used as missing data values in the <em>.dat</em> file, to <code>NA</code>, which is the missing value indicator in R.</p>
+<pre><code>    # Replace all missing values (-99) with R missing value character &#39;NA&#39;.
+    employee[employee==-99] &lt;- NA</code></pre>
+</div>
+<div id="create-model-object" class="section level2">
+<h2>Create Model Object</h2>
+<p>Now that the data are ready, I create a character string with the model using the <code>lavaan</code> syntax. For descriptives and correlations I model the mean, variances, and covariance/correlations.</p>
+<pre><code>    # Create descriptive model object
+    model &lt;- &#39;
+    # means
+    age      ~ 1
+    tenure   ~ 1
+    female   ~ 1
+    wbeing   ~ 1
+    jobsat   ~ 1
+    jobperf  ~ 1
+    turnover ~ 1
+    iq       ~ 1
+    
+    # variances
+    age      ~~ age
+    tenure   ~~ tenure
+    female   ~~ female
+    wbeing   ~~ wbeing
+    jobsat   ~~ jobsat
+    jobperf  ~~ jobperf
+    turnover ~~ turnover
+    iq       ~~ iq
+    
+    # covariances/correlations
+    age      ~~ tenure + female + wbeing + jobsat + jobperf + turnover + iq
+    tenure   ~~ female + wbeing + jobsat + jobperf + turnover + iq
+    female   ~~ wbeing + jobsat + jobperf + turnover + iq
+    wbeing   ~~ jobsat + jobperf + turnover + iq
+    jobsat   ~~ jobperf + turnover + iq
+    jobperf  ~~ turnover + iq
+    turnover ~~ iq
+    &#39;</code></pre>
+</div>
+<div id="fit-the-model" class="section level2">
+<h2>Fit the Model</h2>
+<p>To fit the model, I use the <code>lavaan</code> <em>fit</em> function. This function takes the first two argument model and data. The third argument is <code>missing ='fiml'</code>, which tells lavaan to use FIML (the default is to use listwise deletion).</p>
+<pre><code>    fit &lt;- sem(model, employee, missing=&#39;fiml&#39;)</code></pre>
+<p>Alternatively, you could leave the section of the model code under the <code># means</code> section and use the <code>meanstructure=TRUE</code> argument in the fit function as follows, which give the same results:</p>
+<pre><code>    fit &lt;- sem(model, employee, missing=&#39;fiml&#39;, meanstructure=TRUE)</code></pre>
+</div>
+<div id="generate-output" class="section level2">
+<h2>Generate Output</h2>
+<p>To print the results to the console, use the <code>summary</code> function.</p>
+<pre><code>    summary(fit, fit.measures=TRUE, standardize=TRUE)</code></pre>
+<p>The <code>fit.measures=TRUE</code> calls fit statistics in the output. This should look familiar to those who have used Mplus.</p>
+<pre><code>lavaan (0.5-16) converged normally after 141 iterations
+
+  Number of observations                           480
+
+  Number of missing patterns                         3
+
+  Estimator                                         ML
+  Minimum Function Test Statistic                0.000
+  Degrees of freedom                                 0
+  P-value (Chi-square)                           1.000
+
+Model test baseline model:
+
+  Minimum Function Test Statistic              527.884
+  Degrees of freedom                                28
+  P-value                                        0.000
+
+User model versus baseline model:
+
+  Comparative Fit Index (CFI)                    1.000
+  Tucker-Lewis Index (TLI)                       1.000
+
+Loglikelihood and Information Criteria:
+
+  Loglikelihood user model (H0)              -6621.805
+  Loglikelihood unrestricted model (H1)      -6621.805
+
+  Number of free parameters                         44
+  Akaike (AIC)                               13331.609
+  Bayesian (BIC)                             13515.256
+  Sample-size adjusted Bayesian (BIC)        13375.604
+
+Root Mean Square Error of Approximation:
+
+  RMSEA                                          0.000
+  90 Percent Confidence Interval          0.000  0.000
+  P-value RMSEA &lt;= 0.05                          1.000
+
+Standardized Root Mean Square Residual:
+
+  SRMR                                           0.000</code></pre>
+<p>The <code>standardize=TRUE</code> argument includes columns with standardized output. the <em>std.all</em> column in <code>lavaan</code> output is the same as the <em>STDYX</em> section in Mplus.</p>
+<pre><code>Parameter estimates:
+
+  Information                                 Observed
+  Standard Errors                             Standard
+
+                   Estimate  Std.err  Z-value  P(&gt;|z|)   Std.lv  Std.all
+Covariances:
+  age ~~
+    tenure            8.459    0.858    9.865    0.000    8.459    0.504
+    female           -0.028    0.122   -0.229    0.819   -0.028   -0.010
+    wbeing            1.148    0.334    3.433    0.001    1.148    0.182
+    jobsat            0.861    0.340    2.531    0.011    0.861    0.136
+    jobperf          -0.330    0.308   -1.072    0.284   -0.330   -0.049
+    turnover         -0.377    0.116   -3.255    0.001   -0.377   -0.150
+    iq                0.674    2.066    0.326    0.744    0.674    0.015
+  tenure ~~
+    female           -0.052    0.071   -0.736    0.462   -0.052   -0.034
+    wbeing            0.569    0.195    2.916    0.004    0.569    0.155
+    jobsat            0.565    0.200    2.822    0.005    0.565    0.154
+    jobperf           0.061    0.178    0.344    0.731    0.061    0.016
+    turnover          0.016    0.066    0.240    0.810    0.016    0.011
+    iq                0.026    1.199    0.022    0.983    0.026    0.001
+  female ~~
+    wbeing            0.067    0.031    2.156    0.031    0.067    0.115
+    jobsat            0.028    0.031    0.881    0.378    0.028    0.047
+    jobperf          -0.009    0.029   -0.323    0.747   -0.009   -0.015
+    turnover          0.001    0.011    0.114    0.909    0.001    0.005
+    iq                0.284    0.192    1.481    0.139    0.284    0.068
+  wbeing ~~
+    jobsat            0.446    0.095    4.714    0.000    0.446    0.322
+    jobperf           0.671    0.084    8.030    0.000    0.671    0.456
+    turnover         -0.141    0.030   -4.768    0.000   -0.141   -0.257
+    iq                2.876    0.530    5.430    0.000    2.876    0.291
+  jobsat ~~
+    jobperf           0.271    0.080    3.378    0.001    0.271    0.184
+    turnover         -0.129    0.030   -4.248    0.000   -0.129   -0.234
+    iq                4.074    0.566    7.195    0.000    4.074    0.411
+  jobperf ~~
+    turnover         -0.203    0.028   -7.168    0.000   -0.203   -0.346
+    iq                4.496    0.523    8.588    0.000    4.496    0.426
+  turnover ~~
+    iq               -0.706    0.182   -3.872    0.000   -0.706   -0.180
+
+Intercepts:
+    age              37.948    0.245  154.633    0.000   37.948    7.058
+    tenure           10.054    0.142   70.601    0.000   10.054    3.222
+    female            0.542    0.023   23.817    0.000    0.542    1.087
+    wbeing            6.288    0.062  100.701    0.000    6.288    5.349
+    jobsat            5.950    0.063   94.052    0.000    5.950    5.053
+    jobperf           6.021    0.057  105.262    0.000    6.021    4.805
+    turnover          0.321    0.021   15.058    0.000    0.321    0.687
+    iq              100.102    0.384  260.475    0.000  100.102   11.889
+
+Variances:
+    age              28.908    1.866                     28.908    1.000
+    tenure            9.735    0.628                      9.735    1.000
+    female            0.248    0.016                      0.248    1.000
+    wbeing            1.382    0.107                      1.382    1.000
+    jobsat            1.386    0.108                      1.386    1.000
+    jobperf           1.570    0.101                      1.570    1.000
+    turnover          0.218    0.014                      0.218    1.000
+    iq               70.892    4.576                     70.892    1.000</code></pre>
+<p>Recall that correlations are standardized covariances, so correlations are found in the <em>std.all</em> column in the <em>Covariances</em> section. Also, intercepts are means, and can be interpreted as the FIML means for the variables.</p>
+<p>Finally, to get the missing data patterns and covariance coverage output that can be included in Mplus output use the following code:</p>
+<pre><code>    # Get missing data patterns and covariance coverage similar
+    # to that found in Mplus output.
+    inspect(fit, &#39;patterns&#39;) 
+    inspect(fit, &#39;coverage&#39;)</code></pre>
+<p>which leads to the following output:</p>
+<div id="missing-data-patterns" class="section level3">
+<h3>Missing Data Patterns</h3>
+<pre><code>    age tenure female wbeing jobsat jobprf turnvr iq
+160   1      1      1      1      1      1      1  1
+160   1      1      1      1      0      1      1  1
+160   1      1      1      0      1      1      1  1</code></pre>
+</div>
+<div id="covariance-coverage" class="section level3">
+<h3>Covariance Coverage</h3>
+<pre><code>
+         age   tenure female wbeing jobsat jobprf turnvr iq   
+age      1.000                                                
+tenure   1.000 1.000                                          
+female   1.000 1.000  1.000                                   
+wbeing   0.667 0.667  0.667  0.667                            
+jobsat   0.667 0.667  0.667  0.333  0.667                     
+jobperf  1.000 1.000  1.000  0.667  0.667  1.000              
+turnover 1.000 1.000  1.000  0.667  0.667  1.000  1.000       
+iq       1.000 1.000  1.000  0.667  0.667  1.000  1.000  1.000</code></pre>
+</div>
+</div>
+</div>
+
+    </div>
+
+    
+    
+    
+    <div class="article-tags">
+      
+      <a class="btn btn-primary btn-outline" href="/tags/erma7310">ERMA7310</a>
+      
+      <a class="btn btn-primary btn-outline" href="/tags/erma8340">ERMA8340</a>
+      
+    </div>
+    
+    
+
+  </div>
+
+</article>
+
+
+
+<div class="article-container article-widget">
+  <div class="hr-light"></div>
+  <h3>Related</h3>
+  <ul>
+    
+    <li><a href="/post/modeling-glm/">Modeling, Model Comparison,  and the General Linear Model</a></li>
+    
+    <li><a href="/project/da2/">ERMA 7310: Design and Analysis II</a></li>
+    
+  </ul>
+</div>
+
+
+
+
+<div class="article-container">
+  
+<section id="comments">
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "statisticalconditioning" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="powered-by">
+
+      &copy; 2018 William Murrah &middot; 
+
+      Powered by the <a href="https://github.com/gcushen/hugo-academic" target="_blank">Academic
+      theme</a> for <a href="http://gohugo.io" target="_blank">Hugo</a>.
+
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+    
+
+    
+    
+    <script id="dsq-count-scr" src="//statisticalconditioning.disqus.com/count.js" async></script>
+    
+
+    
+    <script async defer src="//maps.googleapis.com/maps/api/js?key=AIzaSyBNrEFFN9mUmRs4enTvhQdfXz8TrVGZmII"></script>
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gmaps.js/0.4.25/gmaps.min.js" integrity="sha256-7vjlAeb8OaTrCXZkCNun9djzuB2owUsaO72kXaFDBJs=" crossorigin="anonymous"></script>
+    
+    <script src="/js/hugo-academic.js"></script>
+    
+
+    
+    
+
+    
+    
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML" integrity="sha512-tOav5w1OjvsSJzePRtt2uQPFwBoHt1VZcUq8l8nm5284LEKE9FSJBQryzMBzHxY5P0zRdNqEcpLIRVYFNgu1jw==" crossorigin="anonymous"></script>
+    
+    
+
+  </body>
+</html>
+

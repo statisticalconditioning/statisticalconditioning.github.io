@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 William Murrah</copyright>
-    <lastBuildDate>Wed, 10 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 14 Nov 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/erma8340/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>FIML in Lavaan: Descriptive Statistics</title>
+      <link>/post/fiml-in-lavaan-descriptive-statistics/</link>
+      <pubDate>Wed, 14 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/fiml-in-lavaan-descriptive-statistics/</guid>
+      <description>FIML for Missing Data in Lavaan Full information maximum likelihood (FIML) is a modern statistical technique for handling missing data. If you are not familiar with FIML, I would recommend the book entitled Applied Missing Data Analysis by Craig Enders. The book is both thorough and accessible, and a good place to start for those not familiar with the ins and outs of modern missing data techniques.
+The purpose of the FIML in Lavaan series of posts and the related git repository is to take some of the examples related to FIML estimation within a regression framework from the Applied Missing Data website, and translate them into code for the R package lavaan.</description>
+    </item>
     
     <item>
       <title>Modeling, Model Comparison,  and the General Linear Model</title>

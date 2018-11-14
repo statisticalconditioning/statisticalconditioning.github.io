@@ -22,15 +22,6 @@
     </item>
     
     <item>
-      <title>Course</title>
-      <link>/tags/course/</link>
-      <pubDate>Mon, 16 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/course/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>ERMA7300</title>
       <link>/tags/erma7300/</link>
       <pubDate>Wed, 10 Jan 2018 00:00:00 +0000</pubDate>
@@ -42,7 +33,7 @@
     <item>
       <title>ERMA7310</title>
       <link>/tags/erma7310/</link>
-      <pubDate>Wed, 10 Jan 2018 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 14 Nov 2018 00:00:00 +0000</pubDate>
       
       <guid>/tags/erma7310/</guid>
       <description></description>
@@ -60,18 +51,9 @@
     <item>
       <title>ERMA8340</title>
       <link>/tags/erma8340/</link>
-      <pubDate>Wed, 10 Jan 2018 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 14 Nov 2018 00:00:00 +0000</pubDate>
       
       <guid>/tags/erma8340/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Measurementerror</title>
-      <link>/tags/measurementerror/</link>
-      <pubDate>Thu, 10 May 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/measurementerror/</guid>
       <description></description>
     </item>
     
@@ -85,15 +67,6 @@
     </item>
     
     <item>
-      <title>Research</title>
-      <link>/tags/research/</link>
-      <pubDate>Thu, 10 May 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/research/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>SPSS</title>
       <link>/tags/spss/</link>
       <pubDate>Sun, 22 Oct 2017 00:00:00 +0000</pubDate>
@@ -103,7 +76,34 @@
     </item>
     
     <item>
-      <title>Valencia</title>
+      <title>course</title>
+      <link>/tags/course/</link>
+      <pubDate>Mon, 16 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/course/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>measurementerror</title>
+      <link>/tags/measurementerror/</link>
+      <pubDate>Thu, 10 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/measurementerror/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>research</title>
+      <link>/tags/research/</link>
+      <pubDate>Thu, 10 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/research/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>valencia</title>
       <link>/tags/valencia/</link>
       <pubDate>Thu, 10 May 2018 00:00:00 +0000</pubDate>
       
