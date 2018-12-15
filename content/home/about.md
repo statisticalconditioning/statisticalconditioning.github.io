@@ -13,11 +13,7 @@ weight = 5
 
 # About Statistical Thinking 
 
-This site, statistical thinking, is built around the idea that the most important function of statistics is to support scientific reasoning. Statistics should not be taught simply as a menu of procedures to use ritualistically. Statistical procedures, or the software in which they are implemented, are not able to do the thinking required of good science.
-
-
-
-
+This site is built around the idea that the most important use of statistics is to support scientific reasoning. If this is the goal then statistics should not be taught simply as a menu of procedures to use ritualistically. Statistical procedures, or the software in which they are implemented, are not able to do the thinking required of good science. 
 
 Similarly, there are different ways to do statistics.
 Some ways can get you results quickly, but you might not really understand what you did.
@@ -34,8 +30,8 @@ But, a good statistical programming language can allow us to pass off the tediou
 This site demonstrates quantitative methods commonly used in the social sciences, using statistical programming. 
 There are two primary goals for developing these demonstrations.
 
-  1. **Statistical Programming** - First, to help you learn to use a computer to do simple and complex mathematical and statistical computations. That means programming with statistical software. On this site I use R, SPSS, and Mplus.
-  2. **Thinking with Code** - Second, using your statistical programming skills to build an intuitive understanding of  theoretical knowledge emphasized in most formal statistical training.
+  1. **Learning to code** - First, to help you learn to use a computer to do simple and complex mathematical and statistical computations. That means programming with statistical software. On this site I use R, SPSS, and Mplus.
+  2. **Coding to learn** - Second, using your statistical programming skills to build an intuitive understanding of theoretical knowledge emphasized in most formal statistical training.
   
 Speaking of formal statistical training, this site is aimed at supplementing -- but not replacing -- the more traditional modes of learning statistics. 
 Statistical concepts can be complex and are not always intuitive. So, mastering the basics of statistics requires active practice using the concepts and procedures taught in the classroom. Indeed, one reason for creating this site it to use as a resource supplementing my own teaching of statistics.

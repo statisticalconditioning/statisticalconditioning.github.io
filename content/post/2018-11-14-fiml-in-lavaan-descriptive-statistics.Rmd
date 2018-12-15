@@ -95,7 +95,7 @@ Now that the data are ready, I create a character string with the model using th
 ```
 ## Fit the Model
 
-To fit the model, I use the `lavaan` *fit* function. This function takes the first two argument model and data. The third argument is `missing ='fiml'`, which tells lavaan to use FIML (the default is to use listwise deletion).  
+To fit the model, I use the `lavaan` *sem* function. This function takes the first two argument model and data. The third argument is `missing ='fiml'`, which tells lavaan to use FIML (the default is to use listwise deletion).  
 ```    
     fit <- sem(model, employee, missing='fiml')
 ```

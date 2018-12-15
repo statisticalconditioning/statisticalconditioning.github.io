@@ -182,8 +182,25 @@
     
     <url>
     
+      <loc>/post/fiml-regression/</loc>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/categories/import/</loc>
       <lastmod>2017-10-22T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/categories/missing-data/</loc>
       <priority>0</priority>
     </url>
     
