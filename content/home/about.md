@@ -11,14 +11,15 @@ weight = 5
 
 +++
 
-# About Statistical Conditioning 
+# About Statistical Thinking 
 
-This site, statistical conditioning, is built around the idea that learning statistics is a lot like physical conditioning. Just as you can't get fit  by listening to a personal trainer talk about exercises, you can't master statistics by listening to lectures. 
-While lectures are helpful, they are just the beginning. 
-You have to apply what you learn to become proficient with statistical methods.
-With statistics, like many things in life, you learn by doing.
+This site, statistical thinking, is built around the idea that the most important function of statistics is to support scientific reasoning. Statistics should not be taught simply as a menu of procedures to use ritualistically. Statistical procedures, or the software in which they are implemented, are not able to do the thinking required of good science.
 
-But, there are different ways to do statistics.
+
+
+
+
+Similarly, there are different ways to do statistics.
 Some ways can get you results quickly, but you might not really understand what you did.
 Other ways may require more time and effort, but also promote a better understanding.
 The biggest barrier and least appealing aspect of statistics for most people is the math. 
@@ -34,6 +35,10 @@ This site demonstrates quantitative methods commonly used in the social sciences
 There are two primary goals for developing these demonstrations.
 
   1. **Statistical Programming** - First, to help you learn to use a computer to do simple and complex mathematical and statistical computations. That means programming with statistical software. On this site I use R, SPSS, and Mplus.
-  2. **Reasoning with Code** - Second, using your statistical programming skills to build an intuitive understanding of  theoretical knowledge emphasized in most formal statistical training.
+  2. **Thinking with Code** - Second, using your statistical programming skills to build an intuitive understanding of  theoretical knowledge emphasized in most formal statistical training.
   
-Speaking of formal statistical training, this site is aimed at supplementing -- but not replacing -- the more traditional modes of learning statistics. Returning to the fitness analogy, you could walk into a gym and use the equipment with no understanding of the correct technique. At best this could be inefficient; at worst, it could lead to injury. Likewise, to best use this site you need some basic formal training in statistics. Statistical concepts can be complex and are not always intuitive. So, mastering the basics of statistics requires active practice using the concepts and procedures taught in the classroom. Indeed, one reason for creating this site it to use as a resource supplementing my own teaching of statistics.
+Speaking of formal statistical training, this site is aimed at supplementing -- but not replacing -- the more traditional modes of learning statistics. 
+Statistical concepts can be complex and are not always intuitive. So, mastering the basics of statistics requires active practice using the concepts and procedures taught in the classroom. Indeed, one reason for creating this site it to use as a resource supplementing my own teaching of statistics.
+So, while lectures are helpful, they are just the beginning. 
+We have to apply what we learn to become proficient with statistical methods.
+With statistics, like many things in life, we learn by doing.

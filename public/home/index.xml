@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Homes on Statistical Conditioning</title>
+    <title>Homes on Statistical Thinking</title>
     <link>/home/</link>
-    <description>Recent content in Homes on Statistical Conditioning</description>
+    <description>Recent content in Homes on Statistical Thinking</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 William Murrah</copyright>
@@ -13,7 +13,7 @@
     
     
     <item>
-      <title>Statistical Conditioning</title>
+      <title>Statistical Thinking</title>
       <link>/home/hero/</link>
       <pubDate>Sun, 15 Oct 2017 00:00:00 -0500</pubDate>
       
@@ -27,7 +27,8 @@
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>/home/about/</guid>
-      <description>About Statistical Conditioning This site, statistical conditioning, is built around the idea that learning statistics is a lot like physical conditioning. Just as you can&amp;rsquo;t get fit by listening to a personal trainer talk about exercises, you can&amp;rsquo;t master statistics by listening to lectures. While lectures are helpful, they are just the beginning. You have to apply what you learn to become proficient with statistical methods. With statistics, like many things in life, you learn by doing.</description>
+      <description>About Statistical Thinking This site, statistical thinking, is built around the idea that the most important function of statistics is to support scientific reasoning. Statistics should not be taught simply as a menu of procedures to use ritualistically. Statistical procedures, or the software in which they are implemented, are not able to do the thinking required of good science.
+Similarly, there are different ways to do statistics. Some ways can get you results quickly, but you might not really understand what you did.</description>
     </item>
     
     <item>

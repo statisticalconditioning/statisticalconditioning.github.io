@@ -7,6 +7,5 @@ categories: []
 tags: ["ERMA7300"]
 ---
 
-
-**Coming Soon:** How to use this website!
+If you are a visitor to this site who is not taking one of my courses, you can use the site as you would any other site you find on the internet. If you are currently, or have previously enrolled in one of my courses, and want to find information relevant to that course, use the **Courses** tab to find your course, click on it to see the related posts. Note that to date I do not have as many posts and links in place as I hope to in the near future.
 

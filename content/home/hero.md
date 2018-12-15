@@ -4,7 +4,7 @@
 date = 2017-10-15
 draft = false
 
-title = "Statistical Conditioning"
+title = "Statistical Thinking"
 widget = "hero"
 
 # Order that this section will appear in.
