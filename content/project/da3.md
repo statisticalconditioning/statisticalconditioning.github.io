@@ -9,7 +9,7 @@ title = "ERMA 8320: Design and Analysis III"
 summary = "ERMA 7310 page"
 
 # Optional image to display on homepage (relative to `static/img/` folder).
-image_preview = "linear.jpg"
+image_preview = "headers/tripatternwide.png"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
@@ -26,7 +26,7 @@ math = false
 
 # Optional featured image (relative to `static/img/` folder).
 [header]
-image = "linear.jpg"
+image = "headers/tripatternwide.png"
 caption = "My caption :smile:"
 
 +++

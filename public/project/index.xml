@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 William Murrah</copyright>
-    <lastBuildDate>Thu, 10 May 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 16 Dec 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ERMA 8340: Introduction to Structural Equation Modeling</title>
+      <link>/project/sem/</link>
+      <pubDate>Sun, 16 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/project/sem/</guid>
+      <description> Course Description Course Objectives Upon completion of this course, the student will be able to:
+Relevant Posts by Unit 0-Introduction 1-Review </description>
+    </item>
     
     <item>
       <title>Measurement Error in Linear Regression</title>

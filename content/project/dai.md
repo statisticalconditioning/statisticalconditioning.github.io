@@ -9,7 +9,7 @@ title = "ERMA 7300: Design and Analysis I"
 summary = "ERMA 7300 page"
 
 # Optional image to display on homepage (relative to `static/img/` folder).
-image_preview = "background.jpg"
+image_preview = "energyball.jpg"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
@@ -26,7 +26,7 @@ math = false
 
 # Optional featured image (relative to `static/img/` folder).
 [header]
-image = "headers/background.jpg"
+image = "headers/energyball.jpg"
 caption = "My caption :smile:"
 
 +++

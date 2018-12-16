@@ -41,6 +41,10 @@ filter_default = 0
   name = "Design and Analysis III"
   tag = ".ERMA8320"
   
+[[filter]]
+  name = "Intro SEM"
+  tag = ".ERMA8340"  
+  
 # [[filter]]
 #   name = "Other"
 #   tag = ".demo"

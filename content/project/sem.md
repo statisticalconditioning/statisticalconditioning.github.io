@@ -1,22 +1,22 @@
 +++
 # Date this page was created.
-date = "2017-10-16"
+date = "2018-12-16"
 
 # Project title.
-title = "ERMA 7310: Design and Analysis II"
+title = "ERMA 8340: Introduction to Structural Equation Modeling"
 
 # Project summary to display on homepage.
-summary = "ERMA 7310 page"
+summary = "ERMA 8340 page"
 
 # Optional image to display on homepage (relative to `static/img/` folder).
-image_preview = "spikes.jpg"
+image_preview = "headers/nasawide.jpg"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
-tags = ["ERMA7310", "course"]
+tags = ["ERMA8340", "course"]
 
 # Courses: ERMA coures numer
-courses = ["ERMA7310"]
+courses = ["ERMA8340"]
 
 # Optional external URL for project (replaces project detail page).
 external_link = ""
@@ -26,8 +26,8 @@ math = false
 
 # Optional featured image (relative to `static/img/` folder).
 [header]
-image = "spikes.jpg"
-caption = "My caption :smile:"
+image = "headers/nasawide.jpg"
+caption = "Photo by NASA on Unsplash"
 
 +++
 
