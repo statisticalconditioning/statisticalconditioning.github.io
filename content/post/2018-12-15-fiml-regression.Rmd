@@ -1,7 +1,7 @@
 ---
 title: "FIML in Lavaan: Regression Analysis"
 author: "William Murrah"
-date:
+date: '2018-12-15'
 slug: fiml-regression
 categories: ["Missing Data"]
 tags: ["ERMA7310","ERMA8340"]

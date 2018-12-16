@@ -13,6 +13,16 @@
     
     
     <item>
+      <title>FIML in Lavaan: Regression Analysis</title>
+      <link>/post/fiml-regression/</link>
+      <pubDate>Sat, 15 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/fiml-regression/</guid>
+      <description>This tutorial demonstrates how to use full information maximum likelihood (FIML) estimation to deal with missing data in a regression model using lavaan.
+ Import Data   In this post I use FIML to deal with missing data in a multiple regression framework. First, I import the data from a text file named ‘employee.dat’. You can download a zip file of the data from Applied Missing Data website. I also have a github page for these examples here.</description>
+    </item>
+    
+    <item>
       <title>FIML in Lavaan: Descriptive Statistics</title>
       <link>/post/fiml-in-lavaan-descriptive-statistics/</link>
       <pubDate>Wed, 14 Nov 2018 00:00:00 +0000</pubDate>
@@ -39,16 +49,6 @@ The purpose of the FIML in Lavaan series of posts and the related git repository
       <guid>/post/getting-data-into-spss-and-r/</guid>
       <description>The first step in analyzing data is often getting the data into your chosen software. In this tutorial, I demonstrate how to manually enter data into SPSS and R as well as how to import existing date from two common formats.
 Manually Entering Data Let&amp;rsquo;s assume you had the following data on five students grades you wanted to enter into SPSS and R. You have 5 cases, in this example students, and two variables, the student&amp;rsquo;s name and their grade.</description>
-    </item>
-    
-    <item>
-      <title>FIML in Lavaan: Regression Analysis</title>
-      <link>/post/fiml-regression/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/post/fiml-regression/</guid>
-      <description>This tutorial demonstrates how to use full information maximum likelihood (FIML) estimation to deal with missing data in a regression model using lavaan.
- Import Data   In this post I use FIML to deal with missing data in a multiple regression framework. First, I import the data from a text file named ‘employee.dat’. You can download a zip file of the data from Applied Missing Data website. I also have a github page for these examples here.</description>
     </item>
     
   </channel>

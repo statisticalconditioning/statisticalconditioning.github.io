@@ -7,6 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 William Murrah</copyright>
+    <lastBuildDate>Sat, 15 Dec 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/missing-data/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +15,7 @@
     <item>
       <title>FIML in Lavaan: Regression Analysis</title>
       <link>/post/fiml-regression/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 15 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/fiml-regression/</guid>
       <description>This tutorial demonstrates how to use full information maximum likelihood (FIML) estimation to deal with missing data in a regression model using lavaan.
