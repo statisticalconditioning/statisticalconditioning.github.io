@@ -104,7 +104,7 @@ I will mention one final peculiarity of Mplus that can trip up this process. Mpl
 If the data file (`starMplus.dat`) is in the same folder as the Mplus code file (let's say we call it `starBasic.inp`) then the code file might look like this:
 
 ```
-ITLE:  STAR analysis
+TITLE:  STAR analysis
 
 DATA:
   FILE IS "starMplus.dat";
