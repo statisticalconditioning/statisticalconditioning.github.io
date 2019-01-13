@@ -101,6 +101,26 @@ Finally, you will want to create a basic set of code for Mplus that will be the 
     
 
 I will mention one final peculiarity of Mplus that can trip up this process. Mplus only allows 80 characters on each line of code. So you may have to break up long rows into shorter rows. For example the file path and variable names often have to be broken up this way. If you don't Mplus will give you an error message.
+If the data file (`starMplus.dat`) is in the same folder as the Mplus code file (let's say we call it `starBasic.inp`) then the code file might look like this:
+
+```
+ITLE:  STAR analysis
+
+DATA:
+  FILE IS "starMplus.dat";
+
+VARIABLE:
+  NAMES ARE childId	readk	read1	mathk	math1
+  male	white other;
+  USEVARIABLES ARE readk-other;
+  MISSING ARE ALL (-99);
+  categorical are male-other;
+ANALYSIS:
+  TYPE IS Basic;
+
+OUTPUT:  SAMPSTAT PATTERNS;
+plot: type = plot1 plot2;
+```
 
 ## 7. Check descriptive statistics and missingness patterns
 
