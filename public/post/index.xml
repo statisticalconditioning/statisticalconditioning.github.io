@@ -13,6 +13,15 @@
     
     
     <item>
+      <title>Prepare SPSS Data for Mplus</title>
+      <link>/post/prepare-spss-data-for-mplus/</link>
+      <pubDate>Sun, 13 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/prepare-spss-data-for-mplus/</guid>
+      <description>When I have to prepare data for Mplus, I use the MplusAutomation package in R. Its great! I import the SPSS data file into R with the foreign package. Then I use the prepareMplusData() function to create a .dat file for use in Mplus. This function also creates basic Mplus code that can pasted into Mplus or a text file used to prepare Mplus code files. MplusAutomation has many other great features and I highly recommend it for those who use Mplus and R.</description>
+    </item>
+    
+    <item>
       <title>FIML in Lavaan: Regression Analysis</title>
       <link>/post/fiml-regression/</link>
       <pubDate>Sat, 15 Dec 2018 00:00:00 +0000</pubDate>
