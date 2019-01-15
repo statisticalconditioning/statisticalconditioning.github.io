@@ -40,7 +40,7 @@ Name the variable, select the appropriate variable type, label the variable so i
 
 With your variables defined, you are ready to enter the data.
 Click the data view in the bottom left corner of SPSS and enter the data in the empty cells. 
-The rows represent different cases, and the columns diffeent variables.
+The rows represent different cases, and the columns different variables.
 Enter the values as below:
 
 ![](static/img/spss/manualData.png)
@@ -92,7 +92,7 @@ student_grades <- data.frame(
 )
 ```
 
-This creates an object named `student_grades` that contains the two varibles and related data.
+This creates an object named `student_grades` that contains the two variables and related data.
 
 You can view the data frame by typing the name of the object into R as you see below followed by the resulting output.
 
@@ -126,7 +126,7 @@ This will open a dialog box with 6 steps.
 
 ![](/img/spss/importcsv3.jpg)
 
-**Step 2.** Make sure thet **Yes** is selected if there are variable names included in the top of the csv, and select **No** otherwise.
+**Step 2.** Make sure that **Yes** is selected if there are variable names included in the top of the csv, and select **No** otherwise.
 In this example you can see in the preview in the bottom of the dialog box that the variable names "height" and "gender" are included.
 
 ![](/img/spss/importcsv4.jpg)
