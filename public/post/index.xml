@@ -13,6 +13,15 @@
     
     
     <item>
+      <title>FIML in Lavaan: Regression Analysis with Auxiliary Variables</title>
+      <link>/post/fiml-regression-auxiliary/</link>
+      <pubDate>Sun, 17 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/fiml-regression-auxiliary/</guid>
+      <description>This is the third tutorial in a series that demonstrates how to us full information maximum likelihood (FIML) estimation using the R package lavaan. In this post, I demonstrate two methods of using auxiliary variable in a regression model with FIML. I am using data and examples from Craig Ender’s website Applied Missing Data. The purpose of these posts is to make the examples on Craig’s website, which uses Mplus, available to those who prefer to use lavaan.</description>
+    </item>
+    
+    <item>
       <title>Prepare SPSS Data for Mplus</title>
       <link>/post/prepare-spss-data-for-mplus/</link>
       <pubDate>Sun, 13 Jan 2019 00:00:00 +0000</pubDate>
@@ -58,6 +67,15 @@ The purpose of the FIML in Lavaan series of posts and the related git repository
       <guid>/post/getting-data-into-spss-and-r/</guid>
       <description>The first step in analyzing data is often getting the data into your chosen software. In this tutorial, I demonstrate how to manually enter data into SPSS and R as well as how to import existing date from two common formats.
 Manually Entering Data Let&amp;rsquo;s assume you had the following data on five students grades you wanted to enter into SPSS and R. You have 5 cases, in this example students, and two variables, the student&amp;rsquo;s name and their grade.</description>
+    </item>
+    
+    <item>
+      <title>FIML in Lavaan: Regression Analysis with Auxiliary Variables</title>
+      <link>/post/fiml-regression-auxiliary/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/post/fiml-regression-auxiliary/</guid>
+      <description>This is the third tutorial in a series that demonstrates how to us full information maximum likelihood (FIML) estimation using the R package lavaan. In this post, I demonstrate two methods of using auxiliary variable in a regression model with FIML. I am using data and examples from Craig Ender’s website Applied Missing Data. The purpose of these posts is to make the examples on Craig’s website, which uses Mplus, available to those who prefer to use lavaan.</description>
     </item>
     
   </channel>

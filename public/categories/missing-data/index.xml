@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 William Murrah</copyright>
-    <lastBuildDate>Sat, 15 Dec 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 17 Mar 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/missing-data/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>FIML in Lavaan: Regression Analysis with Auxiliary Variables</title>
+      <link>/post/fiml-regression-auxiliary/</link>
+      <pubDate>Sun, 17 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/fiml-regression-auxiliary/</guid>
+      <description>This is the third tutorial in a series that demonstrates how to us full information maximum likelihood (FIML) estimation using the R package lavaan. In this post, I demonstrate two methods of using auxiliary variable in a regression model with FIML. I am using data and examples from Craig Ender’s website Applied Missing Data. The purpose of these posts is to make the examples on Craig’s website, which uses Mplus, available to those who prefer to use lavaan.</description>
+    </item>
     
     <item>
       <title>FIML in Lavaan: Regression Analysis</title>
@@ -20,6 +29,15 @@
       <guid>/post/fiml-regression/</guid>
       <description>This tutorial demonstrates how to use full information maximum likelihood (FIML) estimation to deal with missing data in a regression model using lavaan.
  Import Data   In this post I use FIML to deal with missing data in a multiple regression framework. First, I import the data from a text file named ‘employee.dat’. You can download a zip file of the data from Applied Missing Data website. I also have a github page for these examples here.</description>
+    </item>
+    
+    <item>
+      <title>FIML in Lavaan: Regression Analysis with Auxiliary Variables</title>
+      <link>/post/fiml-regression-auxiliary/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/post/fiml-regression-auxiliary/</guid>
+      <description>This is the third tutorial in a series that demonstrates how to us full information maximum likelihood (FIML) estimation using the R package lavaan. In this post, I demonstrate two methods of using auxiliary variable in a regression model with FIML. I am using data and examples from Craig Ender’s website Applied Missing Data. The purpose of these posts is to make the examples on Craig’s website, which uses Mplus, available to those who prefer to use lavaan.</description>
     </item>
     
   </channel>

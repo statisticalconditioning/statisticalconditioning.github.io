@@ -5,6 +5,15 @@
     
     <url>
     
+      <loc>/post/fiml-regression-auxiliary/</loc>
+      <lastmod>2019-03-17T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/post/prepare-spss-data-for-mplus/</loc>
       <lastmod>2019-01-13T00:00:00+00:00</lastmod>
     </url>
@@ -169,8 +178,8 @@
     
     <url>
     
-      <loc>/courses/erma7310/</loc>
-      <lastmod>2017-10-16T00:00:00+00:00</lastmod>
+      <loc>/tags/erma7310/</loc>
+      <lastmod>2019-03-17T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -179,8 +188,8 @@
     
     <url>
     
-      <loc>/tags/erma7310/</loc>
-      <lastmod>2018-12-15T00:00:00+00:00</lastmod>
+      <loc>/courses/erma7310/</loc>
+      <lastmod>2017-10-16T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -199,6 +208,16 @@
     
     <url>
     
+      <loc>/tags/erma8340/</loc>
+      <lastmod>2019-03-17T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/courses/erma8340/</loc>
       <lastmod>2018-12-16T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -209,9 +228,7 @@
     
     <url>
     
-      <loc>/tags/erma8340/</loc>
-      <lastmod>2018-12-16T00:00:00+00:00</lastmod>
-      <priority>0</priority>
+      <loc>/post/fiml-regression-auxiliary/</loc>
     </url>
     
   
@@ -230,7 +247,7 @@
     <url>
     
       <loc>/categories/missing-data/</loc>
-      <lastmod>2018-12-15T00:00:00+00:00</lastmod>
+      <lastmod>2019-03-17T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
