@@ -80,15 +80,6 @@ Manually Entering Data Let&amp;rsquo;s assume you had the following data on five
     
     <item>
       <title>Regression Analysis with Auxiliary Variables</title>
-      <link>/post/2019-04-13-egression-analysis-with-auxiliary-variables/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2019-04-13-egression-analysis-with-auxiliary-variables/</guid>
-      <description>This is the third tutorial in a series that demonstrates how to us full information maximum likelihood (FIML) estimation using the R package lavaan. In this post, I demonstrate two methods of using auxiliary variable in a regression model with FIML. I am using data and examples from Craig Ender’s website Applied Missing Data. The purpose of these posts is to make the examples on Craig’s website, which uses Mplus, available to those who prefer to use lavaan</description>
-    </item>
-    
-    <item>
-      <title>Regression Analysis with Auxiliary Variables</title>
       <link>/post/2019-04-13-regression-analysis-with-auxiliary-variables/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
