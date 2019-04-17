@@ -7,71 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 William Murrah</copyright>
-    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 17 Apr 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Content tagged as &#39;Academic&#39;</title>
-      <link>/tags/academic/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/academic/</guid>
-      <description>Here is a list of all the content that has been tagged as academic.</description>
-    </item>
-    
-    <item>
-      <title>ERMA7300</title>
-      <link>/tags/erma7300/</link>
-      <pubDate>Tue, 24 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/erma7300/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>ERMA7310</title>
       <link>/tags/erma7310/</link>
-      <pubDate>Sun, 17 Mar 2019 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 17 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/erma7310/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>ERMA8320</title>
-      <link>/tags/erma8320/</link>
-      <pubDate>Mon, 16 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/erma8320/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>ERMA8340</title>
       <link>/tags/erma8340/</link>
-      <pubDate>Sun, 17 Mar 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 16 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>/tags/erma8340/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>R</title>
-      <link>/tags/r/</link>
-      <pubDate>Sun, 22 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/r/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>SPSS</title>
-      <link>/tags/spss/</link>
-      <pubDate>Sun, 22 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/spss/</guid>
       <description></description>
     </item>
     
@@ -108,6 +63,42 @@
       <pubDate>Thu, 10 May 2018 00:00:00 +0000</pubDate>
       
       <guid>/tags/valencia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ERMA7300</title>
+      <link>/tags/erma7300/</link>
+      <pubDate>Tue, 24 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/erma7300/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>/tags/r/</link>
+      <pubDate>Sun, 22 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SPSS</title>
+      <link>/tags/spss/</link>
+      <pubDate>Sun, 22 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/spss/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ERMA8320</title>
+      <link>/tags/erma8320/</link>
+      <pubDate>Mon, 16 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/erma8320/</guid>
       <description></description>
     </item>
     

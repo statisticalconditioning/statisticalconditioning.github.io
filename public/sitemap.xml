@@ -1,12 +1,70 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
     
     
     <url>
     
-      <loc>/post/fiml-regression-auxiliary/</loc>
-      <lastmod>2019-03-17T00:00:00+00:00</lastmod>
+      <loc>/categories/</loc>
+      <lastmod>2019-04-17T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/tags/erma7310/</loc>
+      <lastmod>2019-04-17T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/post/fiml-in-lavaan-regression-analysis-with-auxiliary-variables/</loc>
+      <lastmod>2019-04-17T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/categories/missing-data/</loc>
+      <lastmod>2019-04-17T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/post/</loc>
+      <lastmod>2019-04-17T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/</loc>
+      <lastmod>2019-04-17T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/tags/</loc>
+      <lastmod>2019-04-17T00:00:00+00:00</lastmod>
+      <priority>0</priority>
     </url>
     
   
@@ -23,8 +81,58 @@
     
     <url>
     
+      <loc>/courses/</loc>
+      <lastmod>2018-12-16T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/project/sem/</loc>
       <lastmod>2018-12-16T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/tags/erma8340/</loc>
+      <lastmod>2018-12-16T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/courses/erma8340/</loc>
+      <lastmod>2018-12-16T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/project/</loc>
+      <lastmod>2018-12-16T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/tags/course/</loc>
+      <lastmod>2018-12-16T00:00:00+00:00</lastmod>
+      <priority>0</priority>
     </url>
     
   
@@ -68,6 +176,46 @@
     
     <url>
     
+      <loc>/tags/measurementerror/</loc>
+      <lastmod>2018-05-10T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/tags/research/</loc>
+      <lastmod>2018-05-10T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/tags/valencia/</loc>
+      <lastmod>2018-05-10T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/tags/erma7300/</loc>
+      <lastmod>2017-10-24T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/post/getting-started/</loc>
       <lastmod>2017-10-24T00:00:00+00:00</lastmod>
     </url>
@@ -79,6 +227,56 @@
     
       <loc>/post/getting-data-into-spss-and-r/</loc>
       <lastmod>2017-10-22T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/categories/import/</loc>
+      <lastmod>2017-10-22T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/tags/r/</loc>
+      <lastmod>2017-10-22T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/tags/spss/</loc>
+      <lastmod>2017-10-22T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/units/</loc>
+      <lastmod>2017-10-22T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/units/programming/</loc>
+      <lastmod>2017-10-22T00:00:00+00:00</lastmod>
+      <priority>0</priority>
     </url>
     
   
@@ -113,81 +311,6 @@
     
     <url>
     
-      <loc>/post/</loc>
-      <lastmod>2017-01-01T00:00:00-06:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/tags/academic/</loc>
-      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/courses/erma7300/</loc>
-      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/talk/</loc>
-      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/categories/</loc>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/courses/</loc>
-      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/tags/erma7300/</loc>
-      <lastmod>2017-10-24T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/tags/erma7310/</loc>
-      <lastmod>2019-03-17T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
       <loc>/courses/erma7310/</loc>
       <lastmod>2017-10-16T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -208,19 +331,8 @@
     
     <url>
     
-      <loc>/tags/erma8340/</loc>
-      <lastmod>2019-03-17T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/courses/erma8340/</loc>
-      <lastmod>2018-12-16T00:00:00+00:00</lastmod>
-      <priority>0</priority>
+      <loc>/courses/erma7300/</loc>
+      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -236,136 +348,7 @@
     
     <url>
     
-      <loc>/categories/import/</loc>
-      <lastmod>2017-10-22T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/categories/missing-data/</loc>
-      <lastmod>2019-03-17T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/project/</loc>
-      <lastmod>2018-12-16T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/tags/r/</loc>
-      <lastmod>2017-10-22T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/post/2019-04-13-regression-analysis-with-auxiliary-variables/</loc>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/tags/spss/</loc>
-      <lastmod>2017-10-22T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/</loc>
-      <lastmod>2017-10-15T00:00:00-05:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/tags/</loc>
-      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/units/</loc>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/tags/course/</loc>
-      <lastmod>2018-12-16T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/tags/measurementerror/</loc>
-      <lastmod>2018-05-10T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/units/programming/</loc>
-      <lastmod>2017-10-22T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/tags/research/</loc>
-      <lastmod>2018-05-10T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/tags/valencia/</loc>
-      <lastmod>2018-05-10T00:00:00+00:00</lastmod>
-      <priority>0</priority>
+      <loc>/talk/</loc>
     </url>
     
   

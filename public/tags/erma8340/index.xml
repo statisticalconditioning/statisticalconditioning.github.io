@@ -7,19 +7,10 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 William Murrah</copyright>
-    <lastBuildDate>Sun, 17 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 16 Dec 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/erma8340/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>FIML in Lavaan: Regression Analysis with Auxiliary Variables</title>
-      <link>/post/fiml-regression-auxiliary/</link>
-      <pubDate>Sun, 17 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/fiml-regression-auxiliary/</guid>
-      <description>This is the third tutorial in a series that demonstrates how to us full information maximum likelihood (FIML) estimation using the R package lavaan. In this post, I demonstrate two methods of using auxiliary variable in a regression model with FIML. I am using data and examples from Craig Ender’s website Applied Missing Data. The purpose of these posts is to make the examples on Craig’s website, which uses Mplus, available to those who prefer to use lavaan.</description>
-    </item>
     
     <item>
       <title>ERMA 8340: Introduction to Structural Equation Modeling</title>
@@ -27,8 +18,7 @@
       <pubDate>Sun, 16 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>/project/sem/</guid>
-      <description> Course Description Course Objectives Upon completion of this course, the student will be able to:
-Relevant Posts by Unit 0-Introduction 1-Review </description>
+      <description>ERMA 8340 page</description>
     </item>
     
     <item>
