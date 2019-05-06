@@ -35,8 +35,8 @@ Click on the variable tab in the lower left corner of the SPSS Data Editor.
 Then enter the information about each variable.
 Name the variable, select the appropriate variable type, label the variable so it is clear what information is captured by each variable, and select the appropriate scale of measurement.
 
-![](static/img/spss/manualVar.jpg)
-![](static/img/spss/manualVar2.jpg)
+![](/img/spss/manualVar.jpg)
+![](/img/spss/manualVar2.jpg)
 
 With your variables defined, you are ready to enter the data.
 Click the data view in the bottom left corner of SPSS and enter the data in the empty cells. 
